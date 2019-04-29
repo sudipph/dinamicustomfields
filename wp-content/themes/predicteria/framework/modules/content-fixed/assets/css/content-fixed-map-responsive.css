@@ -1,0 +1,42 @@
+/* ==========================================================================
+   Content Fixed responsive styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Content Fixed responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .qodef-content-fixed.btn-enabled .qodef-content-fixed-inner {
+    padding: 19px 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-content-fixed.btn-enabled .qodef-content-fixed-text-holder,
+  .qodef-content-fixed.btn-enabled .qodef-content-fixed-btn-holder {
+    display: block;
+    width: 100%;
+  }
+  .qodef-content-fixed.btn-enabled .qodef-content-fixed-btn-holder {
+    margin: 25px 0 0;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-content-fixed {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Content Fixed responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Content Fixed responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=content-fixed-map-responsive.css.map */

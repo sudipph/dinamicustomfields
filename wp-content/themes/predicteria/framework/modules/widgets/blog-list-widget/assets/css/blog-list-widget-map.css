@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Author Info widget style - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+.qodef-side-menu .qodef-blog-list-widget .qodef-blog-list-holder.qodef-bl-simple .qodef-bli-text .qodef-post-info-date a:hover,
+.qodef-footer-top-holder .qodef-blog-list-widget .qodef-blog-list-holder.qodef-bl-simple .qodef-bli-text .qodef-post-info-date a:hover {
+  color: #fff;
+}
+
+.qodef-side-menu .qodef-blog-list-widget .qodef-blog-list-holder.qodef-bl-minimal .qodef-post-info-date a:hover,
+.qodef-footer-top-holder .qodef-blog-list-widget .qodef-blog-list-holder.qodef-bl-minimal .qodef-post-info-date a:hover {
+  color: #fff;
+}
+
+/* ==========================================================================
+   Author Info widget style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=blog-list-widget-map.css.map */

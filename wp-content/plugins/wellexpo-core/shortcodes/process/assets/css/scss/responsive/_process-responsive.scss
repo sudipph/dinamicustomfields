@@ -1,0 +1,47 @@
+/* ==========================================================================
+   Process shortcode responsive style - begin
+   ========================================================================== */
+
+.qodef-process-holder {
+
+	@include ipad-landscape {
+
+		&.qodef-four-columns {
+
+			.qodef-process-item {
+				width: 50%;
+				margin: 0 0 20px;
+			}
+		}
+	}
+
+	@include ipad-portrait {
+
+		&.qodef-three-columns {
+
+			.qodef-process-item {
+				width: 50%;
+				margin: 0 0 20px;
+			}
+		}
+	}
+
+	@include phone-landscape {
+			
+		.qodef-process-inner {
+			@include qodefRelativeHolderLayout();
+			margin: 0;
+		}
+
+		.qodef-process-item {
+			width: 100% !important;
+			float: none;
+			margin: 0 0 20px;
+			padding: 0;
+			text-align: inherit;
+		}
+	}
+}
+/* ==========================================================================
+   Process shortcode responsive style - end
+   ========================================================================== */

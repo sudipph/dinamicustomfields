@@ -1,0 +1,60 @@
+/* ==========================================================================
+   clients Holder shortcode style - begin
+   ========================================================================== */
+
+.qodef-clients-grid-holder {
+	@include qodefRelativeHolderLayout();
+	text-align: center;
+	
+	&.qodef-cg-alignment-left {
+		text-align: left;
+	}
+	
+	&.qodef-cg-alignment-right {
+		text-align: right;
+	}
+	
+	.qodef-cc-link {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+	&.qodef-cc-hover-switch-images {
+		
+		.qodef-cc-item {
+			
+			img {
+				
+				.rev_slider_wrapper & {
+					width: auto !important;
+					height: auto !important;
+				}
+			}
+		}
+	}
+
+	&.qodef-cg-with-animation {
+		.qodef-cc-item {
+			visibility: hidden;
+
+			.touch & {
+				visibility: visible;
+			}
+
+			.no-touch & {
+				visibility: visible;
+				opacity: 0;
+
+				&.qodef-appeared {
+					opacity: 1;
+					@include qodefTransition(opacity 1s cubic-bezier(0.19, 0.5, 0.46, 0.88));
+				}
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+   clients Holder shortcode style - end
+   ========================================================================== */

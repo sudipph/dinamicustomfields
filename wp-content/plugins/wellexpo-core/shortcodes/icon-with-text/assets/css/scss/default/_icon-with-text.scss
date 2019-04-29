@@ -1,0 +1,116 @@
+/* ==========================================================================
+   Icon With Text shortcode style - begin
+   ========================================================================== */
+
+.qodef-iwt {
+	@include qodefRelativeHolderLayout();
+	
+	.qodef-iwt-icon {
+		
+		a {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		
+		.qodef-icon-shortcode {
+			line-height: 1;
+			
+			&.qodef-circle,
+			&.qodef-square {
+				line-height: 2;
+			}
+		}
+	}
+	
+	.qodef-iwt-title {
+		margin: 0;
+		line-height: 1.2em;
+		
+		a {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+	
+	.qodef-iwt-title-text {
+		display: block;
+	}
+	
+	.qodef-iwt-text {
+		margin: 19px 0 0;
+	}
+	
+	&.qodef-iwt-icon-left {
+		width: auto;
+		
+		.qodef-iwt-icon,
+		.qodef-iwt-content {
+			display: table-cell;
+			vertical-align: top;
+		}
+		
+		.qodef-iwt-icon {
+			position: relative;
+			top: 1px;
+			
+			img {
+				max-width: none;
+			}
+		}
+		
+		.qodef-iwt-content {
+			padding: 0 0 0 13px;
+		}
+	}
+	
+	&.qodef-iwt-icon-left-from-title {
+		
+		.qodef-iwt-icon,
+		.qodef-iwt-title-text {
+			position: relative;
+			display: table-cell;
+			vertical-align: middle;
+		}
+		
+		.qodef-iwt-icon {
+			
+			.qodef-icon-element {
+				@include qodefTransition(none);
+			}
+			
+			img {
+				max-width: none;
+			}
+		}
+		
+		.qodef-iwt-title-text {
+			padding: 0 0 0 17px;
+		}
+	}
+	
+	&.qodef-iwt-icon-top {
+		text-align: center;
+
+		.qodef-iwt-icon {
+			position: relative;
+			overflow: hidden;
+			padding-top: 30px;
+		}
+
+		.qodef-iwt-bg-svg {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			@include qodefTransform(translateX(-50%));
+		}
+
+		.qodef-iwt-content {
+			padding: 28px 0 0;
+		}
+	}
+}
+/* ==========================================================================
+   Icon With Text shortcode style - end
+   ========================================================================== */

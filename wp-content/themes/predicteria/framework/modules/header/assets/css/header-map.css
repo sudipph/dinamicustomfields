@@ -1,0 +1,2788 @@
+/* ==========================================================================
+   Header styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Header styles - begin
+   ========================================================================== */
+.qodef-page-header {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  z-index: 110;
+  box-sizing: border-box;
+  /* ==========================================================================
+    #General header layout - start
+    ========================================================================== */
+  /* ==========================================================================
+    #General header layout - end
+    ========================================================================== */
+  /* ==========================================================================
+    #Logo area styles - start
+    ========================================================================== */
+  /* ==========================================================================
+    #Logo area styles - end
+    ========================================================================== */
+  /* ==========================================================================
+    #Menu area styles - start
+    ========================================================================== */
+  /* ==========================================================================
+    #Menu area styles - end
+    ========================================================================== */
+  /* ==========================================================================
+    #Specific styles - start
+    ========================================================================== */
+  /* ==========================================================================
+    #Specific styles - end
+    ========================================================================== */
+}
+
+.qodef-page-header a img {
+  display: block;
+}
+
+.qodef-page-header p {
+  margin: 0;
+}
+
+.qodef-page-header .qodef-vertical-align-containers {
+  padding: 0 40px;
+}
+
+.qodef-paspartu-enabled .qodef-page-header .qodef-vertical-align-containers {
+  padding: 0;
+}
+
+.qodef-page-header .qodef-grid {
+  height: 100%;
+}
+
+.qodef-page-header .qodef-grid .qodef-vertical-align-containers {
+  padding: 0;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.qodef-page-header .qodef-logo-area {
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.qodef-page-header .qodef-logo-area .qodef-logo-wrapper a {
+  max-height: 100px;
+}
+
+.qodef-page-header .qodef-menu-area {
+  position: relative;
+  height: 100px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.qodef-boxed .qodef-page-header .qodef-menu-area {
+  padding: 0;
+}
+
+.qodef-page-header .qodef-menu-area .qodef-logo-wrapper a {
+  max-height: 100px;
+}
+
+.qodef-page-header .qodef-menu-area .widget {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.qodef-logo-area-border-disable .qodef-page-header .qodef-logo-area {
+  border: none;
+}
+
+.qodef-logo-area-in-grid-border-disable .qodef-page-header .qodef-logo-area .qodef-grid .qodef-vertical-align-containers {
+  border: none;
+}
+
+.qodef-header-logo-area-in-grid-padding .qodef-page-header .qodef-logo-area .qodef-vertical-align-containers {
+  padding: 0 25px;
+}
+
+.qodef-menu-area-shadow-disable .qodef-page-header .qodef-menu-area {
+  box-shadow: none;
+}
+
+.qodef-menu-area-shadow-disable .qodef-page-header .qodef-menu-area .qodef-grid .qodef-vertical-align-containers {
+  box-shadow: none;
+}
+
+.qodef-menu-area-border-disable .qodef-page-header .qodef-menu-area {
+  border: none;
+}
+
+.qodef-menu-area-in-grid-border-disable .qodef-page-header .qodef-menu-area .qodef-grid .qodef-vertical-align-containers {
+  border: none;
+}
+
+.qodef-header-logo-area-in-grid-padding .qodef-page-header .qodef-menu-area .qodef-vertical-align-containers {
+  padding: 0 25px;
+}
+
+/* ==========================================================================
+#Light header - begin
+========================================================================== */
+.qodef-light-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header) .qodef-logo-wrapper .qodef-light-logo {
+  opacity: 1;
+}
+
+.qodef-light-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header) .qodef-logo-wrapper .qodef-normal-logo,
+.qodef-light-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header) .qodef-logo-wrapper .qodef-dark-logo {
+  opacity: 0;
+}
+
+.qodef-light-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header) .qodef-menu-area {
+  color: #fff !important;
+}
+
+.qodef-light-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header) .qodef-menu-area .widget {
+  color: #fff !important;
+}
+
+.qodef-light-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header) .qodef-menu-area .widget p,
+.qodef-light-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header) .qodef-menu-area .widget a,
+.qodef-light-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header) .qodef-menu-area .widget span,
+.qodef-light-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header) .qodef-menu-area .widget i,
+.qodef-light-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header) .qodef-menu-area .widget .widgettitle {
+  color: #fff !important;
+}
+
+.qodef-light-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header) .qodef-menu-area .widget a:hover {
+  color: #50d6ae !important;
+}
+
+.qodef-light-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header).qodef-menu-area {
+  color: #fff !important;
+}
+
+.qodef-light-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header).qodef-menu-area .widget {
+  color: #fff !important;
+}
+
+.qodef-light-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header).qodef-menu-area .widget p,
+.qodef-light-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header).qodef-menu-area .widget a,
+.qodef-light-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header).qodef-menu-area .widget span,
+.qodef-light-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header).qodef-menu-area .widget i,
+.qodef-light-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header).qodef-menu-area .widget .widgettitle {
+  color: #fff !important;
+}
+
+.qodef-light-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header).qodef-menu-area .widget a:hover {
+  color: #50d6ae !important;
+}
+
+/* ==========================================================================
+#Light header - end
+========================================================================== */
+/* ==========================================================================
+#Dark header - begin
+========================================================================== */
+.qodef-dark-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header) .qodef-logo-wrapper .qodef-dark-logo {
+  opacity: 1;
+}
+
+.qodef-dark-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header) .qodef-logo-wrapper .qodef-normal-logo,
+.qodef-dark-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header) .qodef-logo-wrapper .qodef-light-logo {
+  opacity: 0;
+}
+
+.qodef-dark-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header) .qodef-menu-area {
+  color: #000 !important;
+}
+
+.qodef-dark-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header) .qodef-menu-area .widget {
+  color: #000 !important;
+}
+
+.qodef-dark-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header) .qodef-menu-area .widget p,
+.qodef-dark-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header) .qodef-menu-area .widget a,
+.qodef-dark-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header) .qodef-menu-area .widget span,
+.qodef-dark-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header) .qodef-menu-area .widget i,
+.qodef-dark-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header) .qodef-menu-area .widget .widgettitle {
+  color: #000 !important;
+}
+
+.qodef-dark-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header) .qodef-menu-area .widget a:hover {
+  color: #50d6ae !important;
+}
+
+.qodef-dark-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header).qodef-menu-area {
+  color: #000 !important;
+}
+
+.qodef-dark-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header).qodef-menu-area .widget {
+  color: #000 !important;
+}
+
+.qodef-dark-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header).qodef-menu-area .widget p,
+.qodef-dark-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header).qodef-menu-area .widget a,
+.qodef-dark-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header).qodef-menu-area .widget span,
+.qodef-dark-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header).qodef-menu-area .widget i,
+.qodef-dark-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header).qodef-menu-area .widget .widgettitle {
+  color: #000 !important;
+}
+
+.qodef-dark-header .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header).qodef-menu-area .widget a:hover {
+  color: #50d6ae !important;
+}
+
+/* ==========================================================================
+#Dark header - end
+========================================================================== */
+/* ==========================================================================
+   Header end - end
+   ========================================================================== */
+/* ==========================================================================
+   Header widgets styles - begin
+   ========================================================================== */
+.qodef-page-header .widget,
+.qodef-top-bar .widget,
+.qodef-sticky-header .widget,
+.qodef-mobile-header .widget {
+  /* To display none */
+}
+
+.qodef-page-header .widget.widget_pages, .qodef-page-header .widget.widget_archive, .qodef-page-header .widget.widget_categories, .qodef-page-header .widget.widget_meta, .qodef-page-header .widget.widget_recent_entries, .qodef-page-header .widget.widget_recent_comments, .qodef-page-header .widget.widget_rss, .qodef-page-header .widget.widget_calendar, .qodef-page-header .widget.widget_rss, .qodef-page-header .widget.widget_archive, .qodef-page-header .widget.widget_categories, .qodef-page-header .widget.widget_tag_cloud, .qodef-page-header .widget.widget_nav_menu, .qodef-page-header .widget.widget_search,
+.qodef-top-bar .widget.widget_pages,
+.qodef-top-bar .widget.widget_archive,
+.qodef-top-bar .widget.widget_categories,
+.qodef-top-bar .widget.widget_meta,
+.qodef-top-bar .widget.widget_recent_entries,
+.qodef-top-bar .widget.widget_recent_comments,
+.qodef-top-bar .widget.widget_rss,
+.qodef-top-bar .widget.widget_calendar,
+.qodef-top-bar .widget.widget_rss,
+.qodef-top-bar .widget.widget_archive,
+.qodef-top-bar .widget.widget_categories,
+.qodef-top-bar .widget.widget_tag_cloud,
+.qodef-top-bar .widget.widget_nav_menu,
+.qodef-top-bar .widget.widget_search,
+.qodef-sticky-header .widget.widget_pages,
+.qodef-sticky-header .widget.widget_archive,
+.qodef-sticky-header .widget.widget_categories,
+.qodef-sticky-header .widget.widget_meta,
+.qodef-sticky-header .widget.widget_recent_entries,
+.qodef-sticky-header .widget.widget_recent_comments,
+.qodef-sticky-header .widget.widget_rss,
+.qodef-sticky-header .widget.widget_calendar,
+.qodef-sticky-header .widget.widget_rss,
+.qodef-sticky-header .widget.widget_archive,
+.qodef-sticky-header .widget.widget_categories,
+.qodef-sticky-header .widget.widget_tag_cloud,
+.qodef-sticky-header .widget.widget_nav_menu,
+.qodef-sticky-header .widget.widget_search,
+.qodef-mobile-header .widget.widget_pages,
+.qodef-mobile-header .widget.widget_archive,
+.qodef-mobile-header .widget.widget_categories,
+.qodef-mobile-header .widget.widget_meta,
+.qodef-mobile-header .widget.widget_recent_entries,
+.qodef-mobile-header .widget.widget_recent_comments,
+.qodef-mobile-header .widget.widget_rss,
+.qodef-mobile-header .widget.widget_calendar,
+.qodef-mobile-header .widget.widget_rss,
+.qodef-mobile-header .widget.widget_archive,
+.qodef-mobile-header .widget.widget_categories,
+.qodef-mobile-header .widget.widget_tag_cloud,
+.qodef-mobile-header .widget.widget_nav_menu,
+.qodef-mobile-header .widget.widget_search {
+  display: none !important;
+}
+
+.qodef-top-bar .widget {
+  color: #fff;
+}
+
+.qodef-top-bar .widget a {
+  color: #fff;
+}
+
+.qodef-top-bar .widget a:hover {
+  color: #50d6ae;
+}
+
+/* ==========================================================================
+   Header widgets styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Header logo styles - begin
+   ========================================================================== */
+.qodef-logo-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.qodef-logo-wrapper a {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+}
+
+.qodef-logo-wrapper a img {
+  height: 100%;
+  width: auto;
+  -webkit-transition: opacity 0.2s ease;
+  -moz-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+
+.qodef-logo-wrapper a img.qodef-normal-logo {
+  opacity: 1;
+}
+
+.qodef-logo-wrapper a img.qodef-dark-logo {
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.qodef-logo-wrapper a img.qodef-light-logo {
+  opacity: 0;
+  -webkit-transform: translateY(-200%);
+  -moz-transform: translateY(-200%);
+  transform: translateY(-200%);
+}
+
+/* ==========================================================================
+   Header logo styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Header main menu style - begin
+   ========================================================================== */
+.qodef-main-menu {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  height: 100%;
+  width: auto;
+}
+
+.qodef-main-menu ul {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.qodef-main-menu ul li {
+  position: relative;
+  display: inline-block;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+.qodef-main-menu ul li a {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #282828;
+}
+
+.qodef-main-menu ul li a > span.item_outer {
+  position: relative;
+  display: block;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.qodef-main-menu ul li a > span.item_outer .item_text {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.qodef-main-menu ul li a > span.item_outer .item_text:before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  left: -4px;
+  height: 4px;
+  width: calc(100% + 8px);
+  background-color: #53f6c6;
+  z-index: -1;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: -moz-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transform: scaleX(0) translateZ(0);
+  -moz-transform: scaleX(0) translateZ(0);
+  transform: scaleX(0) translateZ(0);
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+
+.qodef-main-menu ul li a:hover > span.item_outer .item_text:before {
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-transform: scaleX(1) translateZ(0);
+  -moz-transform: scaleX(1) translateZ(0);
+  transform: scaleX(1) translateZ(0);
+}
+
+.qodef-main-menu ul li a i:before {
+  margin: 0 7px 0 0;
+}
+
+.qodef-main-menu ul li a .menu_icon_wrapper {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.qodef-main-menu ul li a .qodef-menu-featured-icon {
+  position: relative;
+  top: -4px;
+  left: 5px;
+  color: currentColor;
+  font-size: 10px;
+  margin: 0;
+}
+
+.qodef-main-menu ul li a .qodef-menu-featured-icon:before {
+  margin: 0;
+}
+
+.qodef-main-menu > ul {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.qodef-main-menu > ul > li {
+  float: left;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.qodef-main-menu > ul > li > a {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  height: 100%;
+  padding: 0 27px;
+  color: #000;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 34px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+}
+
+.qodef-main-menu > ul > li.qodef-active-item > a > span.item_outer .item_text:before,
+.qodef-main-menu > ul > li:hover > a > span.item_outer .item_text:before {
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-transform: scaleX(1) translateZ(0);
+  -moz-transform: scaleX(1) translateZ(0);
+  transform: scaleX(1) translateZ(0);
+}
+
+.qodef-main-menu > ul > li.has_sub > a .qodef-menu-arrow {
+  display: none;
+}
+
+.qodef-light-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-main-menu > ul > li > a {
+  color: #fff;
+}
+
+.qodef-light-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-main-menu > ul > li.qodef-active-item > a > span.item_outer .item_text:before {
+  width: calc(100% + 8px);
+}
+
+.qodef-dark-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-main-menu > ul > li > a {
+  color: #000;
+}
+
+.qodef-dark-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-main-menu > ul > li.qodef-active-item > a > span.item_outer .item_text:before {
+  width: calc(100% + 8px);
+}
+
+/* Narrow drop down styles
+   ========================================================================== */
+.qodef-drop-down .second {
+  position: absolute;
+  display: block;
+  left: -5px;
+  top: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  opacity: 0;
+  z-index: 10;
+  -webkit-transition: top 0.15s ease-out;
+  -moz-transition: top 0.15s ease-out;
+  transition: top 0.15s ease-out;
+}
+
+.qodef-drop-down .second.qodef-drop-down-start {
+  visibility: visible;
+  overflow: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.qodef-drop-down .second.right {
+  right: -5px;
+  left: auto;
+}
+
+.qodef-drop-down .second .inner {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+  z-index: 997;
+  box-shadow: 0px 5px 9.5px 0.5px rgba(0, 0, 0, 0.05);
+}
+
+.qodef-drop-down .second .inner ul li {
+  display: block;
+  float: none;
+  height: auto;
+}
+
+.qodef-drop-down .second .inner ul li .widget {
+  width: 100%;
+  margin: 0 !important;
+}
+
+.qodef-drop-down .second .inner ul li a {
+  display: block;
+  float: none;
+  margin: 0;
+  padding: 4px 30px;
+}
+
+.qodef-drop-down .second .inner ul li a .item_outer {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 0 15px 0 0;
+  box-sizing: border-box;
+}
+
+.qodef-drop-down .second .inner ul li.current-menu-ancestor > a .item_outer .item_text:before,
+.qodef-drop-down .second .inner ul li.current-menu-item > a .item_outer .item_text:before {
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-transform: scaleX(1) translateZ(0);
+  -moz-transform: scaleX(1) translateZ(0);
+  transform: scaleX(1) translateZ(0);
+}
+
+.qodef-drop-down .second .inner ul li.sub > a .item_outer:after {
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  top: -1px;
+  right: 0;
+  content: '\f3d3';
+  font-family: 'Ionicons';
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.qodef-drop-down .second .inner ul.right li a .item_outer {
+  padding: 0 0 0 15px;
+}
+
+.qodef-drop-down .second .inner ul.right li.sub > a .item_outer:after {
+  right: auto;
+  left: 0;
+  content: "\f3d2";
+}
+
+.qodef-drop-down .second .inner ul.right li a {
+  text-align: right;
+}
+
+.qodef-drop-down .second .inner ul.right li ul {
+  left: -100%;
+}
+
+.qodef-drop-down li.left_position .second {
+  left: 0;
+}
+
+.qodef-drop-down li.right_position .second {
+  left: auto;
+  right: 0;
+}
+
+.qodef-drop-down > ul > li:hover > .second {
+  z-index: 20;
+}
+
+.qodef-drop-down .narrow .second .inner ul {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #fff;
+  padding: 34px 0 10px;
+}
+
+.qodef-drop-down .narrow .second .inner ul li {
+  width: 230px;
+}
+
+.qodef-drop-down .narrow .second .inner ul li ul {
+  position: absolute;
+  left: 100%;
+  top: -34px;
+  height: auto;
+  opacity: 0;
+  overflow: hidden;
+  z-index: 10;
+  box-shadow: 0px 5px 9.5px 0.5px rgba(0, 0, 0, 0.05);
+  -webkit-transform: translateZ(0);
+  -webkit-transition: opacity 0.4s ease-out;
+  -moz-transition: opacity 0.4s ease-out;
+  transition: opacity 0.4s ease-out;
+}
+
+.qodef-drop-down .narrow .second .inner ul li:hover ul {
+  z-index: 20;
+  opacity: 1;
+}
+
+.qodef-drop-down .narrow .second .inner ul.right li ul {
+  left: -100%;
+}
+
+.qodef-drop-down .narrow .second .inner ul.right li a > span.item_outer .item_text:before {
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+}
+
+.qodef-drop-down .narrow .second .inner ul.right li:hover > a > span.item_outer .item_text:before {
+  -webkit-transform: scaleX(1) translateZ(0);
+  -moz-transform: scaleX(1) translateZ(0);
+  transform: scaleX(1) translateZ(0);
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+
+/* Wide drop down styles
+   ========================================================================== */
+.qodef-drop-down .wide .second .inner {
+  background-color: #fff;
+  text-align: center;
+}
+
+.qodef-drop-down .wide .second .inner ul li a {
+  padding: 4px 0;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.qodef-drop-down .wide .second .inner ul li ul {
+  position: relative;
+  display: block;
+  top: 0;
+  left: 0;
+  visibility: visible;
+}
+
+.qodef-drop-down .wide .second .inner ul li ul li:last-child a {
+  padding-bottom: 0;
+}
+
+.qodef-drop-down .wide .second .inner > ul {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 47px 0 26px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.qodef-wide-dropdown-menu-content-in-grid .qodef-drop-down .wide .second .inner > ul {
+  width: 1100px;
+}
+
+@media only screen and (min-width: 1400px) {
+  .qodef-grid-1300.qodef-wide-dropdown-menu-content-in-grid .qodef-drop-down .wide .second .inner > ul {
+    width: 1300px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .qodef-grid-1200.qodef-wide-dropdown-menu-content-in-grid .qodef-drop-down .wide .second .inner > ul {
+    width: 1200px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .qodef-grid-1000.qodef-wide-dropdown-menu-content-in-grid .qodef-drop-down .wide .second .inner > ul {
+    width: 1000px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .qodef-grid-800.qodef-wide-dropdown-menu-content-in-grid .qodef-drop-down .wide .second .inner > ul {
+    width: 800px;
+  }
+}
+
+.qodef-drop-down .wide .second .inner > ul > li {
+  float: left;
+  width: 25%;
+  margin: 0;
+  padding: 0 26px;
+  box-sizing: border-box;
+}
+
+.qodef-drop-down .wide .second .inner > ul > li:nth-child(4n+1) {
+  clear: both;
+  border-left: 0;
+}
+
+.qodef-drop-down .wide .second .inner > ul > li > a {
+  padding: 0 0 17px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1em;
+  letter-spacing: 1px;
+}
+
+.qodef-drop-down .wide .second .inner > ul > li > a:hover {
+  color: #282828;
+}
+
+.qodef-drop-down .wide .second .inner > ul > li > a:hover > span.item_outer .item_text:before {
+  width: 0;
+}
+
+.qodef-drop-down .wide .second .inner > ul > li > a.no_link {
+  cursor: default;
+}
+
+.qodef-drop-down .wide .second .inner > ul > li > a .item_outer {
+  padding: 0;
+  overflow: inherit;
+}
+
+.qodef-drop-down .wide .second .inner > ul > li > a .item_outer:before, .qodef-drop-down .wide .second .inner > ul > li > a .item_outer:after {
+  display: none;
+}
+
+.qodef-drop-down .wide .second .inner > ul > li.current-menu-ancestor > a,
+.qodef-drop-down .wide .second .inner > ul > li.current-menu-item > a {
+  color: #282828;
+}
+
+.qodef-drop-down .wide .second .inner > ul > li.current-menu-ancestor > a > span.item_outer .item_text:before,
+.qodef-drop-down .wide .second .inner > ul > li.current-menu-item > a > span.item_outer .item_text:before {
+  width: 0;
+}
+
+.qodef-drop-down .wide.left_position .second .inner > ul, .qodef-drop-down .wide.right_position .second .inner > ul {
+  width: auto;
+  white-space: nowrap;
+}
+
+.qodef-drop-down .wide.left_position .second .inner > ul > li, .qodef-drop-down .wide.right_position .second .inner > ul > li {
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.qodef-drop-down .wide.left_position .second .inner > ul > li:nth-child(4n+1), .qodef-drop-down .wide.right_position .second .inner > ul > li:nth-child(4n+1) {
+  border-left: none;
+}
+
+.qodef-drop-down .wide.left_position .second ul li, .qodef-drop-down .wide.right_position .second ul li {
+  width: 200px;
+}
+
+/* ==========================================================================
+   Header main menu style - end
+   ========================================================================== */
+/* ==========================================================================
+   Fixed header style - begin
+   ========================================================================== */
+.qodef-page-header .qodef-fixed-wrapper.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+}
+
+.admin-bar .qodef-page-header .qodef-fixed-wrapper.fixed {
+  top: 32px;
+}
+
+.qodef-page-header .qodef-fixed-wrapper.fixed .qodef-menu-area {
+  background-color: #fff;
+}
+
+/* ==========================================================================
+   Fixed header style - end
+   ========================================================================== */
+/*==========================================================================
+# Fullscreen menu style - begin
+========================================================================== */
+/* Fullscreen general style - begin
+========================================================================== */
+.qodef-dark-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-fullscreen-menu-opener,
+.qodef-light-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-fullscreen-menu-opener {
+  color: #000;
+}
+
+.qodef-dark-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-fullscreen-menu-opener.qodef-fullscreen-menu-opener-icon-pack:hover,
+.qodef-light-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-fullscreen-menu-opener.qodef-fullscreen-menu-opener-icon-pack:hover {
+  color: #50d6ae;
+}
+
+.qodef-dark-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-fullscreen-menu-opener.qodef-fullscreen-menu-opener-icon-pack .qodef-fullscreen-menu-opener-icon,
+.qodef-light-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-fullscreen-menu-opener.qodef-fullscreen-menu-opener-icon-pack .qodef-fullscreen-menu-opener-icon {
+  background-color: #fff;
+}
+
+.qodef-fullscreen-menu-opener {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.qodef-fullscreen-menu-opener .qodef-fullscreen-menu-opener-icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  visibility: visible;
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+  -moz-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.qodef-fullscreen-menu-opener .qodef-fullscreen-menu-opener-icon > span {
+  position: relative;
+  top: 1px;
+}
+
+.qodef-fullscreen-menu-opener .qodef-fullscreen-menu-close-icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  color: #fff;
+  visibility: hidden;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-fullscreen-menu-opener .qodef-fullscreen-menu-close-icon {
+    color: #000;
+  }
+}
+
+.qodef-fullscreen-menu-opener .qodef-fullscreen-menu-close-icon:hover {
+  color: #50d6ae;
+}
+
+.qodef-fullscreen-menu-opener.qodef-fm-opened .qodef-fullscreen-menu-opener-icon {
+  visibility: hidden;
+}
+
+.qodef-fullscreen-menu-opener.qodef-fm-opened .qodef-fullscreen-menu-close-icon {
+  visibility: visible;
+}
+
+.qodef-fullscreen-menu-opener.qodef-fullscreen-menu-opener-icon-pack {
+  font-size: 25px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.qodef-fullscreen-menu-opener.qodef-fullscreen-menu-opener-icon-pack:hover .qodef-fullscreen-menu-opener-icon {
+  color: #50d6ae;
+}
+
+.qodef-fullscreen-menu-opener.qodef-fullscreen-menu-opener-icon-pack .qodef-fullscreen-menu-opener-icon {
+  color: #000;
+  background-color: #fff;
+  box-shadow: 1px 1px 8px 0px rgba(80, 214, 174, 0.63);
+}
+
+.qodef-fullscreen-menu-opener.qodef-fullscreen-menu-opener-icon-pack * {
+  display: inline-block;
+  line-height: inherit;
+}
+
+.qodef-fullscreen-menu-opener.qodef-fullscreen-menu-opener-icon-pack *:before {
+  display: inline-block;
+  line-height: inherit;
+}
+
+.qodef-fullscreen-menu-opener.qodef-fullscreen-menu-opener-svg-path span {
+  position: relative;
+}
+
+.qodef-fullscreen-menu-opener.qodef-fullscreen-menu-opener-svg-path span > * {
+  vertical-align: middle;
+}
+
+.qodef-fullscreen-menu-opener.qodef-fullscreen-menu-opener-svg-path span > *,
+.qodef-fullscreen-menu-opener.qodef-fullscreen-menu-opener-svg-path span path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.qodef-fullscreen-menu-opener.qodef-fullscreen-menu-opener-predefined {
+  line-height: 1;
+}
+
+.qodef-fullscreen-menu-opener.qodef-fullscreen-menu-opener-predefined .qodef-hm-lines {
+  position: relative;
+  display: block;
+  width: 23px;
+  height: 17px;
+}
+
+.qodef-fullscreen-menu-opener.qodef-fullscreen-menu-opener-predefined .qodef-hm-lines .qodef-hm-line {
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: currentColor;
+  border-radius: 12px;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+.qodef-fullscreen-menu-opener.qodef-fullscreen-menu-opener-predefined .qodef-hm-lines .qodef-hm-line.qodef-line-1 {
+  top: 0;
+}
+
+.qodef-fullscreen-menu-opener.qodef-fullscreen-menu-opener-predefined .qodef-hm-lines .qodef-hm-line.qodef-line-2 {
+  top: 7px;
+}
+
+.qodef-fullscreen-menu-opener.qodef-fullscreen-menu-opener-predefined .qodef-hm-lines .qodef-hm-line.qodef-line-3 {
+  bottom: 0;
+}
+
+.qodef-fullscreen-menu-opener.qodef-fullscreen-menu-opener-predefined .qodef-fullscreen-menu-close-icon {
+  top: -9px;
+  left: -5px;
+  font-size: 32px;
+}
+
+.qodef-fullscreen-menu-opened .qodef-page-header,
+.qodef-fullscreen-menu-opened .qodef-top-bar {
+  visibility: hidden;
+}
+
+.qodef-fullscreen-menu-opened .qodef-fullscreen-menu-opener,
+.qodef-fullscreen-menu-opened .qodef-logo-wrapper {
+  visibility: visible;
+}
+
+.qodef-fullscreen-menu-opened .qodef-fullscreen-menu-holder-outer {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.qodef-fullscreen-menu-holder-outer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden !important;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 105;
+  /* this has to be between header z-index and content z-index */
+}
+
+.qodef-fullscreen-menu-holder {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: table;
+  background-repeat: repeat;
+  background-position: 0 0;
+}
+
+.qodef-fullscreen-menu-holder-inner {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 100px 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-fullscreen-menu-holder-inner {
+    padding: 0 0 57px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-fullscreen-menu-holder-inner {
+    padding: 30px 0;
+  }
+}
+
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-top {
+  color: #fff;
+  margin: 0 0 85px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-top {
+    margin: 0 0 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-top {
+    margin: 0 0 35px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-top {
+    margin: 0 0 20px;
+  }
+}
+
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-top .qodef-fullscreen-tagline {
+  display: block;
+  margin: 0 0 3px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  letter-spacing: .1em;
+  color: #53f6c6;
+}
+
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-top .qodef-fullscreen-title {
+  display: block;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 81px;
+  letter-spacing: -.025em;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1280px) {
+  .qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-top .qodef-fullscreen-title {
+    font-size: 56px;
+    line-height: 1.3em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-top .qodef-fullscreen-title {
+    font-size: 46px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-top .qodef-fullscreen-title {
+    font-size: 36px;
+  }
+}
+
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom {
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #53f6c6;
+}
+
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom.qodef-full-width-bottom,
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-container-inner {
+  padding: 30px 0;
+}
+
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom:not(.qodef-full-width-bottom) {
+  text-align: center;
+}
+
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-container-inner {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-1,
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-2,
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-3 {
+  width: 33.33333333333333%;
+  float: left;
+}
+
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-1 p, .qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-1 div, .qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-1 i, .qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-1 span, .qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-1 a,
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-2 p,
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-2 div,
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-2 i,
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-2 span,
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-2 a,
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-3 p,
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-3 div,
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-3 i,
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-3 span,
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-3 a {
+  color: inherit;
+}
+
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-1 a:hover,
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-2 a:hover,
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-3 a:hover {
+  color: #fff;
+}
+
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-1 .widget_text,
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-2 .widget_text,
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-3 .widget_text {
+  display: inline-block;
+}
+
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-1 {
+  text-align: left;
+}
+
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-2 {
+  text-align: center;
+}
+
+.qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-3 {
+  text-align: right;
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-1,
+  .qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-2,
+  .qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-3 {
+    width: 100%;
+    float: none !important;
+    text-align: left !important;
+  }
+  .qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-1 p,
+  .qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-2 p,
+  .qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-fullscreen-below-menu-widget-holder-column-3 p {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom {
+    position: relative;
+    margin: 30px -10px 0;
+  }
+  .qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom.qodef-full-width-bottom,
+  .qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-container-inner {
+    padding: 20px 10px 0;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom {
+    margin: 30px 0 0;
+  }
+  .qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom.qodef-full-width-bottom,
+  .qodef-fullscreen-menu-holder-inner .qodef-fullscreen-menu-bottom .qodef-container-inner {
+    padding: 20px 0 0;
+  }
+}
+
+.touch .qodef-fullscreen-menu-holder-outer {
+  display: none;
+}
+
+.touch .qodef-fullscreen-menu-opened .qodef-fullscreen-menu-holder-outer {
+  display: block;
+}
+
+nav.qodef-fullscreen-menu {
+  position: relative;
+  top: 0;
+  margin: 0 auto;
+  text-align: left;
+}
+
+nav.qodef-fullscreen-menu ul {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav.qodef-fullscreen-menu ul.qodef-popup-column {
+  float: left;
+  width: 25%;
+}
+
+@media only screen and (max-width: 768px) {
+  nav.qodef-fullscreen-menu ul.qodef-popup-column {
+    width: 33.33333333333333%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  nav.qodef-fullscreen-menu ul.qodef-popup-column {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  nav.qodef-fullscreen-menu ul.qodef-popup-column {
+    float: none;
+    width: 100%;
+  }
+}
+
+nav.qodef-fullscreen-menu ul li {
+  margin: 0;
+  padding: 0;
+}
+
+nav.qodef-fullscreen-menu ul li a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 12px 0;
+  font-size: 21px;
+  line-height: 33px;
+  font-weight: 700;
+  letter-spacing: -.025em;
+  color: #fff;
+}
+
+nav.qodef-fullscreen-menu ul li a span {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  z-index: 1;
+}
+
+nav.qodef-fullscreen-menu ul li a span:before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  left: -4px;
+  width: 0;
+  height: 6px;
+  background-color: #50d6ae;
+  z-index: -1;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+nav.qodef-fullscreen-menu ul li a:hover span:before {
+  width: calc(100% + 8px);
+}
+
+nav.qodef-fullscreen-menu ul li a .qodef-fullscreen-menu-arrow {
+  position: relative;
+  top: 0;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0 10px;
+  font-size: 0.65em;
+  line-height: inherit;
+}
+
+nav.qodef-fullscreen-menu ul li ul.sub_menu {
+  display: none;
+}
+
+nav.qodef-fullscreen-menu ul li ul li a {
+  font-size: 19px;
+  line-height: 31px;
+}
+
+nav.qodef-fullscreen-menu ul li ul li.current-menu-ancestor > a span:before,
+nav.qodef-fullscreen-menu ul li ul li.current-menu-item > a span:before {
+  width: calc(100% + 8px);
+}
+
+nav.qodef-fullscreen-menu ul li ul li ul li a {
+  font-size: 17px;
+  line-height: 29px;
+}
+
+nav.qodef-fullscreen-menu > ul {
+  display: block;
+}
+
+nav.qodef-fullscreen-menu > ul > li > a {
+  font-size: 24px;
+}
+
+nav.qodef-fullscreen-menu > ul > li.qodef-active-item > a span:before {
+  width: calc(100% + 8px);
+}
+
+.qodef-fullscreen-below-menu-widget-holder {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.qodef-fullscreen-above-menu-widget-holder {
+  text-align: center;
+}
+
+/* Fullscreen general style - end
+========================================================================== */
+/* Fullscreen fade animations general - begin
+========================================================================== */
+@-webkit-keyframes fade_out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@-moz-keyframes fade_out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fade_out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes fade_in {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@-moz-keyframes fade_in {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.qodef-fade-push-text-right .qodef-fullscreen-menu-holder-outer,
+.qodef-fade-push-text-top .qodef-fullscreen-menu-holder-outer,
+.qodef-fade-text-scaledown .qodef-fullscreen-menu-holder-outer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  overflow: hidden !important;
+  z-index: 105;
+  opacity: 0;
+}
+
+.qodef-fullscreen-fade-out .qodef-fullscreen-menu-holder-outer {
+  -webkit-animation: fade_out .25s linear both;
+  -moz-animation: fade_out .25s linear both;
+  animation: fade_out .25s linear both;
+}
+
+.qodef-fullscreen-menu-opened.qodef-fullscreen-fade-in .qodef-fullscreen-menu-holder-outer {
+  -webkit-animation: fade_in .25s linear both;
+  -moz-animation: fade_in .25s linear both;
+  animation: fade_in .25s linear both;
+}
+
+/* Fullscreen fade animations general - end
+========================================================================== */
+/* Fullscreen animation push text right - begin
+========================================================================== */
+@-webkit-keyframes push_text_right {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes push_text_right {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+
+@keyframes push_text_right {
+  0% {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes push_nav_right {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes push_nav_right {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+
+@keyframes push_nav_right {
+  0% {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.qodef-fullscreen-menu-opened.qodef-fade-push-text-right .qodef-fullscreen-menu-holder-outer nav > ul > li > a,
+.qodef-fullscreen-menu-opened.qodef-fade-push-text-right .qodef-fullscreen-menu-holder-outer .qodef-fullscreen-below-menu-widget-holder > div,
+.qodef-fullscreen-menu-opened.qodef-fade-push-text-right .qodef-fullscreen-menu-holder-outer .qodef-fullscreen-above-menu-widget-holder > div {
+  -webkit-animation: push_text_right 0.4s cubic-bezier(0.175, 0.885, 0.32, 1) both;
+  -moz-animation: push_text_right 0.4s cubic-bezier(0.175, 0.885, 0.32, 1) both;
+  animation: push_text_right 0.4s cubic-bezier(0.175, 0.885, 0.32, 1) both;
+}
+
+.qodef-fade-push-text-right.qodef-push-nav-right .qodef-fullscreen-menu-holder-outer nav,
+.qodef-fade-push-text-right.qodef-push-nav-right .qodef-fullscreen-menu-holder-outer .qodef-fullscreen-below-menu-widget-holder,
+.qodef-fade-push-text-right.qodef-push-nav-right .qodef-fullscreen-menu-holder-outer .qodef-fullscreen-above-menu-widget-holder {
+  -webkit-transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1);
+  -moz-transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1);
+  transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1);
+  opacity: 0;
+}
+
+/* Fullscreen animation push text right - end
+========================================================================== */
+/* Fullscreen animation push text top - begin
+========================================================================== */
+@-webkit-keyframes push_text_top {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes push_text_top {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+
+@keyframes push_text_top {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.qodef-fullscreen-menu-opened.qodef-fade-push-text-top .qodef-fullscreen-menu-holder-outer nav > ul > li > a,
+.qodef-fullscreen-menu-opened.qodef-fade-push-text-top .qodef-fullscreen-menu-holder-outer .qodef-fullscreen-below-menu-widget-holder > div,
+.qodef-fullscreen-menu-opened.qodef-fade-push-text-top .qodef-fullscreen-menu-holder-outer .qodef-fullscreen-above-menu-widget-holder > div {
+  -webkit-animation: push_text_top 0.4s ease-out both 0.5s;
+  -moz-animation: push_text_top 0.4s ease-out both 0.5s;
+  animation: push_text_top 0.4s ease-out both 0.5s;
+}
+
+.qodef-fade-push-text-top.qodef-push-text-top .qodef-fullscreen-menu-holder-outer nav,
+.qodef-fade-push-text-top.qodef-push-text-top .qodef-fullscreen-menu-holder-outer .qodef-fullscreen-below-menu-widget-holder,
+.qodef-fade-push-text-top.qodef-push-text-top .qodef-fullscreen-menu-holder-outer .qodef-fullscreen-above-menu-widget-holder {
+  -webkit-transform: translateY(-30px);
+  -moz-transform: translateY(-30px);
+  transform: translateY(-30px);
+  -webkit-transition: all 0.75s ease-out;
+  -moz-transition: all 0.75s ease-out;
+  transition: all 0.75s ease-out;
+}
+
+/* Fullscreen animation push text top - end
+========================================================================== */
+/* Fullscreen animation fade text scaledown - begin
+========================================================================== */
+.qodef-fullscreen-menu-opened.qodef-fade-text-scaledown .qodef-fullscreen-menu-holder-outer nav,
+.qodef-fullscreen-menu-opened.qodef-fade-text-scaledown .qodef-fullscreen-menu-holder-outer .qodef-fullscreen-below-menu-widget-holder,
+.qodef-fullscreen-menu-opened.qodef-fade-text-scaledown .qodef-fullscreen-menu-holder-outer .qodef-fullscreen-above-menu-widget-holder {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.25s linear 0.1s;
+  -moz-transition: all 0.25s linear 0.1s;
+  transition: all 0.25s linear 0.1s;
+}
+
+.qodef-fade-text-scaledown .qodef-fullscreen-menu-holder-outer nav,
+.qodef-fade-text-scaledown .qodef-fullscreen-menu-holder-outer .qodef-fullscreen-below-menu-widget-holder,
+.qodef-fade-text-scaledown .qodef-fullscreen-menu-holder-outer .qodef-fullscreen-above-menu-widget-holder {
+  opacity: 0;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 0.25s linear 0.1s;
+  -moz-transition: all 0.25s linear 0.1s;
+  transition: all 0.25s linear 0.1s;
+}
+
+/* Fullscreen animation fade text scaledown - end
+========================================================================== */
+/* ==========================================================================
+# Fullscreen menu style - end
+==========================================================================*/
+/* ==========================================================================
+   Header Minimal style - begin
+   ========================================================================== */
+.qodef-header-minimal .qodef-page-header .qodef-menu-area .qodef-position-right-inner {
+  height: auto;
+}
+
+.qodef-header-minimal .qodef-page-header .qodef-position-left:before,
+.qodef-header-minimal .qodef-page-header .qodef-position-right:before {
+  content: "";
+}
+
+.qodef-header-minimal .qodef-page-header .qodef-sticky-header .qodef-position-left-inner {
+  height: auto;
+}
+
+.qodef-header-minimal .qodef-page-header .qodef-sticky-header .qodef-vertical-align-containers .qodef-position-right .qodef-position-right-inner {
+  height: auto;
+}
+
+/* ==========================================================================
+   Header Minimal style - end
+   ========================================================================== */
+/* ==========================================================================
+   Header Standard style - begin
+   ========================================================================== */
+.qodef-header-standard .qodef-menu-area.qodef-menu-left .qodef-main-menu {
+  width: auto;
+  padding: 0 0 0 20px;
+}
+
+.qodef-header-standard .qodef-menu-area.qodef-menu-left .qodef-vertical-align-containers .qodef-position-left-inner {
+  height: 100%;
+}
+
+.qodef-header-standard .qodef-menu-area.qodef-menu-left .qodef-vertical-align-containers .qodef-position-left:before,
+.qodef-header-standard .qodef-menu-area.qodef-menu-left .qodef-vertical-align-containers .qodef-position-right:before {
+  display: none;
+}
+
+.qodef-header-standard .qodef-menu-area.qodef-menu-left .qodef-vertical-align-containers .qodef-position-right-inner {
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-align-items: center;
+  /* Safari 7.0+ */
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.qodef-header-standard .qodef-menu-area.qodef-menu-center .qodef-vertical-align-containers .qodef-position-center-inner {
+  height: 100%;
+}
+
+.qodef-header-standard .qodef-menu-area.qodef-menu-center .qodef-vertical-align-containers .qodef-position-right:before {
+  display: none;
+}
+
+.qodef-header-standard .qodef-menu-area.qodef-menu-center .qodef-vertical-align-containers .qodef-position-right-inner {
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-align-items: center;
+  /* Safari 7.0+ */
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.qodef-header-standard .qodef-menu-area.qodef-menu-right .qodef-main-menu {
+  width: auto;
+}
+
+.qodef-header-standard .qodef-menu-area.qodef-menu-right .qodef-vertical-align-containers .qodef-position-right-inner {
+  height: 100%;
+}
+
+/* ==========================================================================
+   Header Standard style - end
+   ========================================================================== */
+/* ==========================================================================
+   Header Vertical style - begin
+   ========================================================================== */
+/* ==========================================================================
+   Header Vertical navigation style - begin
+   ========================================================================== */
+.qodef-header-vertical .qodef-vertical-alignment-center .qodef-vertical-menu-outer {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 48px 0 80px;
+}
+
+.qodef-header-vertical .qodef-vertical-alignment-center .qodef-vertical-menu {
+  display: table;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  margin: 0;
+}
+
+.qodef-header-vertical .qodef-vertical-alignment-center .qodef-vertical-menu > ul {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.qodef-header-vertical .qodef-vertical-menu-outer {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.qodef-header-vertical .qodef-vertical-menu {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 107px 0 31px 48px;
+  padding: 0;
+  z-index: 100;
+}
+
+.qodef-header-vertical .qodef-vertical-menu ul {
+  position: relative;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.qodef-header-vertical .qodef-vertical-menu ul li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.qodef-header-vertical .qodef-vertical-menu ul li a {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 5px 0;
+  color: #282828;
+}
+
+.qodef-header-vertical .qodef-vertical-menu ul li a .item_outer {
+  position: relative;
+  display: block;
+  padding: 0 15px 0 0;
+  box-sizing: border-box;
+}
+
+.qodef-header-vertical .qodef-vertical-menu ul li a .item_outer .item_text {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.qodef-header-vertical .qodef-vertical-menu ul li a .item_outer .item_text:before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  left: -4px;
+  width: calc(100% + 8px);
+  height: 4px;
+  background-color: #50d6ae;
+  z-index: -1;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: -moz-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transform: scaleX(0) translateZ(0);
+  -moz-transform: scaleX(0) translateZ(0);
+  transform: scaleX(0) translateZ(0);
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+
+.qodef-header-vertical .qodef-vertical-menu ul li a .qodef-menu-arrow {
+  display: none;
+}
+
+.qodef-header-vertical .qodef-vertical-menu ul li a .qodef-menu-featured-icon {
+  position: relative;
+  top: -4px;
+  left: 3px;
+  color: #282828;
+  font-size: 12px;
+  margin: 0;
+}
+
+.qodef-header-vertical .qodef-vertical-menu ul li a .menu_icon:not(.blank):not(.null) {
+  padding: 0 5px 0 0;
+}
+
+.qodef-header-vertical .qodef-vertical-menu ul li:hover > a .item_outer .item_text:before,
+.qodef-header-vertical .qodef-vertical-menu ul li.open > a .item_outer .item_text:before,
+.qodef-header-vertical .qodef-vertical-menu ul li.qodef-active-item > a .item_outer .item_text:before,
+.qodef-header-vertical .qodef-vertical-menu ul li.current_page_item > a .item_outer .item_text:before,
+.qodef-header-vertical .qodef-vertical-menu ul li.current-menu-item > a .item_outer .item_text:before,
+.qodef-header-vertical .qodef-vertical-menu ul li.current-menu-ancestor > a .item_outer .item_text:before {
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-transform: scaleX(1) translateZ(0);
+  -moz-transform: scaleX(1) translateZ(0);
+  transform: scaleX(1) translateZ(0);
+}
+
+.qodef-header-vertical .qodef-vertical-menu ul li ul {
+  padding: 0 0 0 5px;
+}
+
+.qodef-header-vertical .qodef-vertical-menu ul li ul li.sub > a .item_outer {
+  position: relative;
+  display: block;
+}
+
+.qodef-header-vertical .qodef-vertical-menu ul li .second {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.qodef-header-vertical .qodef-vertical-menu ul li .second .inner {
+  position: relative;
+  display: block;
+  padding: 0;
+  z-index: 997;
+}
+
+.qodef-header-vertical .qodef-vertical-menu > ul > li > a {
+  padding: 10px 0;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.qodef-header-vertical .qodef-vertical-menu > ul > li > a span.item_text {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.qodef-header-vertical .qodef-vertical-menu.qodef-vertical-dropdown-below ul li a:hover .qodef-menu-arrow,
+.qodef-header-vertical .qodef-vertical-menu.qodef-vertical-dropdown-below ul li.qodef-active-item > a .qodef-menu-arrow,
+.qodef-header-vertical .qodef-vertical-menu.qodef-vertical-dropdown-below ul li.current_page_item > a .qodef-menu-arrow,
+.qodef-header-vertical .qodef-vertical-menu.qodef-vertical-dropdown-below ul li.current-menu-item > a .qodef-menu-arrow,
+.qodef-header-vertical .qodef-vertical-menu.qodef-vertical-dropdown-below ul li.current-menu-ancestor > a .qodef-menu-arrow {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.qodef-header-vertical .qodef-vertical-menu.qodef-vertical-dropdown-below ul li .second {
+  display: none;
+}
+
+.qodef-header-vertical .qodef-vertical-menu.qodef-vertical-dropdown-side .second {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.qodef-header-vertical .qodef-vertical-menu.qodef-vertical-dropdown-side .second ul {
+  position: absolute;
+  top: -23px;
+  left: calc(100% + 45px);
+  width: 254px;
+  background-color: #fff;
+  padding: 25px 20px;
+  margin-left: 50px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.qodef-header-vertical .qodef-vertical-menu.qodef-vertical-dropdown-side .second ul * {
+  visibility: inherit;
+  -webkit-transition: visibility 0.2s ease;
+  -moz-transition: visibility 0.2s ease;
+  transition: visibility 0.2s ease;
+}
+
+.qodef-header-vertical .qodef-vertical-menu.qodef-vertical-dropdown-side .second ul.qodef-float-open {
+  margin-left: 0px;
+  opacity: 1;
+  visibility: visible;
+  z-index: 900;
+}
+
+.qodef-header-vertical .qodef-vertical-menu.qodef-vertical-dropdown-side .second ul ul {
+  top: -25px;
+  left: calc(100% + 20px);
+  visibility: hidden;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.qodef-header-vertical.qodef-vertical-header-menu-area-custom .qodef-vertical-menu {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 107px 0 31px 7px;
+  padding: 0;
+  z-index: 100;
+}
+
+.qodef-header-vertical.qodef-vertical-header-menu-area-custom .qodef-vertical-menu ul li:hover:before, .qodef-header-vertical.qodef-vertical-header-menu-area-custom .qodef-vertical-menu ul li.qodef-active-item:before, .qodef-header-vertical.qodef-vertical-header-menu-area-custom .qodef-vertical-menu ul li.current_page_item:before, .qodef-header-vertical.qodef-vertical-header-menu-area-custom .qodef-vertical-menu ul li.current-menu-item:before, .qodef-header-vertical.qodef-vertical-header-menu-area-custom .qodef-vertical-menu ul li.current-menu-ancestor:before {
+  left: 5px;
+  width: 3px;
+  background-color: #50d6ae !important;
+}
+
+.qodef-header-vertical.qodef-vertical-header-menu-area-custom .qodef-vertical-menu ul li:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  left: 6px;
+  width: 1px;
+  height: 100%;
+  background-color: #282828;
+  -webkit-transition: width 0.2s ease-out border-color 0.2s ease-out;
+  -moz-transition: width 0.2s ease-out border-color 0.2s ease-out;
+  transition: width 0.2s ease-out border-color 0.2s ease-out;
+}
+
+.qodef-header-vertical.qodef-vertical-header-menu-area-custom .qodef-vertical-menu ul li a {
+  padding: 0 0 51px 31px;
+}
+
+.qodef-header-vertical.qodef-vertical-header-menu-area-custom .qodef-vertical-menu ul li a:before, .qodef-header-vertical.qodef-vertical-header-menu-area-custom .qodef-vertical-menu ul li a:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+}
+
+.qodef-header-vertical.qodef-vertical-header-menu-area-custom .qodef-vertical-menu ul li a:before {
+  top: 6px;
+  left: 0;
+  width: 13px;
+  height: 13px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  -webkit-transition: border-color 0.2s ease-out;
+  -moz-transition: border-color 0.2s ease-out;
+  transition: border-color 0.2s ease-out;
+}
+
+.qodef-header-vertical.qodef-vertical-header-menu-area-custom .qodef-vertical-menu ul li a:after {
+  top: 10px;
+  left: 4px;
+  width: 5px;
+  height: 5px;
+  background-color: #282828;
+  box-sizing: border-box;
+}
+
+.qodef-header-vertical.qodef-vertical-header-menu-area-custom .qodef-vertical-menu ul li a:hover:before {
+  border-color: #282828;
+}
+
+.qodef-header-vertical.qodef-vertical-header-menu-area-custom .qodef-vertical-menu ul li a .qodef-menu-arrow {
+  display: none;
+}
+
+.qodef-header-vertical.qodef-vertical-header-menu-area-custom .qodef-vertical-menu ul li ul {
+  margin-left: 10px;
+}
+
+.qodef-header-vertical.qodef-vertical-header-menu-area-custom .qodef-vertical-menu ul li:last-child:before {
+  display: none;
+}
+
+.qodef-light-header.qodef-header-vertical .qodef-vertical-menu ul li a {
+  color: #fff !important;
+}
+
+.qodef-light-header.qodef-header-vertical .qodef-vertical-menu ul li a:hover .item_outer .item_text:before {
+  width: calc(100% + 8px);
+}
+
+.qodef-light-header.qodef-header-vertical .qodef-vertical-menu ul li ul li.current_page_item > a .item_outer .item_text:before,
+.qodef-light-header.qodef-header-vertical .qodef-vertical-menu ul li ul li.current-menu-item > a .item_outer .item_text:before,
+.qodef-light-header.qodef-header-vertical .qodef-vertical-menu ul li ul li.current-menu-ancestor > a .item_outer .item_text:before {
+  width: calc(100% + 8px);
+}
+
+.qodef-light-header.qodef-header-vertical.qodef-vertical-header-menu-area-custom .qodef-vertical-menu ul li:before {
+  background-color: #fff;
+}
+
+.qodef-light-header.qodef-header-vertical.qodef-vertical-header-menu-area-custom .qodef-vertical-menu ul li a:after {
+  background-color: #fff;
+}
+
+.qodef-light-header.qodef-header-vertical.qodef-vertical-header-menu-area-custom .qodef-vertical-menu ul li a:hover:before {
+  border-color: #fff;
+}
+
+.qodef-light-header.qodef-header-vertical .qodef-vertical-menu > ul > li.qodef-active-item > a .item_outer .item_text:before,
+.qodef-light-header.qodef-header-vertical .qodef-vertical-menu > ul > li.current-menu-ancestor > a .item_outer .item_text:before {
+  width: calc(100% + 8px);
+}
+
+.qodef-dark-header.qodef-header-vertical .qodef-vertical-menu ul li a {
+  color: #000 !important;
+}
+
+.qodef-dark-header.qodef-header-vertical .qodef-vertical-menu ul li a:hover .item_outer .item_text:before {
+  width: calc(100% + 8px);
+}
+
+.qodef-dark-header.qodef-header-vertical .qodef-vertical-menu ul li ul li.current_page_item > a .item_outer .item_text:before,
+.qodef-dark-header.qodef-header-vertical .qodef-vertical-menu ul li ul li.current-menu-item > a .item_outer .item_text:before,
+.qodef-dark-header.qodef-header-vertical .qodef-vertical-menu ul li ul li.current-menu-ancestor > a .item_outer .item_text:before {
+  width: calc(100% + 8px);
+}
+
+.qodef-dark-header.qodef-header-vertical .qodef-vertical-menu > ul > li.qodef-active-item > a .item_outer .item_text:before,
+.qodef-dark-header.qodef-header-vertical .qodef-vertical-menu > ul > li.current-menu-ancestor > a .item_outer .item_text:before {
+  width: calc(100% + 8px);
+}
+
+/* ==========================================================================
+   Header Vertical navigation style - end
+   ========================================================================== */
+.qodef-header-vertical .qodef-vertical-area-widget-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 10px 0 0;
+  z-index: 100;
+}
+
+.qodef-header-vertical .qodef-vertical-alignment-center .qodef-vertical-area-widget-holder {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+}
+
+.qodef-header-vertical.qodef-uncover-spinner-preload .qodef-vertical-menu-area-inner > div:not(:first-child) {
+  opacity: 0;
+}
+
+@-webkit-keyframes qodefShowFromLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 5%, 0);
+    -moz-transform: translate3d(0, 5%, 0);
+    transform: translate3d(0, 5%, 0);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes qodefShowFromLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 5%, 0);
+    -moz-transform: translate3d(0, 5%, 0);
+    transform: translate3d(0, 5%, 0);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.qodef-header-vertical.qodef-uncover-spinner-preload.qodef-uncover-square-animating .qodef-vertical-menu-area-inner > div:nth-child(2) {
+  -webkit-animation: qodefShowFromLeft 0.8s cubic-bezier(0.19, 0.5, 0.46, 0.88) forwards 0.5s;
+  -moz-animation: qodefShowFromLeft 0.8s cubic-bezier(0.19, 0.5, 0.46, 0.88) forwards 0.5s;
+  animation: qodefShowFromLeft 0.8s cubic-bezier(0.19, 0.5, 0.46, 0.88) forwards 0.5s;
+}
+
+.qodef-header-vertical.qodef-uncover-spinner-preload.qodef-uncover-square-animating .qodef-vertical-menu-area-inner > div:nth-child(3) {
+  -webkit-animation: qodefShowFromLeft 0.8s cubic-bezier(0.19, 0.5, 0.46, 0.88) forwards 0.75s;
+  -moz-animation: qodefShowFromLeft 0.8s cubic-bezier(0.19, 0.5, 0.46, 0.88) forwards 0.75s;
+  animation: qodefShowFromLeft 0.8s cubic-bezier(0.19, 0.5, 0.46, 0.88) forwards 0.75s;
+}
+
+.qodef-header-vertical.qodef-uncover-spinner-preload.qodef-uncover-square-animating .qodef-vertical-menu-area-inner > div:nth-child(4) {
+  -webkit-animation: qodefShowFromLeft 0.8s cubic-bezier(0.19, 0.5, 0.46, 0.88) forwards 1s;
+  -moz-animation: qodefShowFromLeft 0.8s cubic-bezier(0.19, 0.5, 0.46, 0.88) forwards 1s;
+  animation: qodefShowFromLeft 0.8s cubic-bezier(0.19, 0.5, 0.46, 0.88) forwards 1s;
+}
+
+.qodef-header-vertical.admin-bar .qodef-vertical-menu-area {
+  top: 32px;
+  height: calc(100% - 32px);
+}
+
+.qodef-header-vertical .qodef-content,
+.qodef-header-vertical footer {
+  padding-left: 302px;
+  box-sizing: border-box;
+}
+
+.qodef-header-vertical.qodef-vertical-header-menu-area-custom .qodef-content,
+.qodef-header-vertical.qodef-vertical-header-menu-area-custom footer {
+  padding-left: 0;
+}
+
+.qodef-header-vertical .qodef-vertical-menu-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 302px;
+  height: 100%;
+  padding: 44px 45px 10px;
+  background-color: transparent;
+  outline: none;
+  z-index: 101;
+  -webkit-backface-visibility: hidden;
+  box-sizing: border-box;
+}
+
+.qodef-header-vertical .qodef-vertical-menu-area.qodef-with-scroll {
+  overflow: hidden;
+}
+
+.qodef-header-vertical .qodef-vertical-menu-area-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.qodef-header-vertical .qodef-vertical-menu-area-inner.qodef-vertical-align-left {
+  text-align: left;
+}
+
+.qodef-header-vertical .qodef-vertical-menu-area-inner.qodef-vertical-align-center {
+  text-align: center;
+}
+
+.qodef-header-vertical .qodef-vertical-menu-area-inner.qodef-vertical-align-center .qodef-logo-wrapper img {
+  margin: 0 auto;
+}
+
+.qodef-header-vertical .qodef-logo-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  z-index: 100;
+}
+
+.qodef-header-vertical .qodef-logo-wrapper a {
+  display: block;
+  position: relative;
+  height: 100%;
+}
+
+.qodef-header-vertical .qodef-logo-wrapper img {
+  display: block;
+  height: auto;
+  max-height: 100%;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.qodef-header-vertical .qodef-vertical-area-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 302px;
+  height: 100%;
+  background-color: #fff;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease, background-color 0.5s ease;
+  -moz-transition: opacity 0.5s ease, background-color 0.5s ease;
+  transition: opacity 0.5s ease, background-color 0.5s ease;
+}
+
+.qodef-header-vertical.qodef-header-vertical-shadow-disable .qodef-vertical-area-background {
+  box-shadow: none;
+}
+
+.qodef-header-vertical.qodef-header-vertical-border-disable .qodef-vertical-area-background {
+  border: none;
+}
+
+.qodef-light-header .qodef-vertical-menu-area .qodef-logo-wrapper .qodef-light-logo {
+  opacity: 1;
+}
+
+.qodef-light-header .qodef-vertical-menu-area .qodef-logo-wrapper .qodef-normal-logo,
+.qodef-light-header .qodef-vertical-menu-area .qodef-logo-wrapper .qodef-dark-logo {
+  opacity: 0;
+}
+
+.qodef-dark-header .qodef-vertical-menu-area .qodef-logo-wrapper .qodef-dark-logo {
+  opacity: 1;
+}
+
+.qodef-dark-header .qodef-vertical-menu-area .qodef-logo-wrapper .qodef-normal-logo,
+.qodef-dark-header .qodef-vertical-menu-area .qodef-logo-wrapper .qodef-light-logo {
+  opacity: 0;
+}
+
+/* ==========================================================================
+   Header Vertical style - end
+   ========================================================================== */
+/* ==========================================================================
+   Mobile header style - begin
+   ========================================================================== */
+.qodef-mobile-header {
+  position: relative;
+  display: none;
+  z-index: 110;
+  /* #General mobile header styles
+    ========================================================================== */
+  /* #End of general mobile header styles
+   ========================================================================== */
+  /* #Mobile logo styles
+    ========================================================================== */
+  /* #End of mobile logo styles
+    ========================================================================== */
+  /* #Mobile menu opener styles
+    ========================================================================== */
+  /* #End of mobile menu opener styles
+    ========================================================================== */
+  /* #Mobile menu navigation styles
+    ========================================================================== */
+  /* #End of mobile menu navigation styles
+	========================================================================== */
+}
+
+.qodef-mobile-header .qodef-mobile-header-inner {
+  position: relative;
+  height: 70px;
+  background-color: #fff;
+  border-bottom: 1px solid #edeff2;
+  box-sizing: border-box;
+}
+
+.qodef-mobile-header .qodef-mobile-header-inner .qodef-mobile-header-holder {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
+
+.qodef-mobile-header .qodef-grid {
+  height: 100%;
+}
+
+.qodef-mobile-header .qodef-vertical-align-containers {
+  padding: 0;
+}
+
+.qodef-mobile-header .qodef-mobile-logo-wrapper a {
+  display: block;
+}
+
+.qodef-mobile-header .qodef-mobile-logo-wrapper img {
+  display: block;
+  height: 100%;
+  width: auto;
+}
+
+.qodef-mobile-header .qodef-mobile-menu-opener {
+  position: relative;
+  height: 100%;
+  float: right;
+  z-index: 2;
+}
+
+.qodef-mobile-header .qodef-mobile-menu-opener a {
+  display: table;
+  height: 100%;
+  padding-right: 10px;
+}
+
+.qodef-mobile-header .qodef-mobile-menu-opener a > * {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 1em;
+}
+
+.qodef-mobile-header .qodef-mobile-menu-opener a .qodef-mobile-menu-text {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  padding-left: 5px;
+}
+
+.qodef-mobile-header .qodef-mobile-menu-opener.qodef-mobile-menu-opened a {
+  color: #50d6ae;
+}
+
+.qodef-mobile-header .qodef-mobile-menu-opener.qodef-mobile-menu-opener-icon-pack {
+  font-size: 25px;
+  line-height: 50px;
+  text-align: center;
+  color: #000;
+}
+
+.qodef-mobile-header .qodef-mobile-menu-opener.qodef-mobile-menu-opener-icon-pack a {
+  position: relative;
+  top: 50%;
+  left: -17px;
+  width: 50px;
+  height: 50px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.qodef-mobile-header .qodef-mobile-menu-opener.qodef-mobile-menu-opener-icon-pack a:hover .qodef-mobile-menu-icon {
+  box-shadow: 1px 1px 8px 0px rgba(80, 214, 174, 0.63);
+}
+
+.qodef-mobile-header .qodef-mobile-menu-opener.qodef-mobile-menu-opener-icon-pack .qodef-mobile-menu-icon {
+  position: relative;
+  background-color: #fff;
+  box-shadow: none;
+  -webkit-transition: box-shadow 0.2s ease-out;
+  -moz-transition: box-shadow 0.2s ease-out;
+  transition: box-shadow 0.2s ease-out;
+}
+
+.qodef-mobile-header .qodef-mobile-menu-opener.qodef-mobile-menu-opener-icon-pack .qodef-mobile-menu-icon > span {
+  position: relative;
+  top: 1px;
+}
+
+.qodef-mobile-header .qodef-mobile-menu-opener.qodef-mobile-menu-opener-icon-pack .qodef-mobile-menu-icon * {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-mobile-header .qodef-mobile-menu-opener.qodef-mobile-menu-opener-icon-pack .qodef-mobile-menu-icon *:before {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-mobile-header .qodef-mobile-menu-opener.qodef-mobile-menu-opener-svg-path .qodef-mobile-menu-icon > * {
+  vertical-align: middle;
+}
+
+.qodef-mobile-header .qodef-mobile-menu-opener.qodef-mobile-menu-opener-svg-path .qodef-mobile-menu-icon > *,
+.qodef-mobile-header .qodef-mobile-menu-opener.qodef-mobile-menu-opener-svg-path .qodef-mobile-menu-icon path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.qodef-mobile-header .qodef-mobile-menu-opener.qodef-mobile-menu-opener-predefined {
+  line-height: 1;
+}
+
+.qodef-mobile-header .qodef-mobile-menu-opener.qodef-mobile-menu-opener-predefined .qodef-hm-lines {
+  position: relative;
+  display: block;
+  width: 23px;
+  height: 17px;
+}
+
+.qodef-mobile-header .qodef-mobile-menu-opener.qodef-mobile-menu-opener-predefined .qodef-hm-lines .qodef-hm-line {
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: currentColor;
+  border-radius: 12px;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+.qodef-mobile-header .qodef-mobile-menu-opener.qodef-mobile-menu-opener-predefined .qodef-hm-lines .qodef-hm-line.qodef-line-1 {
+  top: 0;
+}
+
+.qodef-mobile-header .qodef-mobile-menu-opener.qodef-mobile-menu-opener-predefined .qodef-hm-lines .qodef-hm-line.qodef-line-2 {
+  top: 7px;
+}
+
+.qodef-mobile-header .qodef-mobile-menu-opener.qodef-mobile-menu-opener-predefined .qodef-hm-lines .qodef-hm-line.qodef-line-3 {
+  bottom: 0;
+}
+
+.qodef-mobile-header .qodef-mobile-nav {
+  display: none;
+  background-color: #fff;
+  border-bottom: 1px solid #edeff2;
+}
+
+.qodef-mobile-header .qodef-mobile-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.qodef-mobile-header .qodef-mobile-nav ul li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  -webkit-transform: translateZ(0);
+}
+
+.qodef-mobile-header .qodef-mobile-nav ul li a, .qodef-mobile-header .qodef-mobile-nav ul li h6 {
+  position: relative;
+  display: block;
+  padding: 9px 0;
+  margin: 0;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 600;
+  color: #282828;
+  border-bottom: 1px solid #edeff2;
+}
+
+.qodef-mobile-header .qodef-mobile-nav ul li a > span, .qodef-mobile-header .qodef-mobile-nav ul li h6 > span {
+  position: relative;
+}
+
+.qodef-mobile-header .qodef-mobile-nav ul li a > span:before, .qodef-mobile-header .qodef-mobile-nav ul li h6 > span:before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  left: -4px;
+  width: 0;
+  height: 4px;
+  background-color: #50d6ae;
+  z-index: -1;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+.qodef-mobile-header .qodef-mobile-nav ul li a:hover > span:before, .qodef-mobile-header .qodef-mobile-nav ul li h6:hover > span:before {
+  width: calc(100% + 8px);
+}
+
+.qodef-mobile-header .qodef-mobile-nav ul ul {
+  display: none;
+  margin-left: 15px;
+}
+
+.qodef-mobile-header .qodef-mobile-nav ul ul li.current-menu-ancestor > a > span:before,
+.qodef-mobile-header .qodef-mobile-nav ul ul li.current-menu-item > a > span:before,
+.qodef-mobile-header .qodef-mobile-nav ul ul li.current-menu-ancestor > h6 > span:before,
+.qodef-mobile-header .qodef-mobile-nav ul ul li.current-menu-item > h6 > span:before {
+  width: calc(100% + 8px);
+}
+
+.qodef-mobile-header .qodef-mobile-nav .qodef-grid > ul > li > a,
+.qodef-mobile-header .qodef-mobile-nav .qodef-grid > ul > li > h6 {
+  padding-left: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 33px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.qodef-mobile-header .qodef-mobile-nav .qodef-grid > ul > li.qodef-active-item > a > span:before,
+.qodef-mobile-header .qodef-mobile-nav .qodef-grid > ul > li.qodef-active-item > h6 > span:before {
+  width: calc(100% + 8px);
+}
+
+.qodef-mobile-header .qodef-mobile-nav .qodef-grid > ul > li.qodef-active-item > .mobile_arrow > .qodef-sub-arrow {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.qodef-mobile-header .qodef-mobile-nav .mobile_arrow {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: auto;
+  padding: 9px 12px 9px 0;
+  font-size: 15px;
+  line-height: inherit;
+  text-align: right;
+  box-sizing: border-box;
+}
+
+.qodef-mobile-header .qodef-mobile-nav .mobile_arrow:hover {
+  cursor: pointer;
+}
+
+.qodef-mobile-header .qodef-mobile-nav .mobile_arrow .qodef-sub-arrow {
+  line-height: 1;
+  -webkit-transition: transform 0.2s ease-in-out;
+  -moz-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+.qodef-mobile-header .qodef-mobile-nav .mobile_arrow .fa-angle-down {
+  display: none;
+}
+
+.qodef-mobile-header .qodef-mobile-nav li.qodef-opened > .mobile_arrow > .qodef-sub-arrow {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.qodef-mobile-header .qodef-mobile-nav > ul > li:last-child > a,
+.qodef-mobile-header .qodef-mobile-nav > .qodef-grid > ul > li:last-child > a {
+  border-bottom: none;
+}
+
+/* ==========================================================================
+   Mobile header style - end
+   ========================================================================== */
+/* ==========================================================================
+   Sticky Mobile header style - begin
+   ========================================================================== */
+.qodef-sticky-up-mobile-header .qodef-animate-mobile-header .qodef-mobile-header-inner {
+  width: 100%;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out, left 0.2s ease, right 0.2s ease;
+  -moz-transition: -moz-transform 0.4s ease-in-out, left 0.2s ease, right 0.2s ease;
+  transition: transform 0.4s ease-in-out, left 0.2s ease, right 0.2s ease;
+}
+
+.qodef-sticky-up-mobile-header .mobile-header-appear .qodef-mobile-header-inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   Sticky Mobile header style - end
+   ========================================================================== */
+/* ==========================================================================
+   Sticky header style - begin
+   ========================================================================== */
+.qodef-sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  z-index: 100;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.6s ease;
+  -moz-transition: -moz-transform 0.6s ease;
+  transition: transform 0.6s ease;
+}
+
+.qodef-sticky-header .qodef-grid {
+  height: 100% !important;
+}
+
+.qodef-sticky-header.header-appear {
+  transform: translateY(0%);
+}
+
+.admin-bar .qodef-sticky-header.header-appear {
+  top: 32px;
+}
+
+.qodef-sticky-header .qodef-sticky-holder {
+  position: relative;
+  height: 100%;
+  z-index: 2;
+  background-color: #fff;
+  border-bottom: 0 solid transparent;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.07);
+  box-sizing: border-box;
+}
+
+.qodef-sticky-header .qodef-sticky-holder .qodef-logo-wrapper a {
+  max-height: 70px;
+}
+
+.qodef-sticky-header .qodef-sticky-holder .qodef-vertical-align-containers {
+  padding: 0 40px;
+}
+
+.qodef-sticky-header .qodef-sticky-holder.qodef-menu-left .qodef-main-menu {
+  width: auto;
+  padding: 0 0 0 20px;
+}
+
+.qodef-sticky-header .qodef-sticky-holder.qodef-menu-left .qodef-vertical-align-containers .qodef-position-left-inner {
+  height: 100%;
+}
+
+.qodef-sticky-header .qodef-sticky-holder.qodef-menu-left .qodef-vertical-align-containers .qodef-position-right:before {
+  display: none;
+}
+
+.qodef-sticky-header .qodef-sticky-holder.qodef-menu-left .qodef-vertical-align-containers .qodef-position-right-inner {
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-align-items: center;
+  /* Safari 7.0+ */
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.qodef-sticky-header .qodef-sticky-holder.qodef-menu-center .qodef-vertical-align-containers .qodef-position-center-inner {
+  height: 100%;
+}
+
+.qodef-sticky-header .qodef-sticky-holder.qodef-menu-center .qodef-vertical-align-containers .qodef-position-right:before {
+  display: none;
+}
+
+.qodef-sticky-header .qodef-sticky-holder.qodef-menu-center .qodef-vertical-align-containers .qodef-position-right-inner {
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-align-items: center;
+  /* Safari 7.0+ */
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.qodef-sticky-header .qodef-sticky-holder.qodef-menu-right .qodef-main-menu {
+  width: auto;
+}
+
+.qodef-sticky-header .qodef-sticky-holder.qodef-menu-right .qodef-vertical-align-containers .qodef-position-right-inner {
+  height: 100%;
+}
+
+.qodef-sticky-header .widget {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Sticky header style - end
+   ========================================================================== */
+/* ==========================================================================
+   Top header style - begin
+   ========================================================================== */
+.qodef-top-bar {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  height: 46px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1;
+  background-color: #000;
+  z-index: 111;
+  box-sizing: border-box;
+}
+
+.qodef-top-bar > .qodef-vertical-align-containers {
+  padding: 0 40px;
+}
+
+.qodef-top-bar .qodef-vertical-align-containers .qodef-position-left:before,
+.qodef-top-bar .qodef-vertical-align-containers .qodef-position-right:before {
+  display: none;
+}
+
+.qodef-top-bar .qodef-vertical-align-containers .qodef-position-left-inner,
+.qodef-top-bar .qodef-vertical-align-containers .qodef-position-right-inner {
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-align-items: center;
+  /* Safari 7.0+ */
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.qodef-top-bar .qodef-grid {
+  height: 100%;
+}
+
+.qodef-top-bar .qodef-grid .qodef-vertical-align-containers {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.qodef-top-bar-in-grid-padding .qodef-top-bar .qodef-grid .qodef-vertical-align-containers {
+  padding: 0 40px;
+}
+
+.qodef-top-bar .widget {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Top header style - end
+   ========================================================================== */
+/* ==========================================================================
+   Header styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=header-map.css.map */

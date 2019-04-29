@@ -1,0 +1,234 @@
+/* ==========================================================================
+   Masonry Gallery shortcodes style - begin
+   ========================================================================== */
+
+.qodef-masonry-gallery-holder {
+	@include qodefRelativeHolderLayout();
+	
+	.qodef-mg-inner {
+		opacity: 0;
+	}
+	
+	.qodef-mg-grid-gutter {
+		width: 0;
+	}
+	
+	.qodef-mg-grid-sizer {
+		width: 33.33333333333333%;
+	}
+
+	.qodef-mg-item {
+		position: relative;
+		width: 33.33333333333333%;
+		z-index: 1;
+		box-sizing: border-box;
+
+		&.qodef-masonry-size-large-width {
+			width: 66.66666666666667%;
+
+			.qodef-mg-image {
+				
+				img {
+					max-height: inherit;
+				}
+			}
+		}
+
+		&.qodef-masonry-size-large-height {
+			
+			.qodef-mg-image {
+				
+				img {
+					max-width: inherit;
+					width: auto;
+					height: 100%;
+				}
+			}
+		}
+		
+		&.qodef-masonry-size-large-width-height {
+			width: 66.66666666666667%;
+		}
+
+		&.qodef-masonry-size-large-width,
+		&.qodef-masonry-size-large-width-height {
+
+			.qodef-mg-item-content-inner {
+				width: 50%;
+			}
+		}
+
+		&.qodef-mg-simple {
+
+			.qodef-mg-item-content {
+				vertical-align: middle;
+			}
+		}
+
+		&:not(.qodef-mg-simple) {
+
+			.qodef-mg-item-title {
+				color: #fff;
+			}
+
+			.qodef-mg-item-button {
+
+				&.qodef-btn-simple {
+					color: #fff !important;
+
+					&:hover {
+						color: #fff !important;
+					}
+				}
+			}
+		}
+
+		.qodef-mg-content {
+			@include qodefRelativeHolderLayout();
+			height: 100%;
+			box-sizing: border-box;
+		}
+		
+		.qodef-mg-item-outer {
+			@include qodefAbsoluteHolderLayout();
+			box-sizing: border-box;
+		}
+		
+		.qodef-mg-item-inner {
+			@include qodefTableLayout();
+			color: #fff;
+		}
+		
+		.qodef-mg-item-content {
+			@include qodefTableCellLayout(bottom);
+			padding: 37px 44px;
+			box-sizing: border-box;
+
+			@include phone-landscape {
+				padding: 17px 22px;
+			}
+		}
+
+		.qodef-mg-image {
+			position: relative;
+			height: 100%;
+			width: 100%;
+			overflow: hidden;
+			@include qodefTransform(translateZ(0px));
+		}
+		
+		.qodef-mg-image-overlay {
+			position: absolute;
+			top: -5px;
+			left: -5px;
+			height: calc(100% + 10px);
+			width: calc(100% + 10px);
+			background-size: cover;
+			background-position: center;
+			z-index: -1;
+		}
+		
+		.qodef-mg-item-icon {
+			margin: 0 0 1px;
+		}
+
+		.qodef-mg-item-category {
+			position: relative;
+            display: inline-block;
+            vertical-align: bottom;
+			margin-bottom: 9px;
+            font-family: $additional-font;
+			line-height: 1.2em;
+			font-size: 14px;
+            font-style: italic;
+            color: $first-main-color;
+		}
+
+		.qodef-mg-item-title {
+			margin: 0;
+		}
+		
+		.qodef-mg-item-text {
+			margin: 12px 0 0;
+
+			@include phone-landscape {
+				display: none;
+			}
+		}
+		
+		.qodef-mg-item-button {
+			margin: 26px 0 0;
+		}
+		
+		.qodef-mg-item-link {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 2;
+		}
+		
+		&.qodef-mg-standard {
+			
+			.qodef-mg-item-inner {
+				opacity: 0;
+				@include qodefTransition(opacity .25s cubic-bezier(0.45, 0.05, 0.55, 0.95), background-color .25s cubic-bezier(0.45, 0.05, 0.55, 0.95));
+			}
+			
+			.qodef-mg-item-title,
+			.qodef-mg-item-text {
+				color: #fff;
+			}
+			
+			img {
+				@include qodefTransition(opacity .7s ease);
+				@include qodefTransform(translateZ(0));
+			}
+			
+			&:hover {
+				
+				.qodef-mg-item-inner {
+					opacity: 1;
+					background-color: rgba($default-heading-color, 0.4);
+				}
+				
+				img {
+					opacity: 0;
+				}
+			}
+		}
+
+		&.qodef-mg-simple {
+			
+			&.qodef-mg-skin-default {
+				
+				.qodef-mg-item-inner {
+					background-color: #fff;
+				}
+			}
+			
+			&.qodef-mg-skin-light {
+				
+				.qodef-mg-item-inner {
+					background-color: #fff;
+				}
+			}
+			
+			&.qodef-mg-skin-dark {
+				
+				.qodef-mg-item-inner {
+					background-color: $default-heading-color;
+				}
+				
+				.qodef-mg-item-title,
+				.qodef-mg-item-text {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Masonry Gallery shortcodes style - end
+   ========================================================================== */

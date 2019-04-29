@@ -1,0 +1,114 @@
+.qodef-team-single-holder {
+    @include qodefRelativeHolderLayout();
+	
+	.qodef-ts-about-title-tagline {
+		font-family: $additional-font;
+		letter-spacing: .15em;
+		font-style: italic;
+		color: $first-main-color;
+		
+		&:before {
+			content: '<';
+		}
+		
+		&:after {
+			content: '/>';
+		}
+		
+	}
+	
+	.qodef-ts-about-title {
+		margin: 0 0 31px;
+	}
+	
+	@media only screen and (min-width: $phone-landscape-plus-pixel) {
+		.qodef-ts-excerpt {
+			column-count: 2;
+			column-gap: 52px;
+		}
+	}
+
+    .qodef-position {
+	    margin: 0;
+        color: #ababab;
+
+        .qodef-icon-shortcode {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 5px;
+
+            a, span, i {
+                color: #999;
+            }
+        }
+    }
+
+	.qodef-ts-bio-holder {
+		margin: 47px 0 0;
+	}
+
+	.qodef-ts-info-row {
+		margin: 0 0 27px;
+		line-height: 1.2em;
+		border-bottom: 1px dashed $default-border-color;
+
+		.qodef-ts-bio-info {
+			display: inline-block;
+			position: relative;
+			min-width: 127px;
+			margin: 0 0 1px;
+			font-weight: 700;
+
+			@include ipad-landscape {
+				min-width: 107px;
+			}
+
+			@include ipad-portrait {
+				min-width: 127px;
+			}
+
+			@include phone-portrait {
+				min-width: 97px;
+			}
+		}
+
+		a {
+			color: $default-text-color;
+
+			&:hover {
+				color: $first-main-color;
+			}
+		}
+	}
+
+    .qodef-team-single-content {
+	    @include qodefRelativeHolderLayout();
+	    margin: 0 0 30px;
+    }
+}
+
+.qodef-team-member-dark-skin {
+	
+	.qodef-team-single-info-holder {
+		
+		h1, h2, h3, h4, h5, h6, p, span, a {
+			color: #fff;
+		}
+		
+		.qodef-ts-about-title-tagline {
+			color: $first-main-color;
+		}
+	}
+	
+	.qodef-team-single-holder {
+		
+		.qodef-ts-about-title {
+			margin-bottom: 86px;
+		}
+		
+		.qodef-ts-info-row {
+			border-color: #333;
+		}
+	}
+}

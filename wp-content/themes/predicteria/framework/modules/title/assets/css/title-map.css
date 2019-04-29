@@ -1,0 +1,251 @@
+/* ==========================================================================
+   Title styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Title style - begin
+   ========================================================================== */
+.qodef-title-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  height: 240px;
+  background-color: #f6f6f6;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  z-index: 101;
+}
+
+.qodef-title-holder.qodef-title-full-width .qodef-grid {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.qodef-title-holder.qodef-bg-responsive {
+  height: auto !important;
+}
+
+.qodef-title-holder.qodef-bg-responsive .qodef-title-image {
+  display: block;
+}
+
+.qodef-title-holder.qodef-bg-responsive .qodef-title-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.qodef-title-holder.qodef-bg-parallax {
+  background-attachment: fixed;
+}
+
+.qodef-title-holder span.qodef-page-subtitle {
+  font-family: "Rubik", sans-serif;
+  font-size: 17px;
+  font-style: italic;
+  letter-spacing: .1em;
+}
+
+.qodef-title-holder .qodef-title-image {
+  display: none;
+}
+
+.qodef-title-holder .qodef-title-image img {
+  display: block;
+  width: 100%;
+}
+
+.qodef-title-holder .qodef-title-wrapper {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.qodef-title-holder .qodef-title-inner {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* ==========================================================================
+   Title style - end
+   ========================================================================== */
+/* ==========================================================================
+   Breadcrumbs Title type style - begin
+   ========================================================================== */
+.qodef-title-holder.qodef-breadcrumbs-type .qodef-breadcrumbs {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: .1em;
+  color: #282828;
+}
+
+.qodef-title-holder.qodef-breadcrumbs-type .qodef-breadcrumbs.qodef-has-inline-style a {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.qodef-title-holder.qodef-breadcrumbs-type .qodef-breadcrumbs.qodef-has-inline-style a:hover {
+  color: inherit;
+  opacity: 0.9;
+}
+
+.qodef-title-holder.qodef-breadcrumbs-type .qodef-breadcrumbs a,
+.qodef-title-holder.qodef-breadcrumbs-type .qodef-breadcrumbs span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: inherit;
+}
+
+.qodef-title-holder.qodef-breadcrumbs-type .qodef-breadcrumbs a.qodef-delimiter,
+.qodef-title-holder.qodef-breadcrumbs-type .qodef-breadcrumbs span.qodef-delimiter {
+  margin: 0 8px;
+}
+
+.qodef-title-holder.qodef-breadcrumbs-type .qodef-breadcrumbs a.qodef-current,
+.qodef-title-holder.qodef-breadcrumbs-type .qodef-breadcrumbs span.qodef-current {
+  color: #50d6ae;
+}
+
+.qodef-title-holder.qodef-breadcrumbs-type .qodef-breadcrumbs a:hover {
+  color: #000;
+}
+
+/* ==========================================================================
+   Breadcrumbs Title type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Centered Title type style - begin
+   ========================================================================== */
+.qodef-title-holder.qodef-centered-type .qodef-title-inner {
+  text-align: center;
+}
+
+.qodef-title-holder.qodef-centered-type .qodef-page-title {
+  margin: 0;
+}
+
+.qodef-title-holder.qodef-centered-type .qodef-page-subtitle {
+  display: block;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Centered Title type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Standard With Breadcrumbs Title type style - begin
+   ========================================================================== */
+.qodef-title-holder.qodef-standard-with-breadcrumbs-type .qodef-title-info,
+.qodef-title-holder.qodef-standard-with-breadcrumbs-type .qodef-breadcrumbs-info {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.qodef-title-holder.qodef-standard-with-breadcrumbs-type .qodef-title-info {
+  width: 99%;
+}
+
+.qodef-title-holder.qodef-standard-with-breadcrumbs-type .qodef-breadcrumbs-info {
+  width: 1%;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.qodef-title-holder.qodef-standard-with-breadcrumbs-type .qodef-page-title {
+  margin: 0;
+}
+
+.qodef-title-holder.qodef-standard-with-breadcrumbs-type .qodef-page-subtitle {
+  margin: 0;
+}
+
+.qodef-title-holder.qodef-standard-with-breadcrumbs-type .qodef-breadcrumbs {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: .1em;
+  color: #282828;
+}
+
+.qodef-title-holder.qodef-standard-with-breadcrumbs-type .qodef-breadcrumbs.qodef-has-inline-style a {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.qodef-title-holder.qodef-standard-with-breadcrumbs-type .qodef-breadcrumbs.qodef-has-inline-style a:hover {
+  color: inherit;
+  opacity: 0.9;
+}
+
+.qodef-title-holder.qodef-standard-with-breadcrumbs-type .qodef-breadcrumbs a,
+.qodef-title-holder.qodef-standard-with-breadcrumbs-type .qodef-breadcrumbs span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: inherit;
+}
+
+.qodef-title-holder.qodef-standard-with-breadcrumbs-type .qodef-breadcrumbs a.qodef-delimiter,
+.qodef-title-holder.qodef-standard-with-breadcrumbs-type .qodef-breadcrumbs span.qodef-delimiter {
+  margin: 0 8px;
+}
+
+.qodef-title-holder.qodef-standard-with-breadcrumbs-type .qodef-breadcrumbs a.qodef-current,
+.qodef-title-holder.qodef-standard-with-breadcrumbs-type .qodef-breadcrumbs span.qodef-current {
+  color: #50d6ae;
+}
+
+.qodef-title-holder.qodef-standard-with-breadcrumbs-type .qodef-breadcrumbs a:hover {
+  color: #000;
+}
+
+/* ==========================================================================
+   Standard With Breadcrumbs Title type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Standard Title type style - begin
+   ========================================================================== */
+.qodef-title-holder.qodef-standard-type .qodef-page-title {
+  margin: 0;
+}
+
+.qodef-title-holder.qodef-standard-type .qodef-page-subtitle {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Standard Title type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Title styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=title-map.css.map */

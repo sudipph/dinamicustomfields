@@ -1,0 +1,156 @@
+/* ==========================================================================
+   Clients Carousel shortcode style - begin
+   ========================================================================== */
+
+.qodef-clients-carousel-holder {
+	@include qodefRelativeHolderLayout();
+	
+	.qodef-cc-inner {
+		@include qodefRelativeHolderLayout();
+	}
+	
+	.qodef-cc-item {
+		@include qodefRelativeHolderLayout();
+		
+		.touch & {
+			cursor: pointer;
+		}
+		
+		img {
+			display: block;
+		}
+	}
+	
+	.qodef-cc-link {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+/***** Hover Types - begin *****/
+
+.qodef-cc-hover-switch-images {
+	
+	.qodef-cc-item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
+		.qodef-cc-image {
+			width: auto;
+			opacity: 1;
+			@include qodefTransition(opacity .1s ease-in-out);
+		}
+		
+		.qodef-cc-hover-image {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: auto;
+			opacity: 0;
+			z-index: 10;
+			@include qodefTransition(opacity .1s ease-in-out .1s);
+		}
+
+		&.qodef-cci-no-link {		
+			.qodef-cc-hover-image {
+				left: 50%;
+				@include qodefTransform(translateX(-50%));
+			}
+		}
+
+		&:hover {
+			.qodef-cc-image {
+				opacity: 0;
+				@include qodefTransition(opacity .15s ease-in-out .05s);
+			}
+			
+			.qodef-cc-hover-image {
+				opacity: 1;
+				@include qodefTransition(opacity .15s ease-in-out);
+			}
+		}
+	}
+
+	.qodef-owl-slider-arrow-custom-location & {
+
+		@media only screen and (min-width: $laptop-landscape-large-plus-pixel) {
+
+			.qodef-owl-slider {
+
+				.owl-nav {
+
+					.owl-prev {
+						left: -24px;
+					}
+
+					.owl-next {
+						right: -24px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.qodef-cc-hover-roll-over {
+	
+	.qodef-cc-item {
+		overflow: hidden;
+		
+		&.qodef-cci-has-link {
+			
+			a {
+				
+				&:hover {
+					
+					.qodef-cc-image {
+						@include qodefTransform(translateY(100%));
+					}
+					
+					.qodef-cc-hover-image {
+						@include qodefTransform(translate(-50%, 0));
+					}
+				}
+			}
+		}
+		
+		&.qodef-cci-no-link {
+			
+			&:hover {
+				
+				.qodef-cc-image {
+					@include qodefTransform(translateY(100%));
+				}
+				
+				.qodef-cc-hover-image {
+					@include qodefTransform(translate(-50%, 0));
+				}
+			}
+		}
+		
+		.qodef-cc-image {
+			position: relative;
+			display: block;
+			width: auto;
+			margin: 0 auto;
+			@include qodefTransitionTransform(.4s ease);
+		}
+		
+		.qodef-cc-hover-image {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: auto;
+			@include qodefTransform(translate(-50%, -100%));
+			@include qodefTransitionTransform(.4s ease);
+		}
+	}
+}
+
+/***** Hover Types - end *****/
+
+/* ==========================================================================
+   Clients Carousel shortcode style - end
+   ========================================================================== */

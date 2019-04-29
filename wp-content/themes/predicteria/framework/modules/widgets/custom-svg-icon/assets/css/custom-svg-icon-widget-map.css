@@ -1,0 +1,49 @@
+/* ==========================================================================
+   Custom Svg Icon widget style - begin
+   ========================================================================== */
+.qodef-custom-svg-icon-widget-holder {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.qodef-light-header .qodef-custom-svg-icon-widget-holder {
+  color: #fff;
+}
+
+.qodef-light-header .qodef-custom-svg-icon-widget-holder:hover {
+  color: #50d6ae;
+}
+
+.qodef-dark-header .qodef-custom-svg-icon-widget-holder {
+  color: #000;
+}
+
+.qodef-dark-header .qodef-custom-svg-icon-widget-holder:hover {
+  color: #50d6ae;
+}
+
+.qodef-custom-svg-icon-widget-holder > * {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+
+.qodef-custom-svg-icon-widget-holder > * * {
+  fill: currentColor;
+}
+
+/* ==========================================================================
+   Custom Svg Icon widget style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=custom-svg-icon-widget-map.css.map */

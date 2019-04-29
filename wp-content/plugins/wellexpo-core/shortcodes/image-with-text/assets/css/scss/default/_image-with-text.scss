@@ -1,0 +1,248 @@
+/* ==========================================================================
+   Image With Text shortcode style - begin
+   ========================================================================== */
+
+.qodef-image-with-text-holder {
+    @include qodefRelativeHolderLayout();
+	
+	&.qodef-has-shadow {
+		.qodef-iwt-image img {
+			box-shadow: 0px 1px 32.55px 2.45px rgba(0, 0, 0, 0.04); 
+			@include qodefTransitionTransform(.2s cubic-bezier(0.19, 0.5, 0.46, 0.88), box-shadow .3s);
+		}
+	}
+	
+	.qodef-iwt-image {
+		@include qodefRelativeHolderLayout();
+		
+		a, img {
+			position: relative;
+			display: block;
+		}
+	}
+	
+	.qodef-iwt-text-holder {
+		@include qodefRelativeHolderLayout();
+	}
+	
+	.qodef-iwt-title {
+		margin: 27px 0 0;
+	}
+	
+	.qodef-iwt-text {
+		display: inline-block;
+		position: relative;
+		padding: 0 18px 0 10px;
+		margin: 18px 0 0;
+		color: $first-main-color;
+	}
+
+	&.qodef-iwt-with-animation {
+		%font {
+			font-size: 14px;
+			letter-spacing: .15em;
+			font-style: italic;
+			line-height: 1.3em;
+			color: inherit;
+		}
+
+		.qodef-iwt-text {
+			white-space: nowrap;
+			font-size: 0; //remove whitespace
+
+			&:before,
+			&:after {
+				position: absolute;
+				top: 0;
+				@extend %font;
+				opacity: 0;
+			}
+
+			&:before {
+				content: '<';
+				left: 0;
+			}
+			
+			&:after {
+				content: '/>';
+				right: 0;
+			}
+		}
+
+		.qodef-char {
+			position: relative;
+			display: inline-block;
+			@extend %font;
+			visibility: hidden;
+		}
+	
+		.qodef-num {
+			position: absolute;
+			@extend %font;
+			visibility: hidden;
+		}
+
+		@include keyframes(qodefNumFadeOut) {
+			0% {
+				visibility: visible;
+				opacity: 1;
+			}
+
+			100% {
+				visibility: visible;
+				opacity: 0;
+				@include qodefTransform(translateY(-30%));
+			}
+		}
+		
+		@include keyframes(qodefNumFadeInOut) {
+			0% {
+				visibility: visible;
+				opacity: 0;
+			}
+
+			50% {
+				visibility: visible;
+				opacity: 1;
+			}
+
+			100% {
+				visibility: visible;
+				opacity: 0;
+				@include qodefTransform(translateY(-30%));
+			}
+		}
+				
+		@include keyframes(qodefCharFadeIn) {
+			0% {
+				visibility: visible;
+				opacity: 0;
+				@include qodefTransform(translateY(30%));
+			}
+
+			100% {
+				visibility: visible;
+				opacity: 1;
+				@include qodefTransform(translateY(0));
+			}
+		}
+
+		&.qodef-appeared {
+			.qodef-iwt-text {
+				&:before,
+				&:after {
+					@include qodefTransition(opacity .1s);
+					opacity: 1;
+				}
+			}
+			.qodef-num-1 {
+				@include qodefAnimation(qodefNumFadeOut .1s forwards);
+			}
+
+			.qodef-num-2 {
+				@include qodefAnimation(qodefNumFadeInOut .1s forwards);
+			}
+			
+			.qodef-char {
+				@include qodefAnimation(qodefCharFadeIn .15s forwards);
+			}
+		}
+	}
+	
+	/***** Custom Link Behavior Style - begin *****/
+	
+	&.qodef-image-behavior-custom-link {
+		
+		&:not(.qodef-has-shadow).qodef-iwt-image{
+			a {
+				@include qodefImageOverlayHoverStyle();
+			}
+		}
+
+		&.qodef-has-shadow .qodef-iwt-image:hover,
+		&.qodef-has-shadow.qodef-hovered .qodef-iwt-image {
+			img {
+				box-shadow: 0px 3px 32.55px 5px rgba(0, 0, 0, 0.1); 
+				@include qodefTransform(translate3d(0, -6px, 0));
+			}
+		}
+	}
+	
+	/***** Custom Link Behavior Style - end *****/
+	
+	/***** Lightbox Behavior Style - begin *****/
+	
+	&.qodef-image-behavior-lightbox {
+		
+		.qodef-iwt-image {
+			
+			a {
+				@include qodefImageOverlayHoverStyle();
+			}
+		}
+	}
+	
+	/***** Lightbox Behavior Style - end *****/
+	
+	/***** Zoom Behavior Style - begin *****/
+	
+	&.qodef-image-behavior-zoom {
+		
+		.qodef-iwt-image {
+			overflow: hidden;
+			
+			.touch & {
+				cursor: pointer;
+			}
+			
+			&:hover {
+				
+				img {
+					@include qodefTransform(scale(1.04));
+				}
+			}
+			
+			img {
+				@include qodefTransform(scale(1));
+				@include qodefTransitionTransform(.3s ease-in-out);
+			}
+		}
+	}
+	
+	/***** Zoom Behavior Style - end *****/
+	
+	/***** Grayscale Behavior Style - begin *****/
+	
+	&.qodef-image-behavior-grayscale {
+		
+		.qodef-iwt-image {
+			overflow: hidden;
+			
+			.touch & {
+				cursor: pointer;
+			}
+			
+			&:hover {
+				
+				img {
+					-webkit-filter: grayscale(0);
+					filter: none;
+				}
+			}
+			
+			img {
+				filter: url('img/desaturate.svg#grayscale');
+				-webkit-filter: grayscale(100%);
+				-moz-filter: grayscale(100%);
+				filter: gray;
+				filter: grayscale(100%);
+				@include qodefTransition(all .3s ease-in-out);
+			}
+		}
+	}
+	
+	/***** Grayscale Behavior Style - end *****/
+}
+/* ==========================================================================
+   Image With Text shortcode style - end
+   ========================================================================== */

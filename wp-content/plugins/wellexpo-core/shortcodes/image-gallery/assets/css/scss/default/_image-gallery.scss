@@ -1,0 +1,185 @@
+/* ==========================================================================
+   Image Gallery shortcode style - begin
+   ========================================================================== */
+
+.qodef-image-gallery {
+	@include qodefRelativeHolderLayout();
+	
+	&.qodef-has-shadow {
+	
+		.qodef-ig-image-inner {
+			box-shadow: $default-box-shadow;
+		}
+		
+		&.qodef-ig-slider-type,
+		&.qodef-ig-carousel-type {
+			
+			.owl-stage-outer {
+				padding: 0 0 20px;
+			}
+			
+			.qodef-ig-image {
+				box-shadow: $default-box-shadow;
+			}
+		}
+	}
+	
+	.qodef-ig-image {
+		
+		a, img {
+			position: relative;
+			display: block;
+		}
+	}
+	
+	.qodef-ig-image-inner {
+		@include qodefRelativeHolderLayout();
+	}
+	
+	.qodef-ig-slider {
+		@include qodefRelativeHolderLayout();
+	}
+	
+	/***** Image Gallery Masonry Style - begin *****/
+	
+	&.qodef-ig-masonry-type {
+		
+		.qodef-ig-image {
+			
+			&.qodef-fixed-masonry-item {
+				
+				.qodef-ig-image-inner,
+				a {
+					height: 100%;
+				}
+			}
+		}
+	}
+	
+	/***** Image Gallery Masonry Style - end *****/
+	
+	/***** Custom Link Behavior Style - begin *****/
+	
+	&.qodef-image-behavior-custom-link {
+		img {
+			display: block;
+			@include qodefTransform(scale(1.08) translate3d(-10px,0,0));
+			@include qodefTransitionTransform(.6s cubic-bezier(0.23, 1, 0.32, 1));
+			will-change: transform;
+		}
+		
+		.qodef-ig-image {
+			.qodef-ig-image-inner {
+				overflow: hidden;
+			}
+			
+			a {
+				@include qodefImageOverlayHoverCustomStyle();
+
+				&:hover {
+					img {
+						@include qodefTransform(scale(1.08) translate3d(5px,0,0));
+						@include qodefTransitionTransform(1s cubic-bezier(0.23, 1, 0.32, 1));
+					}
+				}
+			}
+		}
+	}
+	
+	/***** Custom Link Behavior Style - end *****/
+	
+	/***** Lightbox Behavior Style - begin *****/
+	
+	&.qodef-image-behavior-lightbox {
+		img {
+			display: block;
+			@include qodefTransform(scale(1.08) translate3d(-7px,0,0));
+			@include qodefTransitionTransform(.7s cubic-bezier(0.23, 1, 0.32, 1));
+		}
+		
+		.qodef-ig-image {
+			.qodef-ig-image-inner {
+				overflow: hidden;
+			}
+			
+			a {
+				@include qodefImageOverlayHoverCustomStyle();
+
+				&:hover {
+					img {
+						@include qodefTransform(scale(1.08) translate3d(7px,0,0));
+						@include qodefTransitionTransform(1s cubic-bezier(0.23, 1, 0.32, 1));
+					}
+				}
+			}
+		}
+	}
+	
+	/***** Lightbox Behavior Style - end *****/
+	
+	/***** Zoom Behavior Style - begin *****/
+	
+	&.qodef-image-behavior-zoom {
+		
+		.qodef-ig-image {
+			
+			.touch & {
+				cursor: pointer;
+			}
+			
+			&:hover {
+				
+				img {
+					@include qodefTransform(scale(1.04));
+					@include qodefTransitionTransform(1s cubic-bezier(0.23, 1, 0.32, 1));
+				}
+			}
+			
+			.qodef-ig-image-inner {
+				overflow: hidden;
+			}
+			
+			img {
+				@include qodefTransform(scale(1));
+				@include qodefTransitionTransform(.6s cubic-bezier(0.23, 1, 0.32, 1));
+			}
+		}
+	}
+	
+	/***** Zoom Behavior Style - end *****/
+	
+	/***** Grayscale Behavior Style - begin *****/
+	
+	&.qodef-image-behavior-grayscale {
+		
+		.qodef-ig-image {
+			overflow: hidden;
+			
+			.touch & {
+				cursor: pointer;
+			}
+			
+			&:hover {
+				
+				img {
+					-webkit-filter: grayscale(0);
+					filter: none;
+				}
+			}
+			
+			img {
+				filter: url('img/desaturate.svg#grayscale');
+				-webkit-filter: grayscale(100%);
+				-moz-filter: grayscale(100%);
+				filter: gray;
+				filter: grayscale(100%);
+				@include qodefTransition(all .3s ease-in-out);
+			}
+		}
+	}
+	
+	/***** Grayscale Behavior Style - end *****/
+}
+/* ==========================================================================
+   Image Gallery shortcode style - end
+   ========================================================================== */

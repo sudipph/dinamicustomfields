@@ -1,0 +1,158 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	body {font-family: Arial;}
+
+	/* Style the tab */
+	.tab {
+	  overflow: hidden;
+	  border: 1px solid #ccc;
+	  background-color: #f1f1f1;
+	}
+
+	/* Style the buttons inside the tab */
+	.tab button {
+	  background-color: inherit;
+	  float: left;
+	  border: none;
+	  outline: none;
+	  cursor: pointer;
+	  padding: 14px 16px;
+	  transition: 0.3s;
+	  font-size: 17px;
+	}
+
+	/* Change background color of buttons on hover */
+	.tab button:hover {
+	  background-color: #ddd;
+	}
+
+	/* Create an active/current tablink class */
+	.tab button.active {
+	  background-color: #ccc;
+	}
+
+	/* Style the tab content */
+	.tabcontent {
+	  display: none;
+	  padding: 6px 12px;
+	  border: 1px solid #ccc;
+	  border-top: none;
+	}
+</style>
+</head>
+
+
+<div class="evntdetails">
+	<h2>WHY TO ATTEND</h2>
+	<div class="tab">
+	  <a href="javascript:void(0)" class="tablinks active" onclick="openCity(event, 'Attendee')">Attendee</a>
+	  <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Speaker')">Speaker</a>
+	  <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Sponsor')">Sponsor</a>
+	</div>
+
+	<div id="Attendee" class="tabcontent" style="display:block">
+	  <p class="attendee-head">When attending Predictera’s summits we know it’s all about who you meet and the relationships that are created. We help to provides the right environment with similar industry professionals to make sure you connect with the right people.</p>
+	  <div id="attendee-detail">
+		<ul id="attendee-list">
+			<li>
+			<div class="attendee1">
+				<p class="attendee1-pic"></p>
+				<p class="attendee1-title">Invite-only Attendee list</p>
+				<p class="attendee1-details">Our executive summits bring together delegates across several industry verticals, which means that you'll be meeting with your peers. They'll understand your challenges and be able to celebrate  your wins because they're in the same boat.</p>
+			</div>
+			</li>
+			<li>
+			<div class="attendee2">
+				<p class="attendee2-pic"></p>
+				<p class="attendee2-title">Networking Opportunities</p>
+				<p class="attendee2-details">Technology leaders need to network with other IT leaders. It's that simple. The summit allows you to catch up with familiar faces and make new, critical business contacts.</p>
+			</div>
+			</li>
+			<li>
+			<div class="attendee3">
+				<p class="attendee3-pic"></p>
+				<p class="attendee3-title">Interactive Sessions</p>
+				<p class="attendee3-details">During these small breakouts, ask questions and get the answers you need to determine a successful solution for your organization.</p>
+			</div>
+			</li>
+			<li>
+			<div class="attendee4">
+				<p class="attendee4-pic"></p>
+				<p class="attendee4-title">ROI</p>
+				<p class="attendee4-details">At your organization, ROI is expected. The same is true at the Predictera Executive summits. We expect our attendees to achieve ROI, leave the event with new ideas, new solutions and industry contacts.</p>
+			</div>
+			</li>
+			<li>
+			<div class="attendee4">
+				<p class="attendee4-pic"></p>
+				<p class="attendee4-title">Balanced Agenda</p>
+				<p class="attendee4-details">The Executive summit agenda balances panel discussions with networking breaks, thought leadership, executive visions and product demos with social networking activities. You won't be overwhelmed. You will be productive.</p>
+			</div>
+			</li>
+			<li>
+			<div class="attendee4">
+				<p class="attendee4-pic"></p>
+				<p class="attendee4-title">15 Minute One-On-Ones</p>
+				<p class="attendee4-details">Opportunities with vendors providing a chance to learn more details about their products and services.</p>
+			</div>
+			</li>
+		</ul>
+	  </div>
+	  <div id="attendee-join">
+			<div class="register">
+				<span class="reg1">Ready to join our community?</span>
+				<span class="reg2"><a href="javascript:void(0)">REGISTER</a></span>
+			</div>
+	  </div>
+	  <div id="attendee-mid">
+		<div class="mid1">
+			<div class="part1">75%</div>
+			<div class="part2">
+				<p class="upper">of Attendees are CXO's</p>
+				<p class="lower">& Decision Makers</p>
+			</div>
+		</div>
+		<div class="mid2">
+			<div class="part1">$750M+</div>
+			<div class="part2">
+				<p class="upper">Average Company</p>
+				<p class="lower">Revenue</p>
+			</div>
+		</div>
+		<div class="mid3">
+			<div class="part1">$72M+</div>
+			<div class="part2">
+				<p class="upper">Average Information</p>
+				<p class="lower">Technology Budget</p>
+			</div>
+		</div>
+	  </div>
+	  
+	</div>
+
+	<div id="Speaker" class="tabcontent" style="display:none">
+	  <h3>Speaker</h3>
+	  <p>Speaker</p> 
+	</div>
+
+	<div id="Sponsor" class="tabcontent" style="display:none">
+	  <h3>Sponsor</h3>
+	  <p>Sponsor</p>
+	</div>
+</div>
+
+<script>
+	function openCity(evt, cityName) {
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  document.getElementById(cityName).style.display = "block";
+	  evt.currentTarget.className += " active";
+	}
+</script>

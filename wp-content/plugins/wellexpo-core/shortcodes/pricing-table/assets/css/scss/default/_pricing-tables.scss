@@ -1,0 +1,173 @@
+/* ==========================================================================
+   Pricing Tables shortcode style - begin
+   ========================================================================== */
+
+.qodef-pricing-tables {
+    @include qodefRelativeHolderLayout();
+
+    &.qodef-light-skin {
+
+        .qodef-price-table {
+
+            .qodef-pt-inner {
+
+                .qodef-pt-prices {
+                    color: #fff;
+                }
+
+                .qodef-pt-text-holder {
+
+                    .qodef-pt-title {
+                        color: #fff;
+                    }
+
+                    .qodef-pt-mark {
+                        color: #fff;
+                    }
+
+                    .qodef-pt-content {
+                        color: #fff;
+
+                        ul {
+
+                            li {
+
+                                &:before {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+
+                    .qodef-pt-button {
+
+                        .qodef-btn.qodef-btn-simple {
+                            color: #fff !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.qodef-price-table {
+
+    @include ipad-portrait {
+        float: none !important;
+        width: 100% !important;
+    }
+
+    .qodef-pt-inner {
+        @include qodefRelativeHolderLayout();
+        box-sizing: border-box;
+
+        @include ipad-landscape {
+            padding: 0 !important;
+        }
+
+        .qodef-pt-image-holder {
+            margin: 0 0 13px;
+        }
+
+        .qodef-pt-main-holder {
+            @include qodefRelativeHolderLayout();
+        }
+
+        .qodef-pt-prices,
+        .qodef-pt-text-holder {
+            float: left;
+        }
+
+        .qodef-pt-prices {
+            margin-right: 25px;
+            font-size: 35px;
+            line-height: 1;
+            font-weight: 700;
+            letter-spacing: -.025em;
+            color: $default-heading-color;
+
+            .qodef-pt-value {
+                position: relative;
+                top: -10px;
+                right: -2px;
+                font-size: 19px;
+            }
+        }
+
+        .qodef-pt-text-holder {
+
+            .qodef-pt-title {
+                margin: 0 0 4px;
+                font-size: 25px;
+                line-height: 1.2em;
+                font-weight: 700;
+                color: $default-heading-color;
+            }
+
+            .qodef-pt-mark {
+                position: relative;
+                font-family: $additional-font;
+                font-size: 14px;
+                font-style: italic;
+                letter-spacing: .1em;
+                color: $default-heading-color;
+            }
+
+            .qodef-pt-content {
+                margin: 0 0 20px;
+
+                ul {
+                    margin: 16px 0;
+                    list-style-type: none;
+
+                    li {
+
+                        &:before {
+                            content: '\4e';
+                            position: relative;
+                            top: 1px;
+                            display: inline-block;
+                            vertical-align: baseline;
+                            margin-right: 12px;
+                            font-family: 'ElegantIcons';
+                            font-size: 18px;
+                            color: $default-heading-color;
+                        }
+                    }
+                }
+            }
+
+            .qodef-pt-button {
+
+                .qodef-btn.qodef-btn-simple {
+                    color: #313131 !important;
+                }
+            }
+        }
+    }
+
+    &.qodef-pt-active-item {
+
+        .qodef-pt-inner {
+
+            &:after {
+                content: '\e033';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 44px;
+                height: 44px;
+                font-family: 'ElegantIcons';
+                font-size: 19px;
+                line-height: 44px;
+                text-align: center;
+                color: $default-heading-color;
+                background-color: $additional-color;
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Pricing Tables shortcode style - end
+   ========================================================================== */

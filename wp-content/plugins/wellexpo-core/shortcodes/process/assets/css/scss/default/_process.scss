@@ -1,0 +1,68 @@
+/* ==========================================================================
+   Process shortcode style - begin
+   ========================================================================== */
+
+.qodef-process-holder {
+	@include qodefRelativeHolderLayout();
+	
+	$columns: ('two', 'three', 'four');
+	@for $i from 0 to length($columns) {
+		&.qodef-#{nth($columns, $i+1)}-columns {
+			$column_width: 100%/($i+2);
+			
+			.qodef-process-item {
+				width: $column_width;
+			}
+		}
+	}
+	
+	.qodef-process-inner {
+		margin: 0 -15px;
+	}
+	
+	.qodef-process-item {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		float: left;
+		min-height: 280px;
+		padding: 0 15px;
+		opacity: 0;
+		box-sizing: border-box;
+		@include qodefTransition(opacity 1s cubic-bezier(0.19, 0.5, 0.46, 0.88));
+		
+		@for $i from 1 to 5 {
+			&:nth-child(#{$i}) {
+				-webkit-transition-delay: $i*0.1s;
+				transition-delay: $i*0.1s;
+			}
+		}
+	}
+
+	.qodef-pi-image-holder {
+		position: relative;
+	}
+
+	.qodef-iwt {
+		position: absolute;
+		top: 94px;
+	}
+	
+	.qodef-pi-title {
+		margin: 0;
+	}
+	
+	.qodef-pi-text {
+		margin: 11px 0 0;
+	}
+
+	&.qodef-process-appeared {
+		
+		.qodef-process-item {
+			opacity: 1;
+		}
+	}
+}
+/* ==========================================================================
+   Process shortcode style - end
+   ========================================================================== */

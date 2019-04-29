@@ -1,0 +1,185 @@
+/* ==========================================================================
+   Info Slider shortcode styles - begin
+   ========================================================================== */
+.qodef-info-slider {
+	display: flex;
+
+	.qodef-is-content {
+		display: flex;
+		align-items: center;
+		width: 47%;
+	}
+
+	.qodef-section-title-holder  {
+		padding: 26% 8% 30% 30%;
+		
+		.qodef-bg-svg circle {
+			opacity: 0;
+		}
+
+		.qodef-bg-svg:after {
+			@include qodefTransform(scaleX(0));
+		}
+		
+		&.qodef-appeared {
+			.qodef-bg-svg circle {
+				opacity: 1;
+				@include qodefTransition(opacity .3s);
+				
+				@for $i from 1 to 16 {
+					&:nth-child(#{$i}) { 
+						-webkit-transition-delay: $i * 0.03s; 
+						transition-delay: $i * 0.03s; 
+					}
+				}
+			}
+			
+			.qodef-bg-svg:after {
+				@include qodefTransformOrigin(100%, 50%);
+				@include qodefTransform(scaleX(1));
+				@include qodefTransitionTransform(.5s cubic-bezier(0.19, 0.5, 0.46, 0.88) .2s);
+			}
+		}
+	}
+
+	.qodef-st-inner {
+		position: relative;
+	}
+
+	.qodef-st-title-wrapper {
+		margin-bottom: 25px;
+	}
+
+	.qodef-bg-svg {
+		position: absolute;
+		bottom: 101%;
+		right: 100%;
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			height: 50%;
+			width: 50%;
+			background-color: $first-main-color;
+		}
+	}
+
+	.qodef-is-items {
+		position: relative;
+		width: 53%;
+	}
+
+	.qodef-is-item-link,
+	.qodef-is-item {
+		@include qodefAbsoluteHolderLayout();
+	}
+
+	.qodef-is-item {
+		display: flex;
+		align-items: center;
+
+		@include keyframes(qodefFadeInSlide) {
+			0% {
+				opacity: 0;
+			}
+
+			100% {
+				opacity: 1;
+			}
+		}
+
+		&.qodef-prev {
+			z-index: 5;
+		}
+		
+		&.qodef-active {
+			z-index: 10;
+			@include qodefAnimation(qodefFadeInSlide .75s cubic-bezier(0.86, 0, 0.07, 1) forwards);
+
+			.qodef-is-item-image {
+				box-shadow:  0px 0px 59px 0px rgba(0, 0, 0, 0.07);
+			}
+
+			.qodef-is-item-link {
+				z-index: 100;
+			}
+		}
+	}
+
+	.qodef-is-item-image {
+		display: block;
+		height: 100%;
+		object-fit: cover;
+		object-position: left top;
+	}
+
+	&.qodef-is-with-nav {
+		padding-bottom: 50px;
+
+		.qodef-is-nav {
+			position: absolute;
+			display: flex;
+			align-items: flex-end;
+			height: 50px;
+			bottom: 0;
+			left: 47%;
+			width: 53%;
+		}
+
+		.qodef-is-nav-item {
+			position: relative;
+			height: 5px;
+			width: 5px;
+			padding: 3px;
+			margin-right: 15px;
+			cursor: pointer;
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: 3px;
+				left: 3px;
+				height: 5px;
+				width: 5px;
+				background-color: #313131;
+				@include qodefTransition(.2s);
+			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				width: 11px;
+				height: 11px;
+				top: -1px;
+				left: -1px;
+				border: 1px solid #313131;
+				opacity: 0;
+				@include qodefTransition(.2s);
+			}
+
+			&:hover {
+				&:after {
+					opacity: 1;
+				}
+			}
+
+			&.qodef-active  {
+				&:before {
+					background-color: #d8d7d7;
+				}
+
+				&:after {
+					border-color: #d8d7d7;
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Info Slider shortcode styles - end
+   ========================================================================== */
+
+

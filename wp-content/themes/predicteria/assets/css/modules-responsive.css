@@ -1,0 +1,2002 @@
+/*------------------------------------------------------------------
+ * This is main responsive css file for theme. It is broken into following sections:
+ * 1. Global responsive styles
+ * 2. Blog responsive styles
+ * 3. Footer responsive styles
+ * 4. Header responsive styles
+ * 5. Search responsive styles
+ * 6. Title area responsive styles
+ * 7. Shortcodes responsive styles
+ * 8. Custom Post Types responsive styles
+-------------------------------------------------------------------*/
+
+/* ==========================================================================
+   1. Global responsive styles
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+@media only screen and (max-width: 1024px) {
+  body:not(.qodef-content-is-behind-header):not(.error404) .qodef-content {
+    margin-top: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-hide-on-tablet {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-hide-on-mobile {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .qodef-grid,
+  .qodef-container-inner,
+  .qodef-row-grid-section {
+    width: 950px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-grid,
+  .qodef-container-inner,
+  .qodef-row-grid-section {
+    width: 768px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-grid,
+  .qodef-container-inner,
+  .qodef-row-grid-section {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-grid,
+  .qodef-container-inner,
+  .qodef-row-grid-section {
+    width: 420px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .qodef-grid,
+  .qodef-container-inner,
+  .qodef-row-grid-section {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .qodef-grid,
+  .qodef-container-inner,
+  .qodef-row-grid-section {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .qodef-boxed .qodef-wrapper .qodef-wrapper-inner,
+  .qodef-boxed .qodef-wrapper .qodef-footer-inner {
+    width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-boxed .qodef-wrapper .qodef-wrapper-inner,
+  .qodef-boxed .qodef-wrapper .qodef-footer-inner {
+    width: 818px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-boxed .qodef-wrapper .qodef-wrapper-inner,
+  .qodef-boxed .qodef-wrapper .qodef-footer-inner {
+    width: 650px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-boxed .qodef-wrapper .qodef-wrapper-inner,
+  .qodef-boxed .qodef-wrapper .qodef-footer-inner {
+    width: 470px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .qodef-boxed .qodef-wrapper .qodef-wrapper-inner,
+  .qodef-boxed .qodef-wrapper .qodef-footer-inner {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .qodef-boxed .qodef-wrapper .qodef-wrapper-inner,
+  .qodef-boxed .qodef-wrapper .qodef-footer-inner {
+    width: 92%;
+  }
+}
+
+/* ==========================================================================
+   Grid System responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1280px) {
+  /*
+	* If you changed some value for space do the same thing in product-list-main-and-vc scss files
+	*/
+
+  .qodef-huge-space .qodef-outer-space {
+    margin: 0 -25px;
+  }
+
+  .qodef-huge-space .qodef-outer-space .qodef-item-space {
+    padding: 0 25px;
+    margin: 0 0 50px;
+  }
+
+  .qodef-huge-space.qodef-disable-bottom-space {
+    margin-bottom: -50px;
+  }
+
+  .qodef-huge-space.qodef-columns-has-side-space {
+    padding: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .qodef-grid-list.qodef-six-columns .qodef-masonry-grid-sizer {
+    width: 20%;
+  }
+
+  .qodef-grid-list.qodef-six-columns .qodef-item-space {
+    width: 20%;
+  }
+
+  .qodef-grid-list.qodef-six-columns .qodef-item-space.qodef-masonry-size-large-width,
+  .qodef-grid-list.qodef-six-columns .qodef-item-space.qodef-masonry-size-large-width-height {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1367px) {
+  .qodef-grid-list.qodef-six-columns .qodef-item-space:nth-child(5n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .qodef-grid-list.qodef-five-columns .qodef-masonry-grid-sizer {
+    width: 25%;
+  }
+
+  .qodef-grid-list.qodef-five-columns .qodef-item-space {
+    width: 25%;
+  }
+
+  .qodef-grid-list.qodef-five-columns .qodef-item-space.qodef-masonry-size-large-width,
+  .qodef-grid-list.qodef-five-columns .qodef-item-space.qodef-masonry-size-large-width-height {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 1025px) {
+  .qodef-grid-list.qodef-five-columns .qodef-item-space:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .qodef-grid-list.qodef-six-columns .qodef-masonry-grid-sizer {
+    width: 25%;
+  }
+
+  .qodef-grid-list.qodef-six-columns .qodef-item-space {
+    width: 25%;
+  }
+
+  .qodef-grid-list.qodef-six-columns .qodef-item-space.qodef-masonry-size-large-width,
+  .qodef-grid-list.qodef-six-columns .qodef-item-space.qodef-masonry-size-large-width-height {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 1025px) {
+  .qodef-grid-list.qodef-six-columns .qodef-item-space:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-grid-list.qodef-four-columns .qodef-masonry-grid-sizer {
+    width: 33.33333%;
+  }
+
+  .qodef-grid-list.qodef-four-columns .qodef-item-space {
+    width: 33.33333%;
+  }
+
+  .qodef-grid-list.qodef-four-columns .qodef-item-space.qodef-masonry-size-large-width,
+  .qodef-grid-list.qodef-four-columns .qodef-item-space.qodef-masonry-size-large-width-height {
+    width: 66.66667%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .qodef-grid-list.qodef-four-columns .qodef-item-space:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-grid-list.qodef-five-columns .qodef-masonry-grid-sizer {
+    width: 33.33333%;
+  }
+
+  .qodef-grid-list.qodef-five-columns .qodef-item-space {
+    width: 33.33333%;
+  }
+
+  .qodef-grid-list.qodef-five-columns .qodef-item-space.qodef-masonry-size-large-width,
+  .qodef-grid-list.qodef-five-columns .qodef-item-space.qodef-masonry-size-large-width-height {
+    width: 66.66667%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .qodef-grid-list.qodef-five-columns .qodef-item-space:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-grid-list.qodef-six-columns .qodef-masonry-grid-sizer {
+    width: 33.33333%;
+  }
+
+  .qodef-grid-list.qodef-six-columns .qodef-item-space {
+    width: 33.33333%;
+  }
+
+  .qodef-grid-list.qodef-six-columns .qodef-item-space.qodef-masonry-size-large-width,
+  .qodef-grid-list.qodef-six-columns .qodef-item-space.qodef-masonry-size-large-width-height {
+    width: 66.66667%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .qodef-grid-list.qodef-six-columns .qodef-item-space:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-grid-list.qodef-three-columns .qodef-masonry-grid-sizer {
+    width: 50%;
+  }
+
+  .qodef-grid-list.qodef-three-columns .qodef-item-space {
+    width: 50%;
+  }
+
+  .qodef-grid-list.qodef-three-columns .qodef-item-space.qodef-masonry-size-large-width,
+  .qodef-grid-list.qodef-three-columns .qodef-item-space.qodef-masonry-size-large-width-height {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .qodef-grid-list.qodef-three-columns .qodef-item-space:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-grid-list.qodef-four-columns .qodef-masonry-grid-sizer {
+    width: 50%;
+  }
+
+  .qodef-grid-list.qodef-four-columns .qodef-item-space {
+    width: 50%;
+  }
+
+  .qodef-grid-list.qodef-four-columns .qodef-item-space.qodef-masonry-size-large-width,
+  .qodef-grid-list.qodef-four-columns .qodef-item-space.qodef-masonry-size-large-width-height {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .qodef-grid-list.qodef-four-columns .qodef-item-space:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-grid-list.qodef-five-columns .qodef-masonry-grid-sizer {
+    width: 50%;
+  }
+
+  .qodef-grid-list.qodef-five-columns .qodef-item-space {
+    width: 50%;
+  }
+
+  .qodef-grid-list.qodef-five-columns .qodef-item-space.qodef-masonry-size-large-width,
+  .qodef-grid-list.qodef-five-columns .qodef-item-space.qodef-masonry-size-large-width-height {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .qodef-grid-list.qodef-five-columns .qodef-item-space:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-grid-list.qodef-six-columns .qodef-masonry-grid-sizer {
+    width: 50%;
+  }
+
+  .qodef-grid-list.qodef-six-columns .qodef-item-space {
+    width: 50%;
+  }
+
+  .qodef-grid-list.qodef-six-columns .qodef-item-space.qodef-masonry-size-large-width,
+  .qodef-grid-list.qodef-six-columns .qodef-item-space.qodef-masonry-size-large-width-height {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .qodef-grid-list.qodef-six-columns .qodef-item-space:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-grid-list.qodef-two-columns .qodef-masonry-grid-sizer {
+    width: 100%;
+  }
+
+  .qodef-grid-list.qodef-two-columns .qodef-item-space {
+    width: 100%;
+  }
+
+  .qodef-grid-list.qodef-three-columns .qodef-masonry-grid-sizer {
+    width: 100%;
+  }
+
+  .qodef-grid-list.qodef-three-columns .qodef-item-space {
+    width: 100%;
+  }
+
+  .qodef-grid-list.qodef-four-columns .qodef-masonry-grid-sizer {
+    width: 100%;
+  }
+
+  .qodef-grid-list.qodef-four-columns .qodef-item-space {
+    width: 100%;
+  }
+
+  .qodef-grid-list.qodef-five-columns .qodef-masonry-grid-sizer {
+    width: 100%;
+  }
+
+  .qodef-grid-list.qodef-five-columns .qodef-item-space {
+    width: 100%;
+  }
+
+  .qodef-grid-list.qodef-six-columns .qodef-masonry-grid-sizer {
+    width: 100%;
+  }
+
+  .qodef-grid-list.qodef-six-columns .qodef-item-space {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Grid System responsive style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../css/modules-responsive.css.map */
+/* ==========================================================================
+   Blog responsive styles - begin
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+@media only screen and (max-width: 1024px) {
+  .qodef-related-posts-holder .qodef-related-post {
+    width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-blog-single-navigation .qodef-blog-single-prev .qodef-post-image,
+  .qodef-blog-single-navigation .qodef-blog-single-next .qodef-post-image {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .qodef-related-posts-holder .qodef-related-post {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .qodef-blog-holder.qodef-blog-single article .qodef-post-info-bottom .qodef-post-info-bottom-left,
+  .qodef-blog-holder.qodef-blog-single article .qodef-post-info-bottom .qodef-post-info-bottom-right {
+    width: 100%;
+    float: none;
+  }
+
+  .qodef-blog-holder.qodef-blog-single article .qodef-post-info-bottom .qodef-post-info-bottom-right {
+    text-align: inherit;
+    margin: 10px 0 0;
+  }
+}
+
+/* ==========================================================================
+   Blog Slider shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .qodef-blog-slider-holder.qodef-bs-carousel-centered .active.center .qodef-item-text-wrapper {
+    opacity: 1;
+  }
+}
+
+/* ==========================================================================
+   Blog Slider shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Blog responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=blog-map-responsive.css.map */
+/* ==========================================================================
+   Content Fixed responsive styles - begin
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+   Content Fixed responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .qodef-content-fixed.btn-enabled .qodef-content-fixed-inner {
+    padding: 19px 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-content-fixed.btn-enabled .qodef-content-fixed-text-holder,
+  .qodef-content-fixed.btn-enabled .qodef-content-fixed-btn-holder {
+    display: block;
+    width: 100%;
+  }
+
+  .qodef-content-fixed.btn-enabled .qodef-content-fixed-btn-holder {
+    margin: 25px 0 0;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-content-fixed {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Content Fixed responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Content Fixed responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=content-fixed-map-responsive.css.map */
+/* ==========================================================================
+   Footer responsive styles - begin
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+   Footer responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .qodef-page-footer .qodef-column-content.qodef-grid-col-3 {
+    width: 50%;
+    float: left;
+  }
+
+  .qodef-page-footer .qodef-column-content.qodef-grid-col-3:nth-child(2n+1) {
+    clear: both;
+  }
+
+  .qodef-page-footer .qodef-column-content.qodef-grid-col-3:nth-child(3),
+  .qodef-page-footer .qodef-column-content.qodef-grid-col-3:nth-child(4) {
+    margin-top: 30px;
+  }
+
+  .qodef-page-footer .qodef-column-content.qodef-grid-col-4 {
+    width: 33.33333333333333%;
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-page-footer .qodef-column-content:not(:first-child) {
+    margin-top: 30px;
+  }
+}
+
+/* ==========================================================================
+   Footer responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Footer responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=footer-map-responsive.css.map */
+/* ==========================================================================
+   Header responsive styles - begin
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+   Header responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .qodef-page-header {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Header responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Fixed header responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1200px) {
+  .qodef-boxed .qodef-page-header .qodef-fixed-wrapper.fixed {
+    width: 1000px;
+  }
+}
+
+/* ==========================================================================
+   Fixed header responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Header Vertical responsive style - begin
+   ========================================================================== */
+
+@media only screen and (min-width: 1025px) {
+  .error404.qodef-header-vertical .qodef-content {
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-header-vertical .qodef-vertical-menu-area {
+    display: none;
+  }
+
+  .qodef-header-vertical .qodef-content,
+  .qodef-header-vertical footer {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .qodef-header-vertical .qodef-grid,
+  .qodef-header-vertical .qodef-container-inner,
+  .qodef-header-vertical .qodef-row-grid-section {
+    width: 950px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .qodef-header-vertical .qodef-grid,
+  .qodef-header-vertical .qodef-container-inner,
+  .qodef-header-vertical .qodef-row-grid-section {
+    width: 768px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-header-vertical .qodef-grid,
+  .qodef-header-vertical .qodef-container-inner,
+  .qodef-header-vertical .qodef-row-grid-section {
+    width: 768px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-header-vertical .qodef-grid,
+  .qodef-header-vertical .qodef-container-inner,
+  .qodef-header-vertical .qodef-row-grid-section {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-header-vertical .qodef-grid,
+  .qodef-header-vertical .qodef-container-inner,
+  .qodef-header-vertical .qodef-row-grid-section {
+    width: 420px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .qodef-header-vertical .qodef-grid,
+  .qodef-header-vertical .qodef-container-inner,
+  .qodef-header-vertical .qodef-row-grid-section {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .qodef-header-vertical .qodef-grid,
+  .qodef-header-vertical .qodef-container-inner,
+  .qodef-header-vertical .qodef-row-grid-section {
+    width: 90%;
+  }
+}
+
+/* ==========================================================================
+   Header Vertical responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Mobile header responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .qodef-mobile-header {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-paspartu-enabled .qodef-mobile-header .qodef-grid {
+    width: 90%;
+  }
+}
+
+/* ==========================================================================
+   Mobile header responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Sticky header responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1200px) {
+  .qodef-boxed .qodef-page-header .qodef-sticky-header {
+    width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-boxed.qodef-sticky-up-mobile-header .mobile-header-appear .qodef-mobile-header-inner {
+    width: 818px;
+    left: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-boxed.qodef-sticky-up-mobile-header .mobile-header-appear .qodef-mobile-header-inner {
+    width: 650px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-boxed.qodef-sticky-up-mobile-header .mobile-header-appear .qodef-mobile-header-inner {
+    width: 470px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .qodef-boxed.qodef-sticky-up-mobile-header .mobile-header-appear .qodef-mobile-header-inner {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .qodef-boxed.qodef-sticky-up-mobile-header .mobile-header-appear .qodef-mobile-header-inner {
+    width: 92%;
+  }
+}
+
+/* ==========================================================================
+   Sticky header responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Top header responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .qodef-top-bar {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Top header responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Header responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=header-map-responsive.css.map */
+/* ==========================================================================
+   Search responsive styles - begin
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+# Search template responsive style - begin
+========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .qodef-search-page-holder article .qodef-post-image {
+    width: 80px;
+  }
+
+  .qodef-search-page-holder article .qodef-post-title-area {
+    padding: 0 0 0 105px;
+    min-height: 80px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-search-page-holder article .qodef-post-image {
+    width: 60px;
+  }
+
+  .qodef-search-page-holder article .qodef-post-title-area {
+    padding: 0 0 0 80px;
+    min-height: 60px;
+  }
+}
+
+/* ==========================================================================
+# Search template responsive style - end
+========================================================================== */
+
+/* ==========================================================================
+# Fullscreen search responsive - start
+========================================================================== */
+
+@media only screen and (max-width: 1280px) {
+  .qodef-fullscreen-with-sidebar-search-holder .qodef-fullscreen-search-cell {
+    padding: 50px 0 0;
+  }
+
+  .qodef-fullscreen-with-sidebar-search-holder .qodef-fullscreen-sidebar {
+    margin: 20px 0 0;
+  }
+
+  .qodef-fullscreen-with-sidebar-search-holder .qodef-search-field {
+    font-size: 70px;
+  }
+
+  .qodef-fullscreen-with-sidebar-search-holder .qodef-search-submit {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-fullscreen-with-sidebar-search-holder .qodef-form-holder-inner {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-fullscreen-with-sidebar-search-holder .qodef-field-holder .qodef-search-field {
+    font-size: 25px;
+  }
+
+  .qodef-fullscreen-with-sidebar-search-holder .qodef-search-submit {
+    font-size: 25px;
+    bottom: 25px !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .qodef-fullscreen-with-sidebar-search-holder .qodef-form-holder-inner {
+    width: 80%;
+  }
+}
+
+/* ==========================================================================
+# Fullscreen search responsive - end
+========================================================================== */
+
+/* ==========================================================================
+# Fullscreen search responsive - start
+========================================================================== */
+
+@media only screen and (max-width: 1440px) {
+  .qodef-fullscreen-search-holder .qodef-form-holder-inner {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-fullscreen-search-holder .qodef-form-holder-inner {
+    width: 90%;
+  }
+}
+
+/* ==========================================================================
+# Fullscreen search responsive - end
+========================================================================== */
+
+/* ==========================================================================
+   Search responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=search-map-responsive.css.map */
+/* ==========================================================================
+   Subscribe Popup responsive styles - begin
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+# Subscribe Pop-up style responsive - begin
+========================================================================== */
+
+@media only screen and (max-width: 1280px) {
+  .qodef-subscribe-popup-holder .qodef-sp-inner {
+    width: 63%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-subscribe-popup-holder .qodef-sp-inner {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-subscribe-popup-holder .qodef-sp-inner {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-subscribe-popup-holder .qodef-sp-inner {
+    min-height: 450px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-subscribe-popup-holder .qodef-sp-content-container {
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  .qodef-subscribe-popup-holder .qodef-sp-background {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+# Subscribe Pop-up style responsive - end
+========================================================================== */
+
+/* ==========================================================================
+   Subscribe Popup responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=popup-map-responsive.css.map */
+/* ==========================================================================
+   Title responsive styles - begin
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+   Title responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .qodef-title-holder.qodef-has-bg-image {
+    height: auto !important;
+    background-image: none !important;
+  }
+
+  .qodef-title-holder.qodef-has-bg-image .qodef-title-image {
+    display: block;
+  }
+
+  .qodef-title-holder.qodef-has-bg-image .qodef-title-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 100% !important;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .qodef-title-holder.qodef-title-va-header-bottom {
+    height: auto !important;
+  }
+
+  .qodef-title-holder.qodef-title-va-header-bottom .qodef-title-wrapper {
+    padding-top: 0 !important;
+  }
+}
+
+/* ==========================================================================
+   Title responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Centered Title type responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .qodef-title-holder.qodef-centered-type .qodef-page-subtitle {
+    padding: 0 !important;
+  }
+}
+
+/* ==========================================================================
+   Centered Title type responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Standard With Breadcrumbs Title type responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .qodef-title-holder.qodef-standard-with-breadcrumbs-type .qodef-title-info,
+  .qodef-title-holder.qodef-standard-with-breadcrumbs-type .qodef-breadcrumbs-info {
+    display: block;
+    width: 100%;
+  }
+
+  .qodef-title-holder.qodef-standard-with-breadcrumbs-type .qodef-breadcrumbs-info {
+    margin: 10px 0 0;
+    text-align: initial;
+    white-space: inherit;
+  }
+}
+
+/* ==========================================================================
+   Standard With Breadcrumbs Title type responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Title responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=title-map-responsive.css.map */
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+   Custom Post Types responsive styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Masonry Gallery shortcodes responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1440px) {
+  .qodef-masonry-gallery-holder .qodef-mg-item.qodef-masonry-size-large-width .qodef-mg-item-content-inner,
+  .qodef-masonry-gallery-holder .qodef-mg-item.qodef-masonry-size-large-width-height .qodef-mg-item-content-inner {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-masonry-gallery-holder .qodef-mg-grid-sizer,
+  .qodef-masonry-gallery-holder .qodef-mg-item {
+    width: 50%;
+  }
+
+  .qodef-masonry-gallery-holder .qodef-mg-item.qodef-masonry-size-large-width,
+  .qodef-masonry-gallery-holder .qodef-mg-item.qodef-masonry-size-large-width-height {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-masonry-gallery-holder .qodef-mg-grid-sizer,
+  .qodef-masonry-gallery-holder .qodef-mg-item {
+    width: 100%;
+  }
+
+  .qodef-masonry-gallery-holder .qodef-mg-item.qodef-masonry-size-large-width .qodef-mg-item-content-inner,
+  .qodef-masonry-gallery-holder .qodef-mg-item.qodef-masonry-size-large-width-height .qodef-mg-item-content-inner {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Masonry Gallery shortcodes responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+# Team Info responsive style - begin
+========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .qodef-team-info .qodef-team-meta-section .qodef-team-meta-section-title {
+    min-width: 107px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-team-info .qodef-team-image,
+  .qodef-team-info .qodef-team-content {
+    float: none !important;
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .qodef-team-info .qodef-team-meta-section .qodef-team-meta-section-title {
+    min-width: 127px;
+  }
+
+  .qodef-team-info.qodef-team-image-enabled .qodef-team-content {
+    margin: 10px 0 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .qodef-team-info .qodef-team-meta-section .qodef-team-meta-section-title {
+    min-width: 97px;
+  }
+}
+
+/* ==========================================================================
+# Team Info responsive style - end
+========================================================================== */
+
+/* ==========================================================================
+# Team responsive style - begin
+========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .qodef-team.info-bellow .qodef-team-image {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-team.info-hover {
+    margin-bottom: 30px;
+  }
+}
+
+/* ==========================================================================
+# Team responsive style - end
+========================================================================== */
+
+@media only screen and (max-width: 1366px) {
+  .qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-content,
+  .qodef-testimonials-holder.qodef-testimonials-custom .qodef-testimonial-content {
+    padding: 17px 23px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-text-holder {
+    padding-left: 104px;
+  }
+
+  .qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-text {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: normal;
+  }
+
+  .qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-author-holder {
+    margin: 18px 0 0;
+  }
+
+  .qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-author-job {
+    padding: 5px 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonials,
+  .qodef-testimonials-holder.qodef-testimonials-custom .qodef-testimonials {
+    padding: 0 20px;
+  }
+
+  .qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-heading,
+  .qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-text-holder,
+  .qodef-testimonials-holder.qodef-testimonials-custom .qodef-testimonial-heading,
+  .qodef-testimonials-holder.qodef-testimonials-custom .qodef-testimonial-text-holder {
+    float: none;
+  }
+
+  .qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-text-holder,
+  .qodef-testimonials-holder.qodef-testimonials-custom .qodef-testimonial-text-holder {
+    width: 100%;
+    padding: 0;
+  }
+
+  .qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-content,
+  .qodef-testimonials-holder.qodef-testimonials-custom .qodef-testimonial-content {
+    padding: 17px 10px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-content,
+  .qodef-testimonials-holder.qodef-testimonials-custom .qodef-testimonial-content {
+    padding: 17px 0;
+  }
+}
+
+/*# sourceMappingURL=../../../../plugins/wellexpo-core/assets/css/custom-post-types-map-responsive.css.map */
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+   Shortcodes responsive styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Button shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .qodef-btn.qodef-btn-large,
+  .qodef-btn.qodef-btn-huge {
+    padding: 11px 33px;
+  }
+}
+
+/* ==========================================================================
+   Button shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Call To Action shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (min-width: 1201px) and (max-width: 1300px) {
+  .qodef-call-to-action-holder .qodef-grid {
+    width: 1100px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .qodef-call-to-action-holder.qodef-three-quarters-columns .qodef-cta-text-holder,
+  .qodef-call-to-action-holder.qodef-four-fifths-columns .qodef-cta-text-holder {
+    width: 66.66666666666667%;
+  }
+
+  .qodef-call-to-action-holder.qodef-three-quarters-columns .qodef-cta-button-holder,
+  .qodef-call-to-action-holder.qodef-four-fifths-columns .qodef-cta-button-holder {
+    width: 33.33333333333333%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-call-to-action-holder.qodef-normal-layout .qodef-cta-inner,
+  .qodef-call-to-action-holder.qodef-normal-layout .qodef-cta-text-holder,
+  .qodef-call-to-action-holder.qodef-normal-layout .qodef-cta-button-holder {
+    display: block;
+  }
+
+  .qodef-call-to-action-holder.qodef-normal-layout .qodef-cta-button-holder {
+    margin: 28px 0 0;
+    text-align: initial;
+  }
+
+  .qodef-call-to-action-holder.qodef-two-halves-columns .qodef-cta-text-holder,
+  .qodef-call-to-action-holder.qodef-two-halves-columns .qodef-cta-button-holder,
+  .qodef-call-to-action-holder.qodef-two-thirds-columns .qodef-cta-text-holder,
+  .qodef-call-to-action-holder.qodef-two-thirds-columns .qodef-cta-button-holder,
+  .qodef-call-to-action-holder.qodef-three-quarters-columns .qodef-cta-text-holder,
+  .qodef-call-to-action-holder.qodef-three-quarters-columns .qodef-cta-button-holder,
+  .qodef-call-to-action-holder.qodef-four-fifths-columns .qodef-cta-text-holder,
+  .qodef-call-to-action-holder.qodef-four-fifths-columns .qodef-cta-button-holder {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Call To Action shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Countdown shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1200px) {
+  .qodef-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-countdown .countdown-row.countdown-show4 .countdown-section,
+  .qodef-countdown .countdown-row.countdown-show5 .countdown-section,
+  .qodef-countdown .countdown-row.countdown-show6 .countdown-section {
+    width: 33.33333333333333%;
+  }
+
+  .qodef-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 40px;
+  }
+}
+
+/* ==========================================================================
+   Countdown shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Custom Font shortcode responsive styles - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 768px) {
+  .qodef-custom-font-holder.qodef-disable-title-break br {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Custom Font shortcode responsive styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Elements Holder shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1366px) {
+  .qodef-elements-holder.qodef-responsive-mode-1366.qodef-two-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-1366.qodef-three-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-1366.qodef-four-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-1366.qodef-five-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-1366.qodef-six-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-1366.qodef-one-column-alignment-left .qodef-eh-item .qodef-eh-item-content {
+    text-align: left;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-1366.qodef-one-column-alignment-right .qodef-eh-item .qodef-eh-item-content {
+    text-align: right;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-1366.qodef-one-column-alignment-center .qodef-eh-item .qodef-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-elements-holder.qodef-responsive-mode-1024.qodef-two-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-1024.qodef-three-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-1024.qodef-four-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-1024.qodef-five-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-1024.qodef-six-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-1024.qodef-one-column-alignment-left .qodef-eh-item .qodef-eh-item-content {
+    text-align: left;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-1024.qodef-one-column-alignment-right .qodef-eh-item .qodef-eh-item-content {
+    text-align: right;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-1024.qodef-one-column-alignment-center .qodef-eh-item .qodef-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-elements-holder.qodef-responsive-mode-768.qodef-two-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-768.qodef-three-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-768.qodef-four-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-768.qodef-five-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-768.qodef-six-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-768.qodef-one-column-alignment-left .qodef-eh-item .qodef-eh-item-content {
+    text-align: left;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-768.qodef-one-column-alignment-right .qodef-eh-item .qodef-eh-item-content {
+    text-align: right;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-768.qodef-one-column-alignment-center .qodef-eh-item .qodef-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-elements-holder.qodef-responsive-mode-680.qodef-two-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-680.qodef-three-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-680.qodef-four-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-680.qodef-five-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-680.qodef-six-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-680.qodef-one-column-alignment-left .qodef-eh-item .qodef-eh-item-content {
+    text-align: left;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-680.qodef-one-column-alignment-right .qodef-eh-item .qodef-eh-item-content {
+    text-align: right;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-680.qodef-one-column-alignment-center .qodef-eh-item .qodef-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .qodef-elements-holder.qodef-responsive-mode-480.qodef-two-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-480.qodef-three-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-480.qodef-four-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-480.qodef-five-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-480.qodef-six-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-480.qodef-one-column-alignment-left .qodef-eh-item .qodef-eh-item-content {
+    text-align: left;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-480.qodef-one-column-alignment-right .qodef-eh-item .qodef-eh-item-content {
+    text-align: right;
+  }
+
+  .qodef-elements-holder.qodef-responsive-mode-480.qodef-one-column-alignment-center .qodef-eh-item .qodef-eh-item-content {
+    text-align: center;
+  }
+
+  .qodef-elements-holder .qodef-eh-item-content {
+    padding: 0 10px;
+  }
+}
+
+/* ==========================================================================
+   Elements Holder shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Google Map shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .qodef-google-map-with-contact-form-overlay {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   Google Map shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Google Map shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .qodef-google-map-overlay {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   Google Map shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Info Slider shortcode responsive styles - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .qodef-info-slider .qodef-section-title-holder {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-info-slider {
+    display: block;
+  }
+
+  .qodef-info-slider .qodef-bg-svg {
+    display: none;
+  }
+
+  .qodef-info-slider .qodef-is-content {
+    width: 80%;
+    margin: auto;
+  }
+
+  .qodef-info-slider .qodef-section-title-holder {
+    padding: 0;
+  }
+
+  .qodef-info-slider .qodef-is-items {
+    width: 80%;
+    padding-top: 70%;
+    margin: auto;
+  }
+
+  .qodef-info-slider .qodef-is-item-image {
+    height: auto;
+    object-fit: contain;
+  }
+
+  .qodef-info-slider.qodef-is-with-nav {
+    padding-bottom: 20px;
+  }
+
+  .qodef-info-slider.qodef-is-with-nav .qodef-is-nav {
+    height: 20px;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ==========================================================================
+   Info Slider shortcode responsive styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Masonry Elements Holder shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1440px) {
+  .qodef-masonry-elements-holder .qodef-masonry-elements-item.qodef-large-width,
+  .qodef-masonry-elements-holder .qodef-masonry-elements-item.qodef-large-width-height {
+    width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-masonry-elements-holder .qodef-masonry-elements-item {
+    width: 50% !important;
+  }
+
+  .qodef-masonry-elements-holder .qodef-masonry-elements-item.qodef-large-width,
+  .qodef-masonry-elements-holder .qodef-masonry-elements-item.qodef-large-width-height {
+    width: 100% !important;
+  }
+
+  .qodef-masonry-elements-holder .qodef-masonry-elements-grid-sizer {
+    width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-masonry-elements-holder .qodef-masonry-elements-item {
+    width: 100% !important;
+  }
+
+  .qodef-masonry-elements-holder .qodef-masonry-elements-item.qodef-large-width,
+  .qodef-masonry-elements-holder .qodef-masonry-elements-item.qodef-large-width-height {
+    width: 100% !important;
+  }
+
+  .qodef-masonry-elements-holder .qodef-masonry-elements-grid-sizer {
+    width: 100% !important;
+  }
+}
+
+/* ==========================================================================
+   Masonry lements Holder shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Process shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .qodef-process-holder.qodef-four-columns .qodef-process-item {
+    width: 50%;
+    margin: 0 0 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-process-holder.qodef-three-columns .qodef-process-item {
+    width: 50%;
+    margin: 0 0 20px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-process-holder .qodef-process-inner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    margin: 0;
+  }
+
+  .qodef-process-holder .qodef-process-item {
+    width: 100% !important;
+    float: none;
+    margin: 0 0 20px;
+    padding: 0;
+    text-align: inherit;
+  }
+}
+
+/* ==========================================================================
+   Process shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Section Title shortcode responsive styles - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 768px) {
+  .qodef-section-title-holder.qodef-st-disable-title-break .qodef-st-title br {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Section Title shortcode responsive styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Tabs shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .qodef-tabs.qodef-tabs-boxed .qodef-tabs-nav li {
+    margin: 0 8px 0 0;
+  }
+
+  .qodef-tabs.qodef-tabs-boxed .qodef-tabs-nav li a {
+    padding: 7px 18px;
+  }
+
+  .qodef-tabs.qodef-tabs-simple .qodef-tabs-nav li {
+    margin: 0 26px 0 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-tabs.qodef-tabs-boxed .qodef-tabs-nav li {
+    display: block;
+    float: none;
+    margin: 0 0 8px;
+  }
+
+  .qodef-tabs.qodef-tabs-boxed .qodef-tabs-nav li a {
+    width: 100%;
+  }
+
+  .qodef-tabs.qodef-tabs-simple .qodef-tabs-nav li {
+    margin: 0 20px 0 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-tabs.qodef-tabs-simple .qodef-tabs-nav {
+    padding: 0 0 20px;
+  }
+
+  .qodef-tabs.qodef-tabs-simple .qodef-tabs-nav li {
+    display: block;
+    float: none;
+    margin: 0 0 20px;
+  }
+
+  .qodef-tabs.qodef-tabs-simple .qodef-tabs-nav li a {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Tabs shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Vertical Split Slider shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  body.qodef-vss-initialized {
+    overflow-y: visible !important;
+    height: auto !important;
+  }
+
+  .qodef-vertical-split-slider,
+  #multiscroll-nav {
+    display: none;
+  }
+
+  .qodef-vss-responsive {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   Vertical Split Slider shortcode responsive style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/wellexpo-core/assets/css/shortcodes-map-responsive.css.map */
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+   Shortcodes responsive styles
+   ========================================================================== */
+
+@media only screen and (max-width: 1280px) {
+  .qodef-instagram-list-holder.qodef-il-four-columns .qodef-il-item {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+  .qodef-instagram-list-holder.qodef-il-four-columns .qodef-il-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .qodef-instagram-list-holder.qodef-il-five-columns .qodef-il-item {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+  .qodef-instagram-list-holder.qodef-il-five-columns .qodef-il-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-instagram-list-holder.qodef-il-three-columns .qodef-il-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .qodef-instagram-list-holder.qodef-il-three-columns .qodef-il-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-instagram-list-holder.qodef-il-four-columns .qodef-il-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .qodef-instagram-list-holder.qodef-il-four-columns .qodef-il-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-instagram-list-holder.qodef-il-five-columns .qodef-il-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .qodef-instagram-list-holder.qodef-il-five-columns .qodef-il-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-instagram-list-holder .qodef-il-item {
+    width: 100% !important;
+  }
+}
+
+/*# sourceMappingURL=../../../../plugins/wellexpo-instagram-feed/assets/css/shortcodes-map-responsive.css.map */
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+   Widgets responsive styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Instagram widget responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .qodef-instagram-feed:not(.qodef-instagram-carousel) li img {
+    width: 100%;
+  }
+
+  .qodef-instagram-feed:not(.qodef-instagram-carousel).qodef-col-6 li {
+    width: 25%;
+  }
+
+  .qodef-instagram-feed:not(.qodef-instagram-carousel).qodef-col-9 li {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-instagram-feed:not(.qodef-instagram-carousel).qodef-col-6 li {
+    width: 33.33333%;
+  }
+
+  .qodef-instagram-feed:not(.qodef-instagram-carousel).qodef-col-9 li {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-instagram-feed:not(.qodef-instagram-carousel) li {
+    width: 50% !important;
+  }
+}
+
+/* ==========================================================================
+   Instagram widget responsive style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/wellexpo-instagram-feed/assets/css/widget-map-responsive.css.map */
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+   Shortcodes responsive styles
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/wellexpo-twitter-feed/assets/css/shortcodes-map-responsive.css.map */

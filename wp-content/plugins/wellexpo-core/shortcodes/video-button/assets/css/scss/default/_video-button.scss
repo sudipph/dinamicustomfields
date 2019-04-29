@@ -1,0 +1,136 @@
+/* ==========================================================================
+   Video Button shortcode start styles
+   ========================================================================== */
+
+.qodef-video-button-holder {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	
+	&.qodef-vb-has-img {
+		
+		.qodef-video-button-play,
+		.qodef-video-button-play-image {
+			@include qodefAbsoluteHolderLayout();
+			z-index: 1;
+			
+			.qodef-video-button-play-inner {
+				position: relative;
+				top: 50%;
+				left: 0;
+				display: block;
+				text-align: center;
+				@include qodefTransform(translateY(-50%));
+			}
+		}
+	}
+	
+	.qodef-video-button-image {
+		@include qodefRelativeHolderLayout();
+		
+		img {
+			display: block;
+		}
+	}
+
+	.qodef-video-button-play,
+	.qodef-video-button-play-image {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		z-index: 1;
+	}
+
+	.qodef-video-button-play {
+		color: $default-heading-color;
+		font-size: 106px;
+		line-height: 1;
+
+		span {
+			display: block;
+			line-height: inherit;
+
+			&:before {
+				display: block;
+				line-height: inherit;
+			}
+		}
+	}
+
+	.qodef-video-button-play-image {
+
+		&.qodef-vb-has-hover-image {
+
+			&:hover {
+
+				img {
+
+					&:first-child {
+						opacity: 0;
+					}
+
+					&:nth-child(2) {
+						opacity: 1;
+					}
+				}
+			}
+		}
+
+		img {
+			display: block;
+			margin: 0 auto;
+			@include qodefTransition(opacity .3s ease-in-out);
+
+			&:first-child {
+				position: relative;
+				opacity: 1;
+			}
+
+			&:nth-child(2) {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				opacity: 0;
+				@include qodefTransform(translateX(-50%) translateZ(0));
+
+				.rev_slider_wrapper & {
+					@include qodefTransform(translateZ(0));
+				}
+			}
+		}
+	}
+
+	&.qodef-vb-custom {
+		padding-top: 77px;
+		padding-right: 77px;
+		box-sizing: border-box;
+
+		.qodef-video-button-custom-play {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 140px;
+			height: 140px;
+
+			.qodef-video-button-custom-play-inner {
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 77px;
+				height: 77px;
+				font-size: 22px;
+				line-height: 77px;
+				text-align: center;
+				color: $default-heading-color;
+				background-color: $additional-color;
+				
+				&:hover {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Video Button shortcode end styles
+   ========================================================================== */

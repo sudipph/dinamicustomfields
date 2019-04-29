@@ -1,0 +1,100 @@
+/* ==========================================================================
+   Social Icons Group widget style - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+.qodef-social-icons-group-widget .qodef-widget-title {
+  margin: 0 0 13px;
+}
+
+.qodef-social-icons-group-widget.qodef-square-icons .qodef-social-icon-widget-holder {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  margin: 0 -1px 0 0;
+  float: left;
+  font-size: 16px;
+  color: #000;
+  border: 1px dashed #edeff2;
+}
+
+.qodef-social-icons-group-widget.qodef-square-icons .qodef-social-icon-widget-holder:hover {
+  color: #50d6ae;
+}
+
+.qodef-social-icons-group-widget.qodef-square-icons .qodef-social-icon-widget-holder .qodef-social-icon-widget {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.qodef-social-icons-group-widget.qodef-square-icons.qodef-light-skin .qodef-social-icon-widget-holder {
+  color: #fff;
+  border-color: #fff;
+}
+
+.qodef-social-icons-group-widget.qodef-square-icons.qodef-light-skin .qodef-social-icon-widget-holder:hover {
+  color: #50d6ae;
+}
+
+.qodef-social-icons-group-widget .qodef-social-icon-widget-holder {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px 0 0;
+  text-align: center;
+}
+
+.qodef-social-icons-group-widget .qodef-social-icon-widget-holder:first-child {
+  margin-left: 0;
+}
+
+.qodef-social-icons-group-widget .qodef-social-icon-widget-holder:last-child {
+  margin-right: 0;
+}
+
+.qodef-side-menu .qodef-social-icons-group-widget a,
+.qodef-footer-top-holder .qodef-social-icons-group-widget a {
+  color: #fff !important;
+}
+
+.qodef-side-menu .qodef-social-icons-group-widget a:hover,
+.qodef-footer-top-holder .qodef-social-icons-group-widget a:hover {
+  color: #50d6ae !important;
+}
+
+.qodef-side-menu .qodef-social-icons-group-widget.qodef-square-icons .qodef-social-icon-widget-holder,
+.qodef-footer-top-holder .qodef-social-icons-group-widget.qodef-square-icons .qodef-social-icon-widget-holder {
+  border-color: #fff;
+}
+
+.qodef-footer-bottom-holder .qodef-social-icons-group-widget a {
+  color: #000;
+}
+
+.qodef-footer-bottom-holder .qodef-social-icons-group-widget.qodef-light-skin a {
+  color: #fff;
+}
+
+.qodef-footer-bottom-holder .qodef-social-icons-group-widget.qodef-square-icons .qodef-social-icon-widget-holder {
+  border-color: #000;
+}
+
+.qodef-footer-bottom-holder .qodef-social-icons-group-widget.qodef-square-icons .qodef-social-icon-widget-holder:hover {
+  color: #000;
+}
+
+.qodef-footer-bottom-holder .qodef-social-icons-group-widget.qodef-square-icons.qodef-light-skin .qodef-social-icon-widget-holder {
+  color: #fff;
+  border-color: #fff;
+}
+
+/* ==========================================================================
+   Social Icons Group widget style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=social-icons-group-widget-map.css.map */

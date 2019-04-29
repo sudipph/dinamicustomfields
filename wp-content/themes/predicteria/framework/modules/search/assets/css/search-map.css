@@ -1,0 +1,1248 @@
+/* ==========================================================================
+   Search styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+# Search opener - begin
+========================================================================== */
+.qodef-search-opener {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 17px;
+  line-height: 1;
+  margin: 0 10px;
+}
+
+.qodef-search-opener .qodef-search-opener-wrapper {
+  display: block;
+}
+
+.qodef-search-opener .qodef-search-opener-wrapper > * {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: inherit;
+}
+
+.qodef-search-opener .qodef-search-opener-wrapper > *:before {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-search-opener.qodef-search-opener-svg-path .qodef-search-opener-wrapper > * {
+  vertical-align: middle;
+}
+
+.qodef-search-opener.qodef-search-opener-svg-path .qodef-search-opener-wrapper > *,
+.qodef-search-opener.qodef-search-opener-svg-path .qodef-search-opener-wrapper path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.qodef-light-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-search-opener,
+.qodef-light-header .qodef-top-bar .qodef-search-opener {
+  color: #fff !important;
+}
+
+.qodef-light-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-search-opener:hover,
+.qodef-light-header .qodef-top-bar .qodef-search-opener:hover {
+  color: #50d6ae !important;
+}
+
+.qodef-dark-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-search-opener,
+.qodef-dark-header .qodef-top-bar .qodef-search-opener {
+  color: #000 !important;
+}
+
+.qodef-dark-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-search-opener:hover,
+.qodef-dark-header .qodef-top-bar .qodef-search-opener:hover {
+  color: #50d6ae !important;
+}
+
+/* ==========================================================================
+# Search opener - end
+========================================================================== */
+/* ==========================================================================
+# Search template style - begin
+========================================================================== */
+.qodef-search-page-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 80px;
+}
+
+.qodef-search-page-holder .qodef-search-page-form {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 30px;
+}
+
+.qodef-search-page-holder .qodef-search-page-form .qodef-search-title {
+  margin: 0 0 20px;
+}
+
+.qodef-search-page-holder .qodef-search-page-form .qodef-search-label {
+  display: block;
+  font-size: 13px;
+}
+
+.qodef-search-page-holder .qodef-search-page-form .qodef-form-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 10px;
+  clear: both;
+  border-bottom: 1px solid #edeff2;
+}
+
+.qodef-search-page-holder .qodef-search-page-form .qodef-form-holder .qodef-column-left {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.qodef-search-page-holder .qodef-search-page-form .qodef-form-holder .qodef-column-right {
+  display: table-cell;
+  width: 1%;
+  text-align: left;
+  vertical-align: top;
+}
+
+.qodef-search-page-holder .qodef-search-page-form .qodef-form-holder .qodef-search-field {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin: 0;
+  padding: 0 20px 0 3px;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+}
+
+.qodef-search-page-holder .qodef-search-page-form .qodef-form-holder .qodef-search-field::-webkit-input-placeholder {
+  color: inherit;
+}
+
+.qodef-search-page-holder .qodef-search-page-form .qodef-form-holder .qodef-search-field:-moz-placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+.qodef-search-page-holder .qodef-search-page-form .qodef-form-holder .qodef-search-field::-moz-placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+.qodef-search-page-holder .qodef-search-page-form .qodef-form-holder .qodef-search-field:-ms-input-placeholder {
+  color: inherit;
+}
+
+.qodef-search-page-holder .qodef-search-page-form .qodef-form-holder .qodef-search-submit {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  font-size: 18px;
+  color: #282828;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  vertical-align: middle;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.qodef-search-page-holder .qodef-search-page-form .qodef-form-holder .qodef-search-submit:hover {
+  color: #000;
+}
+
+.qodef-search-page-holder article {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 30px 0;
+  margin: 0;
+  border-bottom: 1px solid #edeff2;
+}
+
+.qodef-search-page-holder article.sticky .qodef-post-title a {
+  color: #50d6ae;
+}
+
+.qodef-search-page-holder article.page .qodef-post-title-area .qodef-post-info > div.qodef-post-info-category {
+  display: none;
+}
+
+.qodef-search-page-holder article .qodef-post-content {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-search-page-holder article .qodef-post-image {
+  display: block;
+  float: left;
+  width: 130px;
+}
+
+.qodef-search-page-holder article .qodef-post-image a, .qodef-search-page-holder article .qodef-post-image img {
+  display: block;
+}
+
+.qodef-search-page-holder article .qodef-post-title-area {
+  min-height: 130px;
+  padding: 0 0 0 150px;
+}
+
+.qodef-search-page-holder article .qodef-post-title-area.qodef-no-thumbnail {
+  padding: 0;
+  min-height: inherit;
+}
+
+.qodef-search-page-holder article .qodef-post-title-area .qodef-post-title-area-inner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.qodef-search-page-holder article .qodef-post-title-area .qodef-post-title-area-inner .qodef-post-title {
+  margin: 0;
+}
+
+.qodef-search-page-holder article .qodef-post-title-area .qodef-post-title-area-inner .qodef-post-excerpt {
+  margin: 7px 0 0;
+}
+
+.qodef-search-page-holder .qodef-blog-pagination {
+  margin: 50px 0 0;
+}
+
+/* ==========================================================================
+# Search template style - end
+========================================================================== */
+/* ==========================================================================
+# Search covers header - start
+========================================================================== */
+.qodef-search-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+  background-color: #000;
+  z-index: 115;
+}
+
+.qodef-search-cover .qodef-container,
+.qodef-search-cover .qodef-container-inner {
+  height: 100%;
+}
+
+.qodef-fixed-header-appear .qodef-search-cover,
+.qodef-sticky-header-appear .qodef-search-cover,
+.qodef-mobile-header.mobile-header-appear .qodef-search-cover {
+  position: fixed;
+}
+
+.qodef-fixed-header-appear.admin-bar .qodef-search-cover,
+.qodef-sticky-header-appear.admin-bar .qodef-search-cover,
+.admin-bar .qodef-mobile-header.mobile-header-appear .qodef-search-cover {
+  top: 32px;
+}
+
+.qodef-search-cover .qodef-form-holder-outer {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.qodef-search-cover .qodef-form-holder {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 40px;
+}
+
+.qodef-search-cover .qodef-form-holder-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-search-cover .qodef-container-inner .qodef-form-holder {
+  padding: 0;
+}
+
+.qodef-search-cover .qodef-container-inner .qodef-search-close {
+  right: 0;
+}
+
+.qodef-search-cover input {
+  display: inline-block;
+  vertical-align: middle;
+  width: 90%;
+  margin: 0;
+  padding: 0;
+  float: left;
+  font-family: inherit;
+  color: #fff;
+  font-size: inherit;
+  font-weight: inherit;
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  outline: none;
+  outline-offset: 0;
+  border-radius: 0;
+}
+
+.qodef-search-cover input:focus {
+  color: inherit;
+}
+
+.qodef-search-cover input::-webkit-input-placeholder {
+  color: inherit;
+}
+
+.qodef-search-cover input:-moz-placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+.qodef-search-cover input::-moz-placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+.qodef-search-cover input:-ms-input-placeholder {
+  color: inherit;
+}
+
+.qodef-search-cover input[type="submit"] {
+  border: 0 none;
+  clip: rect(0px, 0px, 0px, 0px);
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  visibility: hidden;
+}
+
+.qodef-search-cover .qodef-search-close {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.qodef-search-cover .qodef-search-close:hover {
+  color: #50d6ae;
+}
+
+.qodef-search-cover .qodef-search-close.qodef-search-close-icon-pack {
+  font-size: 20px;
+  line-height: 1em;
+}
+
+.qodef-search-cover .qodef-search-close.qodef-search-close-icon-pack * {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-search-cover .qodef-search-close.qodef-search-close-icon-pack *:before {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-search-cover .qodef-search-close.qodef-search-close-svg-path > * {
+  vertical-align: middle;
+}
+
+.qodef-search-cover .qodef-search-close.qodef-search-close-svg-path > *,
+.qodef-search-cover .qodef-search-close.qodef-search-close-svg-path path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.qodef-search-cover.disabled input,
+.qodef-search-cover.disabled input:focus {
+  font-weight: normal;
+}
+
+/* ==========================================================================
+# Search covers header - end
+========================================================================== */
+/* ==========================================================================
+# Fullscreen search - start
+========================================================================== */
+/* Fullscreen search general style - start
+========================================================================== */
+.qodef-fullscreen-with-sidebar-search-holder {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 105;
+  opacity: 0;
+}
+
+.qodef-fullscreen-with-sidebar-search-holder .qodef-fullscreen-search-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.qodef-fullscreen-with-sidebar-search-holder .qodef-fullscreen-search-cell {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  vertical-align: top;
+  text-align: center;
+  padding: 110px 0 0;
+}
+
+.qodef-fullscreen-with-sidebar-search-holder .qodef-fullscreen-search-inner:not(.qodef-grid) {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1501px) {
+  .qodef-fullscreen-with-sidebar-search-holder .qodef-fullscreen-search-inner:not(.qodef-grid) {
+    width: 1500px;
+    margin: 0 auto;
+  }
+}
+
+.qodef-fullscreen-with-sidebar-search-holder .qodef-form-holder-inner {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+.qodef-fullscreen-with-sidebar-search-holder .qodef-field-holder {
+  display: block;
+  position: relative;
+}
+
+.qodef-fullscreen-with-sidebar-search-holder .qodef-search-field {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border: 0;
+  padding: 0 0 0 15px;
+  background: transparent;
+  outline: none;
+  font-family: inherit;
+  font-size: 89px;
+  color: #d9cac1;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  border-left: 6px solid #d9cac1;
+  font-weight: 600;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.qodef-fullscreen-with-sidebar-search-holder .qodef-search-field:focus {
+  border-bottom: 0;
+  color: #000;
+  border-color: #000;
+}
+
+.qodef-fullscreen-with-sidebar-search-holder .qodef-search-submit {
+  position: absolute;
+  right: 0;
+  bottom: 40px;
+  width: auto;
+  color: #d9cac1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.qodef-fullscreen-with-sidebar-search-holder .qodef-search-submit.qodef-search-submit-icon-pack {
+  font-size: 64px;
+  line-height: 1em;
+}
+
+.qodef-fullscreen-with-sidebar-search-holder .qodef-search-submit.qodef-search-submit-svg-path > *,
+.qodef-fullscreen-with-sidebar-search-holder .qodef-search-submit.qodef-search-submit-svg-path path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.qodef-fullscreen-with-sidebar-search-holder .qodef-search-submit:hover {
+  color: #000;
+}
+
+.qodef-fullscreen-with-sidebar-search-holder .qodef-search-close {
+  position: absolute;
+  top: 40px;
+  right: 75px;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.qodef-fullscreen-with-sidebar-search-holder .qodef-search-close.qodef-search-close-icon-pack {
+  font-size: 26px;
+  line-height: 1em;
+}
+
+.qodef-fullscreen-with-sidebar-search-holder .qodef-search-close.qodef-search-close-icon-pack span {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-fullscreen-with-sidebar-search-holder .qodef-search-close.qodef-search-close-icon-pack span:before {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-fullscreen-with-sidebar-search-holder .qodef-search-close.qodef-search-close-svg-path > * {
+  vertical-align: middle;
+}
+
+.qodef-fullscreen-with-sidebar-search-holder .qodef-search-close.qodef-search-close-svg-path > *,
+.qodef-fullscreen-with-sidebar-search-holder .qodef-search-close.qodef-search-close-svg-path path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.admin-bar .qodef-fullscreen-with-sidebar-search-holder .qodef-search-close {
+  top: 72px;
+}
+
+.qodef-fullscreen-with-sidebar-search-holder .qodef-search-close:hover {
+  color: #000;
+}
+
+.qodef-fullscreen-with-sidebar-search-holder .qodef-fullscreen-sidebar {
+  margin: 26px 0 0;
+}
+
+/* Fullscreen search general style - end
+========================================================================== */
+/* Fullscreen search fade style - start
+========================================================================== */
+.qodef-search-fade .qodef-fullscreen-with-sidebar-search-holder {
+  visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  opacity: 0;
+  z-index: 112;
+  box-sizing: border-box;
+}
+
+.qodef-search-fade .qodef-fullscreen-with-sidebar-search-holder .qodef-fullscreen-search-table {
+  background-color: #53f6c6;
+}
+
+.qodef-search-fade-out.qodef-search-fade .qodef-fullscreen-with-sidebar-search-holder {
+  -webkit-animation: search_fade_out 0.2s ease-out both;
+  -moz-animation: search_fade_out 0.2s ease-out both;
+  animation: search_fade_out 0.2s ease-out both;
+}
+
+.qodef-search-fade-in.qodef-search-fade .qodef-fullscreen-with-sidebar-search-holder.qodef-animate {
+  -webkit-animation: search_fade_in 0.3s ease both;
+  -moz-animation: search_fade_in 0.3s ease both;
+  animation: search_fade_in 0.3s ease both;
+}
+
+.qodef-search-fade .qodef-fullscreen-with-sidebar-search-holder.qodef-animate .qodef-search-close {
+  opacity: 1;
+  visibility: visible;
+}
+
+@-webkit-keyframes search_fade_out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes search_fade_out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes search_fade_in {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes search_fade_in {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Fullscreen search fade style - end
+========================================================================== */
+/* ==========================================================================
+# Fullscreen search - end
+========================================================================== */
+/* ==========================================================================
+# Fullscreen search - start
+========================================================================== */
+/* Fullscreen search general style - start
+========================================================================== */
+.qodef-fullscreen-search-holder {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 105;
+  opacity: 0;
+}
+
+.qodef-fullscreen-search-holder .qodef-fullscreen-search-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.qodef-fullscreen-search-holder .qodef-fullscreen-search-cell {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-fullscreen-search-holder .qodef-form-holder-inner {
+  position: relative;
+  width: 60%;
+  margin: auto;
+}
+
+.qodef-fullscreen-search-holder .qodef-form-holder-inner .qodef-line {
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  border-bottom: 1px solid #edeff2;
+  -webkit-transition: all 0.3s 0.2s;
+  -moz-transition: all 0.3s 0.2s;
+  transition: all 0.3s 0.2s;
+}
+
+.qodef-fullscreen-search-opened .qodef-fullscreen-search-holder .qodef-form-holder-inner .qodef-line {
+  width: 100%;
+  -webkit-transition: width 0.5s ease 0.6s;
+  -moz-transition: width 0.5s ease 0.6s;
+  transition: width 0.5s ease 0.6s;
+}
+
+.qodef-fullscreen-search-holder .qodef-form-holder-inner .qodef-search-info-top .qodef-search-tagline {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: .1em;
+  color: #50d6ae;
+}
+
+.qodef-fullscreen-search-holder .qodef-form-holder-inner .qodef-search-info-top .qodef-search-title {
+  font-size: 60px;
+  margin: 0 0 51px;
+}
+
+.qodef-fullscreen-search-holder .qodef-search-form-inner {
+  width: calc(100% - 202px);
+  padding: 13px 0;
+  box-shadow: 0px 5px 21px 0px rgba(83, 246, 198, 0.37);
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-fullscreen-search-holder .qodef-search-form-inner {
+    width: 100%;
+  }
+}
+
+.qodef-fullscreen-search-holder .qodef-search-form-inner .qodef-search-field {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  width: calc(100% - 170px);
+  margin: 0;
+  padding: 17px 38px;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #000;
+  background-color: transparent;
+  border: 0;
+  border-right: 2px solid #50d6ae;
+  border-radius: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.qodef-fullscreen-search-holder .qodef-search-form-inner .qodef-search-field:focus {
+  color: #000;
+}
+
+.qodef-fullscreen-search-holder .qodef-search-form-inner .qodef-search-field::-webkit-input-placeholder {
+  color: inherit;
+}
+
+.qodef-fullscreen-search-holder .qodef-search-form-inner .qodef-search-field:-moz-placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+.qodef-fullscreen-search-holder .qodef-search-form-inner .qodef-search-field::-moz-placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+.qodef-fullscreen-search-holder .qodef-search-form-inner .qodef-search-field:-ms-input-placeholder {
+  color: inherit;
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-fullscreen-search-holder .qodef-search-form-inner .qodef-search-field {
+    padding: 17px 28px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .qodef-fullscreen-search-holder .qodef-search-form-inner .qodef-search-field {
+    width: calc(100% - 100px);
+    padding: 17px 14px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .qodef-fullscreen-search-holder .qodef-search-form-inner .qodef-search-field {
+    width: calc(100% - 80px);
+    padding: 17px 4px;
+  }
+}
+
+.qodef-fullscreen-search-holder .qodef-search-form-inner .qodef-search-submit {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  margin: 0;
+  padding: 17px 38px;
+  width: 170px;
+  font-family: "Poppins", sans-serif;
+  line-height: 32px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: #282828;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  outline: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-fullscreen-search-holder .qodef-search-form-inner .qodef-search-submit {
+    padding: 17px 28px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .qodef-fullscreen-search-holder .qodef-search-form-inner .qodef-search-submit {
+    width: 100px;
+    padding: 17px 14px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .qodef-fullscreen-search-holder .qodef-search-form-inner .qodef-search-submit {
+    width: 80px;
+    padding: 17px 4px;
+  }
+}
+
+.qodef-fullscreen-search-holder .qodef-search-form-inner .qodef-search-submit:hover {
+  color: #50d6ae;
+}
+
+.qodef-fullscreen-search-holder .qodef-search-form-inner .qodef-search-submit.qodef-search-submit-icon-pack {
+  font-size: 13px;
+}
+
+.qodef-fullscreen-search-holder .qodef-search-form-inner .qodef-search-submit.qodef-search-submit-svg-path > *,
+.qodef-fullscreen-search-holder .qodef-search-form-inner .qodef-search-submit.qodef-search-submit-svg-path path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.qodef-fullscreen-search-holder .qodef-search-close {
+  position: absolute;
+  top: 13px;
+  right: 23px;
+  color: #282828;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.admin-bar .qodef-fullscreen-search-holder .qodef-search-close {
+  top: 52px;
+}
+
+.qodef-fullscreen-search-holder .qodef-search-close:hover {
+  color: #000;
+}
+
+.qodef-fullscreen-search-holder .qodef-search-close.qodef-search-close-icon-pack {
+  font-size: 48px;
+  line-height: 1em;
+}
+
+.qodef-fullscreen-search-holder .qodef-search-close.qodef-search-close-icon-pack * {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-fullscreen-search-holder .qodef-search-close.qodef-search-close-icon-pack *:before {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-fullscreen-search-holder .qodef-search-close.qodef-search-close-svg-path > * {
+  vertical-align: middle;
+}
+
+.qodef-fullscreen-search-holder .qodef-search-close.qodef-search-close-svg-path > *,
+.qodef-fullscreen-search-holder .qodef-search-close.qodef-search-close-svg-path path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+/* Fullscreen search general style - end
+========================================================================== */
+/* Fullscreen search fade style - start
+========================================================================== */
+.qodef-search-fade .qodef-fullscreen-search-holder {
+  visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  opacity: 0;
+  z-index: 112;
+  box-sizing: border-box;
+}
+
+.qodef-search-fade .qodef-fullscreen-search-holder .qodef-fullscreen-search-table {
+  background-color: rgba(255, 255, 255, 0.98);
+}
+
+.qodef-search-fade-out.qodef-search-fade .qodef-fullscreen-search-holder {
+  -webkit-animation: search_fade_out 0.2s ease-out both;
+  -moz-animation: search_fade_out 0.2s ease-out both;
+  animation: search_fade_out 0.2s ease-out both;
+}
+
+.qodef-search-fade-in.qodef-search-fade .qodef-fullscreen-search-holder.qodef-animate {
+  -webkit-animation: search_fade_in 0.3s ease both;
+  -moz-animation: search_fade_in 0.3s ease both;
+  animation: search_fade_in 0.3s ease both;
+}
+
+.qodef-search-fade .qodef-fullscreen-search-holder.qodef-animate .qodef-search-close {
+  opacity: 1;
+  visibility: visible;
+}
+
+@-webkit-keyframes search_fade_out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes search_fade_out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes search_fade_in {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes search_fade_in {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Fullscreen search fade style - end
+========================================================================== */
+/* ==========================================================================
+# Fullscreen search - end
+========================================================================== */
+/* ==========================================================================
+# Slide From Header Bottom search general style - start
+========================================================================== */
+.qodef-slide-from-header-bottom-holder {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 300px;
+  display: none;
+  padding: 25px;
+  margin: 0;
+  background-color: #fff;
+  border: 1px solid #edeff2;
+  overflow: hidden;
+  z-index: 9999;
+  box-sizing: border-box;
+}
+
+.qodef-fixed-header-appear .qodef-slide-from-header-bottom-holder,
+.qodef-sticky-header-appear .qodef-slide-from-header-bottom-holder,
+.qodef-mobile-header.mobile-header-appear .qodef-slide-from-header-bottom-holder {
+  position: fixed;
+}
+
+.qodef-slide-from-header-bottom-holder .qodef-form-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  border: 1px solid #edeff2;
+  box-sizing: border-box;
+}
+
+.qodef-slide-from-header-bottom-holder .qodef-form-holder .qodef-search-field,
+.qodef-slide-from-header-bottom-holder .qodef-form-holder .qodef-search-submit {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  margin: 0;
+  height: 44px;
+  line-height: 42px;
+  color: #282828;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+.qodef-slide-from-header-bottom-holder .qodef-form-holder .qodef-search-field {
+  width: calc(100% - 40px);
+  padding: 0 10px 0 20px;
+  font-family: inherit;
+}
+
+.qodef-slide-from-header-bottom-holder .qodef-form-holder .qodef-search-field:focus {
+  color: #000;
+}
+
+.qodef-slide-from-header-bottom-holder .qodef-form-holder .qodef-search-submit {
+  width: 40px;
+  padding: 0 12px 0 0;
+  cursor: pointer;
+}
+
+.qodef-slide-from-header-bottom-holder .qodef-form-holder .qodef-search-submit:hover {
+  color: #000;
+}
+
+.qodef-slide-from-header-bottom-holder .qodef-form-holder .qodef-search-submit.qodef-search-submit-icon-pack {
+  font-size: 15px;
+  line-height: 1em;
+}
+
+.qodef-slide-from-header-bottom-holder .qodef-form-holder .qodef-search-submit.qodef-search-submit-icon-pack * {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-slide-from-header-bottom-holder .qodef-form-holder .qodef-search-submit.qodef-search-submit-icon-pack *:before {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-slide-from-header-bottom-holder .qodef-form-holder .qodef-search-submit.qodef-search-submit-svg-path > * {
+  vertical-align: middle;
+}
+
+.qodef-slide-from-header-bottom-holder .qodef-form-holder .qodef-search-submit.qodef-search-submit-svg-path > *,
+.qodef-slide-from-header-bottom-holder .qodef-form-holder .qodef-search-submit.qodef-search-submit-svg-path path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+/* ==========================================================================
+# Slide From Header Bottom search general style - end
+========================================================================== */
+/* ==========================================================================
+# Slide From Window top search general style - start
+========================================================================== */
+.qodef-search-slides-from-window-top .qodef-top-bar,
+.qodef-search-slides-from-window-top .qodef-page-header,
+.qodef-search-slides-from-window-top .qodef-fixed-wrapper.fixed,
+.qodef-search-slides-from-window-top .qodef-mobile-header {
+  top: 0;
+  -webkit-transition: top 0.25s ease-out;
+  -moz-transition: top 0.25s ease-out;
+  transition: top 0.25s ease-out;
+}
+
+.qodef-search-slides-from-window-top.qodef-search-open .qodef-top-bar,
+.qodef-search-slides-from-window-top.qodef-search-open .qodef-page-header,
+.qodef-search-slides-from-window-top.qodef-search-open .qodef-fixed-wrapper.fixed,
+.qodef-search-slides-from-window-top.qodef-search-open .qodef-mobile-header {
+  top: 50px;
+}
+
+.qodef-search-slides-from-window-top.qodef-search-open .qodef-search-slide-window-top {
+  height: 50px;
+}
+
+.qodef-search-slides-from-window-top.qodef-search-open.qodef-sticky-up-mobile-header .qodef-animate-mobile-header .qodef-mobile-header-inner,
+.qodef-search-slides-from-window-top.qodef-search-open .qodef-sticky-header.header-appear {
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  transform: translateY(50px);
+}
+
+.qodef-search-slides-from-window-top.qodef-search-open.admin-bar.qodef-sticky-up-mobile-header .qodef-animate-mobile-header .qodef-mobile-header-inner,
+.qodef-search-slides-from-window-top.qodef-search-open.admin-bar .qodef-sticky-header.header-appear {
+  -webkit-transform: translateY(82px);
+  -moz-transform: translateY(82px);
+  transform: translateY(82px);
+}
+
+.qodef-search-slide-window-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  margin: 0;
+  color: #fff;
+  background-color: #000;
+  overflow: hidden;
+  z-index: 201;
+  -webkit-transition: top 0.25s ease-out, height 0.25s ease-out;
+  -moz-transition: top 0.25s ease-out, height 0.25s ease-out;
+  transition: top 0.25s ease-out, height 0.25s ease-out;
+}
+
+.admin-bar .qodef-search-slide-window-top {
+  top: 32px;
+}
+
+.qodef-search-slide-window-top .qodef-grid .qodef-search-form-inner {
+  padding: 0;
+}
+
+.qodef-search-slide-window-top .qodef-search-form-inner {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.qodef-search-slide-window-top .qodef-search-submit {
+  color: #fff;
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  width: 40px;
+}
+
+.qodef-search-slide-window-top .qodef-search-submit.qodef-search-submit-icon-pack {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.qodef-search-slide-window-top .qodef-search-submit.qodef-search-submit-icon-pack > * {
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.qodef-search-slide-window-top .qodef-search-submit.qodef-search-submit-svg-path > * {
+  vertical-align: middle;
+}
+
+.qodef-search-slide-window-top .qodef-search-submit.qodef-search-submit-svg-path > *,
+.qodef-search-slide-window-top .qodef-search-submit.qodef-search-submit-svg-path path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.qodef-search-slide-window-top .qodef-search-close {
+  color: #fff;
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  width: 40px;
+}
+
+.qodef-search-slide-window-top .qodef-search-close.qodef-search-close-icon-pack {
+  font-size: 20px;
+  line-height: 1em;
+}
+
+.qodef-search-slide-window-top .qodef-search-close.qodef-search-close-icon-pack span {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-search-slide-window-top .qodef-search-close.qodef-search-close-icon-pack span:before {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-search-slide-window-top .qodef-search-close.qodef-search-close-svg-path > * {
+  vertical-align: middle;
+}
+
+.qodef-search-slide-window-top .qodef-search-close.qodef-search-close-svg-path > *,
+.qodef-search-slide-window-top .qodef-search-close.qodef-search-close-svg-path path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.qodef-search-slide-window-top .qodef-swt-search-field {
+  padding: 0 30px;
+  margin: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+}
+
+.qodef-search-slide-window-top .qodef-swt-search-field:focus {
+  color: #fff;
+}
+
+/* ==========================================================================
+# Slide From Window top search general style - end
+========================================================================== */
+/* ==========================================================================
+   Search styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=search-map.css.map */

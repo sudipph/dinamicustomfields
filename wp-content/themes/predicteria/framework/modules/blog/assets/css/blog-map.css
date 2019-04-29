@@ -1,0 +1,2403 @@
+/* ==========================================================================
+   Blog styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Blog Common style - begin
+   ========================================================================== */
+.qodef-blog-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 40px;
+  clear: both;
+  box-sizing: border-box;
+}
+
+.qodef-blog-holder article {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.qodef-blog-holder article.sticky .qodef-post-title a {
+  color: #50d6ae;
+}
+
+.qodef-blog-holder article .qodef-post-content {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-blog-holder article .qodef-post-heading {
+  position: relative;
+}
+
+.qodef-blog-holder article .qodef-post-type-id {
+  position: absolute;
+  top: -77px;
+  left: -140px;
+  width: 140px;
+  height: 140px;
+}
+
+.qodef-blog-holder article .qodef-post-type-id .qodef-post-icon-holder {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 77px;
+  height: 77px;
+  text-align: center;
+  background-color: #53f6c6;
+  z-index: 1;
+}
+
+.qodef-blog-holder article .qodef-post-type-id .qodef-post-icon-holder .qodef-post-icon {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  font-size: 24px;
+}
+
+.qodef-blog-holder article .qodef-post-image {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.qodef-blog-holder article .qodef-post-image img {
+  display: block;
+}
+
+.qodef-blog-holder article .qodef-post-image-background {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.qodef-blog-holder article .qodef-post-image-background a {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.qodef-blog-holder article .qodef-post-image-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  line-height: 1;
+  color: #fff;
+}
+
+.qodef-blog-holder article .qodef-post-text {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.qodef-blog-holder article .qodef-post-title {
+  margin: 0;
+}
+
+.qodef-blog-holder article .qodef-post-excerpt-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 15px 0 0;
+}
+
+.qodef-blog-holder article .qodef-post-excerpt-holder p {
+  margin: 0;
+}
+
+.qodef-blog-holder article .qodef-post-excerpt:after {
+  content: '...';
+}
+
+.qodef-blog-holder article .qodef-more-link-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 15px 0 0;
+}
+
+.qodef-blog-holder article .qodef-post-info {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-blog-holder article .qodef-post-info > * {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  color: currentColor;
+}
+
+.qodef-blog-holder article .qodef-post-info > * a {
+  color: inherit;
+}
+
+.qodef-blog-holder article .qodef-post-info-top {
+  margin-bottom: 3px;
+  line-height: 1.2em;
+}
+
+.qodef-blog-holder article .qodef-post-info-top > div {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: .1em;
+  color: #50d6ae;
+}
+
+.qodef-blog-holder article .qodef-post-info-top > div a {
+  color: inherit;
+}
+
+.qodef-blog-holder article .qodef-post-info-top > div a:hover {
+  color: #000;
+}
+
+.qodef-blog-holder article .qodef-post-info-bottom {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding-top: 29px;
+}
+
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-left,
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-right {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-left > div,
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-right > div {
+  display: inline-block;
+  margin-right: 11px;
+}
+
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-left > div:last-child,
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-right > div:last-child {
+  margin-right: 0;
+}
+
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-left > div .qodef-post-info-meta-icon,
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-right > div .qodef-post-info-meta-icon {
+  margin-right: 2px;
+}
+
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-left > div.qodef-post-info-author .qodef-post-info-author-avatar,
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-right > div.qodef-post-info-author .qodef-post-info-author-avatar {
+  margin-right: 7px;
+}
+
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-left > div.qodef-post-info-author .qodef-post-info-author-avatar img,
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-right > div.qodef-post-info-author .qodef-post-info-author-avatar img {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 5em;
+}
+
+@media only screen and (min-width: 481px) {
+  .qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-left {
+    width: 80%;
+    float: left;
+  }
+  .qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-right {
+    width: 20%;
+    text-align: right;
+    float: right;
+  }
+}
+
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-right > div {
+  margin-left: 17px;
+}
+
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-right > div:first-child {
+  margin-left: 0;
+}
+
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-social-share-holder {
+  margin-top: 5px;
+  margin-right: 23px;
+}
+
+.qodef-blog-holder article.format-link .qodef-post-text {
+  padding: 60px 29px 62px;
+  border: 1px dashed #d7d7d7;
+}
+
+.qodef-blog-holder article.format-link .qodef-post-text-main {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+}
+
+.qodef-blog-holder article.format-link .qodef-post-mark {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  width: 106px;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.qodef-blog-holder article.format-link .qodef-post-mark .qodef-link-mark {
+  position: relative;
+  top: 3px;
+  font-size: 60px;
+  color: #53f6c6;
+}
+
+.qodef-blog-holder article.format-link .qodef-post-link-holder {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.qodef-blog-holder article.format-quote .qodef-post-text {
+  padding: 37px 37px 45px;
+  border: 1px dashed #d7d7d7;
+}
+
+.qodef-blog-holder article.format-quote .qodef-post-text-main {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.qodef-blog-holder article.format-quote .qodef-post-mark {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  width: 98px;
+  height: 56px;
+  vertical-align: middle;
+}
+
+.qodef-blog-holder article.format-quote .qodef-post-mark .qodef-quote-mark {
+  position: relative;
+  top: calc(50% + 8px);
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 112px;
+  line-height: 56px;
+  font-weight: 700;
+  color: #53f6c6;
+}
+
+.qodef-blog-holder article.format-quote .qodef-post-quote-holder {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  vertical-align: top;
+}
+
+.qodef-blog-holder article.format-quote .qodef-quote-author {
+  display: inline-block;
+  margin-top: 28px;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  line-height: 1.3em;
+  font-weight: 700;
+  letter-spacing: -.025em;
+  color: #000;
+}
+
+.qodef-blog-holder article.format-gallery .qodef-post-image {
+  width: 100%;
+}
+
+.qodef-blog-holder article.format-gallery .owl-carousel .owl-item {
+  z-index: 2;
+}
+
+.qodef-blog-holder article.format-gallery .owl-carousel .owl-item.active {
+  z-index: 3;
+}
+
+.qodef-blog-holder article.format-audio.has-post-thumbnail .qodef-post-heading {
+  position: relative;
+}
+
+.qodef-blog-holder article.format-audio.has-post-thumbnail .qodef-blog-audio-holder {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.qodef-blog-holder article.format-audio .qodef-post-image {
+  width: 100%;
+  max-width: inherit;
+}
+
+.qodef-blog-holder article.format-audio .qodef-post-image img {
+  width: 100%;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container, .qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-embed, .qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-embed body, .qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls {
+  background: none;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container {
+  background-color: #000;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container,
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls {
+  height: 40px !important;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls {
+  padding: 0 10px 0 4px;
+  box-sizing: border-box;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button {
+  width: 40px;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button {
+  width: 40px;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button,
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button {
+  height: 40px;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button button,
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button button {
+  position: relative;
+  height: 100%;
+  background: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  border: 0;
+  outline: none;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button.mejs-play button,
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button.mejs-play button {
+  width: 40px;
+  background-image: url("../img/audio/play.png");
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button.mejs-pause button,
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button.mejs-pause button {
+  width: 40px;
+  background-image: url("../img/audio/pause.png");
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button.mejs-stop button,
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button.mejs-stop button {
+  width: 40px;
+  background-image: url("../img/audio/stop.png");
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button.mejs-mute button,
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button.mejs-mute button {
+  width: 40px;
+  background-image: url("../img/audio/sound.png");
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button.mejs-unmute button,
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button.mejs-unmute button {
+  width: 40px;
+  background-image: url("../img/audio/mute.png");
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-time {
+  height: 100%;
+  padding: 0;
+  font-family: inherit;
+  font-size: 13px;
+  color: #fff;
+  line-height: 40px;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail {
+  height: 100%;
+  padding: 0;
+  font-family: inherit;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total {
+  height: 6px;
+  margin: 0;
+  top: 50%;
+  margin-top: -3px;
+  background: none;
+  background-color: #fff;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-current {
+  height: 6px;
+  background-color: #50d6ae;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-buffering,
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-hovered {
+  height: 6px;
+  z-index: 9999;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-hovered {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-float {
+  top: -16px;
+  /* 10 is height of float item */
+  border: 0;
+  color: #fff;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-handle-content {
+  display: none;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-float-current {
+  margin: 0 2px;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-float-corner {
+  top: 10px;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-loaded,
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-float {
+  background: none;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > a.mejs-horizontal-volume-slider {
+  height: 40px;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > a.mejs-horizontal-volume-slider .mejs-horizontal-volume-total,
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > a.mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+  height: 6px;
+  background: none;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > a.mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+  top: 50%;
+  margin-top: -3px;
+  background-color: #fff;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > a.mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+  background-color: #50d6ae;
+}
+
+.qodef-blog-holder article.format-video .qodef-self-hosted-video {
+  max-width: 100%;
+}
+
+/* ==========================================================================
+   Blog Common style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog pagination standard style - begin
+   ========================================================================== */
+.qodef-blog-pagination-wp {
+  display: none;
+}
+
+.qodef-blog-pagination {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  margin: 40px 0 0;
+  clear: both;
+}
+
+.qodef-blog-pagination ul {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.qodef-blog-pagination ul li {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 5px 0 0;
+}
+
+.qodef-blog-pagination ul li .page-numbers {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #000;
+  -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out;
+}
+
+.qodef-blog-pagination ul li .page-numbers.current, .qodef-blog-pagination ul li .page-numbers:hover {
+  color: #000;
+  background-color: #53f6c6;
+}
+
+.qodef-blog-pagination ul li.qodef-pag-number a {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #000;
+  -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out;
+}
+
+.qodef-blog-pagination ul li.qodef-pag-number:hover a {
+  color: #000;
+  background-color: #53f6c6;
+}
+
+.qodef-blog-pagination ul li.qodef-pag-active a {
+  color: #000;
+  background-color: #53f6c6;
+}
+
+.qodef-blog-pagination ul li.qodef-pag-prev, .qodef-blog-pagination ul li.qodef-pag-next {
+  margin: 0 5px 0 0;
+}
+
+.qodef-blog-pagination ul li.qodef-pag-prev a, .qodef-blog-pagination ul li.qodef-pag-next a {
+  display: inline-block;
+}
+
+.qodef-blog-pagination ul li.qodef-pag-prev a span, .qodef-blog-pagination ul li.qodef-pag-next a span {
+  display: block;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #000;
+  -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out;
+}
+
+.qodef-blog-pagination ul li.qodef-pag-prev a span:before, .qodef-blog-pagination ul li.qodef-pag-next a span:before {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-blog-pagination ul li.qodef-pag-prev a:hover span, .qodef-blog-pagination ul li.qodef-pag-next a:hover span {
+  color: #000;
+  background-color: #53f6c6;
+}
+
+/* ==========================================================================
+   Blog pagination standard style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List shortcode pagination standard style - begin
+   ========================================================================== */
+.qodef-blog-list-holder.qodef-bl-pag-standard-shortcodes .qodef-blog-list {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.qodef-blog-list-holder.qodef-bl-pag-standard-shortcodes.qodef-bl-pag-standard-shortcodes-animate .qodef-blog-list {
+  opacity: 0;
+}
+
+.qodef-bl-standard-pagination {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  margin: 40px 0 0;
+  clear: both;
+}
+
+.qodef-bl-standard-pagination ul {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.qodef-bl-standard-pagination ul li {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 5px 0 0;
+}
+
+.qodef-bl-standard-pagination ul li .page-numbers {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #000;
+  -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out;
+}
+
+.qodef-bl-standard-pagination ul li .page-numbers.current, .qodef-bl-standard-pagination ul li .page-numbers:hover {
+  color: #000;
+  background-color: #53f6c6;
+}
+
+.qodef-bl-standard-pagination ul li.qodef-pag-number a {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #000;
+  -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out;
+}
+
+.qodef-bl-standard-pagination ul li.qodef-pag-number:hover a {
+  color: #000;
+  background-color: #53f6c6;
+}
+
+.qodef-bl-standard-pagination ul li.qodef-pag-active a {
+  color: #000;
+  background-color: #53f6c6;
+}
+
+.qodef-bl-standard-pagination ul li.qodef-pag-prev, .qodef-bl-standard-pagination ul li.qodef-pag-next {
+  margin: 0 5px 0 0;
+}
+
+.qodef-bl-standard-pagination ul li.qodef-pag-prev a, .qodef-bl-standard-pagination ul li.qodef-pag-next a {
+  display: inline-block;
+}
+
+.qodef-bl-standard-pagination ul li.qodef-pag-prev a span, .qodef-bl-standard-pagination ul li.qodef-pag-next a span {
+  display: block;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #000;
+  -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out;
+}
+
+.qodef-bl-standard-pagination ul li.qodef-pag-prev a span:before, .qodef-bl-standard-pagination ul li.qodef-pag-next a span:before {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-bl-standard-pagination ul li.qodef-pag-prev a:hover span, .qodef-bl-standard-pagination ul li.qodef-pag-next a:hover span {
+  color: #000;
+  background-color: #53f6c6;
+}
+
+.qodef-bl-standard-pagination ul li.qodef-pag-prev a {
+  opacity: 0;
+}
+
+.qodef-bl-standard-pagination ul li.qodef-pag-next a {
+  opacity: 1;
+}
+
+/* ==========================================================================
+   Blog List shortcode pagination standard style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog pagination load more style - begin
+   ========================================================================== */
+.qodef-blog-pag-load-more {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 40px 0 30px;
+  text-align: center;
+}
+
+/* ==========================================================================
+   Blog pagination load more style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog pagination loading element style - begin
+   ========================================================================== */
+.qodef-blog-pag-loading {
+  position: relative;
+  display: none;
+  width: 100%;
+  margin: 40px 0 20px;
+  color: #000;
+  text-align: center;
+}
+
+.qodef-blog-pag-loading.qodef-standard-pag-trigger {
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+.qodef-blog-pag-loading.qodef-showing {
+  display: block;
+}
+
+.qodef-blog-pag-loading > div {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  margin: 0 3px;
+  background-color: #000;
+  border-radius: 100%;
+  -webkit-animation: bl-pag-bouncedelay 1.4s infinite ease-in-out both;
+  -moz-animation: bl-pag-bouncedelay 1.4s infinite ease-in-out both;
+  animation: bl-pag-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.qodef-blog-pag-loading .qodef-blog-pag-bounce1 {
+  -webkit-animation-delay: -0.32s;
+  -moz-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.qodef-blog-pag-loading .qodef-blog-pag-bounce2 {
+  -webkit-animation-delay: -0.16s;
+  -moz-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes bl-pag-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes bl-pag-bouncedelay {
+  0%, 80%, 100% {
+    -moz-transform: scale(0);
+  }
+  40% {
+    -moz-transform: scale(1);
+  }
+}
+
+@keyframes bl-pag-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* ==========================================================================
+   Blog pagination loading element style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List - Custom style - begin
+   ========================================================================== */
+.qodef-blog-holder.qodef-blog-custom {
+  padding-left: 86px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-blog-holder.qodef-blog-custom {
+    padding-left: 0;
+  }
+}
+
+.qodef-blog-holder.qodef-blog-custom article {
+  margin: 0 0 128px;
+  padding: 0;
+}
+
+.qodef-blog-holder.qodef-blog-custom article .qodef-post-content {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-blog-holder.qodef-blog-custom article:not(.format-link):not(.format-quote) .qodef-post-heading,
+.qodef-blog-holder.qodef-blog-custom article:not(.format-link):not(.format-quote) .qodef-post-text {
+  float: left;
+  box-sizing: border-box;
+}
+
+.qodef-blog-holder.qodef-blog-custom article:not(.format-link):not(.format-quote) .qodef-post-heading {
+  width: 36.3%;
+  padding-top: 77px;
+}
+
+.qodef-blog-holder.qodef-blog-custom article:not(.format-link):not(.format-quote) .qodef-post-text {
+  width: 63.7%;
+  padding-left: 110px;
+}
+
+.qodef-blog-holder.qodef-blog-custom article:not(.format-link):not(.format-quote) .qodef-post-date-pattern {
+  position: absolute;
+  top: 0;
+  right: -77px;
+  width: 140px;
+  height: 140px;
+}
+
+@media only screen and (max-width: 480px) {
+  .qodef-blog-holder.qodef-blog-custom article:not(.format-link):not(.format-quote) .qodef-post-date-pattern {
+    top: 38px;
+    right: -39px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .qodef-blog-holder.qodef-blog-custom article:not(.format-link):not(.format-quote) .qodef-post-date-pattern {
+    top: 61px;
+    right: -15px;
+  }
+}
+
+.qodef-blog-holder.qodef-blog-custom article:not(.format-link):not(.format-quote) .qodef-post-date-pattern .qodef-post-date-pattern-inner {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 77px;
+  height: 77px;
+  text-align: center;
+  background-color: #53f6c6;
+  z-index: 1;
+}
+
+.qodef-blog-holder.qodef-blog-custom article:not(.format-link):not(.format-quote) .qodef-post-date-pattern .qodef-post-date-pattern-inner .qodef-post-info-date {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -.025em;
+  color: #000;
+}
+
+.qodef-blog-holder.qodef-blog-custom article:not(.format-link):not(.format-quote) .qodef-post-date-pattern .qodef-post-date-pattern-inner .qodef-post-info-date a {
+  color: inherit;
+}
+
+.qodef-blog-holder.qodef-blog-custom article:not(.format-link):not(.format-quote) .qodef-post-date-pattern .qodef-post-date-pattern-inner .qodef-post-info-date a > span {
+  display: block;
+}
+
+.qodef-blog-holder.qodef-blog-custom article:not(.format-link):not(.format-quote) .qodef-post-info-top {
+  margin-bottom: 14px;
+}
+
+.qodef-blog-holder.qodef-blog-custom article:not(.format-link):not(.format-quote) .qodef-post-read-more-button {
+  margin-top: 28px;
+}
+
+@media only screen and (min-width: 1025px) {
+  .qodef-blog-holder.qodef-blog-custom article:not(.format-link):not(.format-quote) .qodef-blog-audio-holder .mejs-container {
+    width: 100% !important;
+  }
+  .qodef-blog-holder.qodef-blog-custom article:not(.format-link):not(.format-quote) .qodef-blog-audio-holder .mejs-container .mejs-horizontal-volume-slider {
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-blog-holder.qodef-blog-custom article:not(.format-link):not(.format-quote) .qodef-post-heading,
+  .qodef-blog-holder.qodef-blog-custom article:not(.format-link):not(.format-quote) .qodef-post-text {
+    float: none;
+    width: 100%;
+  }
+  .qodef-blog-holder.qodef-blog-custom article:not(.format-link):not(.format-quote).qodef-post-has-media .qodef-post-heading {
+    margin-bottom: 30px;
+  }
+  .qodef-blog-holder.qodef-blog-custom article:not(.format-link):not(.format-quote) .qodef-post-text {
+    padding: 0;
+  }
+}
+
+.qodef-blog-holder.qodef-blog-custom article:not(.format-link):not(.format-quote) .qodef-post-image {
+  overflow: hidden;
+}
+
+.qodef-blog-holder.qodef-blog-custom article:not(.format-link):not(.format-quote) .qodef-post-image a {
+  display: block;
+}
+
+.qodef-blog-holder.qodef-blog-custom article:not(.format-link):not(.format-quote) .qodef-post-image img {
+  -webkit-transform: scale(1.08) translate3d(-5px, 0, 0);
+  -moz-transform: scale(1.08) translate3d(-5px, 0, 0);
+  transform: scale(1.08) translate3d(-5px, 0, 0);
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: -moz-transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-filter: blur();
+  filter: blur();
+  will-change: transform;
+}
+
+.qodef-blog-holder.qodef-blog-custom article:not(.format-link):not(.format-quote) .qodef-post-image:hover img {
+  -webkit-transform: scale(1.08) translate3d(5px, 0, 0);
+  -moz-transform: scale(1.08) translate3d(5px, 0, 0);
+  transform: scale(1.08) translate3d(5px, 0, 0);
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: -moz-transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.qodef-blog-holder.qodef-blog-custom article.format-link .qodef-post-text {
+  padding: 90px 115px 92px;
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-blog-holder.qodef-blog-custom article.format-link .qodef-post-text {
+    padding: 90px 85px 92px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .qodef-blog-holder.qodef-blog-custom article.format-link .qodef-post-text {
+    padding: 90px 45px 92px;
+  }
+}
+
+.qodef-blog-holder.qodef-blog-custom article.format-link .qodef-post-mark {
+  position: absolute;
+  top: -59px;
+  left: -84px;
+  display: inline-block;
+  width: auto;
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-blog-holder.qodef-blog-custom article.format-link .qodef-post-mark {
+    left: -54px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .qodef-blog-holder.qodef-blog-custom article.format-link .qodef-post-mark {
+    left: -14px;
+  }
+}
+
+.qodef-blog-holder.qodef-blog-custom article.format-link .qodef-post-mark .qodef-link-mark {
+  font-size: 52px;
+}
+
+.qodef-blog-holder.qodef-blog-custom article.format-quote .qodef-post-text {
+  padding: 63px 100px 65px;
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-blog-holder.qodef-blog-custom article.format-quote .qodef-post-text {
+    padding: 90px 85px 65px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .qodef-blog-holder.qodef-blog-custom article.format-quote .qodef-post-text {
+    padding: 90px 45px 65px;
+  }
+}
+
+.qodef-blog-holder.qodef-blog-custom article.format-quote .qodef-post-mark {
+  position: absolute;
+  top: -30px;
+  left: -64px;
+  display: inline-block;
+  width: auto;
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-blog-holder.qodef-blog-custom article.format-quote .qodef-post-mark {
+    top: -57px;
+    left: -49px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .qodef-blog-holder.qodef-blog-custom article.format-quote .qodef-post-mark {
+    left: -9px;
+  }
+}
+
+.qodef-blog-holder.qodef-blog-custom article.format-quote .qodef-quote-author-label {
+  position: relative;
+  display: block;
+  margin: 39px 0 -31px;
+  vertical-align: top;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  color: #50d6ae;
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-blog-holder.qodef-blog-custom article {
+    width: 100% !important;
+  }
+}
+
+/* ==========================================================================
+   Blog List - Custom style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List - Masonry style - begin
+   ========================================================================== */
+.qodef-blog-holder.qodef-blog-masonry article {
+  margin: 0 0 20px;
+  padding: 0 0 30px;
+}
+
+@media only screen and (min-width: 681px) and (max-width: 1200px) {
+  .qodef-blog-holder.qodef-blog-masonry article .qodef-post-info-bottom .qodef-post-info-bottom-left,
+  .qodef-blog-holder.qodef-blog-masonry article .qodef-post-info-bottom .qodef-post-info-bottom-right {
+    width: 100%;
+    float: none;
+    text-align: left;
+  }
+}
+
+.qodef-blog-holder.qodef-blog-masonry article.qodef-post-has-media .qodef-post-heading {
+  margin-bottom: 30px;
+}
+
+.qodef-blog-holder.qodef-blog-masonry article.format-quote .qodef-quote-author {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 1.3em;
+  font-weight: 700;
+  letter-spacing: -.025em;
+  color: #000;
+}
+
+/* ==========================================================================
+   Blog List - Masonry style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List - Standard style - begin
+   ========================================================================== */
+.qodef-blog-holder.qodef-blog-standard article {
+  margin: 58px 0 70px;
+  padding: 0;
+}
+
+.qodef-blog-holder.qodef-blog-standard article.format-link, .qodef-blog-holder.qodef-blog-standard article.format-quote {
+  margin: 0 0 70px;
+}
+
+.qodef-blog-holder.qodef-blog-standard article:first-child {
+  margin: 0 0 70px;
+}
+
+.qodef-blog-holder.qodef-blog-standard article:first-child.qodef-post-has-featured-image {
+  padding-top: 77px;
+}
+
+.qodef-blog-holder.qodef-blog-standard article.qodef-post-has-media .qodef-post-heading {
+  margin-bottom: 62px;
+}
+
+.qodef-blog-holder.qodef-blog-standard.qodef-blog-list-decoration-right-side article .qodef-post-type-id {
+  left: auto;
+  right: -77px;
+}
+
+.qodef-blog-holder.qodef-blog-standard.qodef-blog-list-decoration-none article .qodef-post-type-id {
+  display: none;
+}
+
+/* ==========================================================================
+   Blog List - Standard style - end
+   ========================================================================== */
+/* Single author box styles - begin
+	====================================================================== */
+.qodef-author-description {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.qodef-author-description .qodef-author-description-inner {
+  margin: 0 0 29px;
+  padding: 1px 0 38px;
+  min-height: 167px;
+  border-bottom: 1px dashed #edeff2;
+  clear: both;
+}
+
+.qodef-author-description .qodef-author-description-content {
+  position: relative;
+  display: table;
+}
+
+.qodef-author-description .qodef-author-description-image {
+  display: table-cell;
+  vertical-align: middle;
+  width: 167px;
+  padding-left: 4px;
+}
+
+.qodef-author-description .qodef-author-description-image img {
+  display: block;
+  border-radius: 100%;
+}
+
+.qodef-author-description .qodef-author-description-text-holder {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 4px 0 4px 31px;
+}
+
+.qodef-author-description .qodef-author-description-text-holder .qodef-author-name {
+  margin: 0;
+}
+
+.qodef-author-description .qodef-author-description-text-holder .qodef-author-name a {
+  color: #000;
+}
+
+.qodef-author-description .qodef-author-description-text-holder .qodef-author-name a:hover {
+  color: #50d6ae;
+}
+
+.qodef-author-description .qodef-author-description-text-holder .qodef-author-email {
+  margin: 0;
+}
+
+.qodef-author-description .qodef-author-description-text-holder .qodef-author-text {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-author-description .qodef-author-description-text-holder .qodef-author-text > p {
+  margin: 6px 0;
+}
+
+.qodef-author-description .qodef-author-description-text-holder .qodef-author-social-icons {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-author-description .qodef-author-description-text-holder .qodef-author-social-icons a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0 15px 0 0;
+  font-size: 11px;
+  color: #000;
+}
+
+.qodef-author-description .qodef-author-description-text-holder .qodef-author-social-icons a:last-child {
+  margin: 0;
+}
+
+.qodef-author-description .qodef-author-description-text-holder .qodef-author-social-icons a:hover {
+  color: #50d6ae;
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-author-description .qodef-author-description-content {
+    padding: 0;
+  }
+  .qodef-author-description .qodef-author-description-image {
+    display: block;
+    width: 100%;
+  }
+  .qodef-author-description .qodef-author-description-text-holder {
+    display: block;
+    padding: 0;
+    margin-top: 30px;
+  }
+}
+
+/* Single author box styles - end
+	====================================================================== */
+/* Single posts navigation styles - begin
+    ====================================================================== */
+.qodef-blog-single-navigation {
+  position: relative;
+  display: table;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0;
+  clear: both;
+  box-sizing: border-box;
+}
+
+.qodef-blog-single-navigation .qodef-blog-single-navigation-inner {
+  padding: 18px 0 30px;
+}
+
+.qodef-blog-single-navigation .qodef-blog-single-prev {
+  float: left;
+}
+
+.qodef-blog-single-navigation .qodef-blog-single-prev .qodef-post-image,
+.qodef-blog-single-navigation .qodef-blog-single-prev .qodef-post-info {
+  float: left;
+}
+
+.qodef-blog-single-navigation .qodef-blog-single-prev .qodef-post-image {
+  margin-right: 16px;
+}
+
+.qodef-blog-single-navigation .qodef-blog-single-next {
+  float: right;
+}
+
+.qodef-blog-single-navigation .qodef-blog-single-next .qodef-post-image,
+.qodef-blog-single-navigation .qodef-blog-single-next .qodef-post-info {
+  float: right;
+}
+
+.qodef-blog-single-navigation .qodef-blog-single-next .qodef-post-image {
+  margin-left: 16px;
+}
+
+.qodef-blog-single-navigation .qodef-blog-single-next .qodef-post-info {
+  text-align: right;
+}
+
+.qodef-blog-single-navigation .qodef-post-info {
+  margin-top: 5px;
+}
+
+.qodef-blog-single-navigation .qodef-post-info-category {
+  position: relative;
+  display: block;
+  margin-bottom: 2px;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  font-style: italic;
+  color: #50d6ae;
+}
+
+.qodef-blog-single-navigation .qodef-post-info-category a {
+  color: inherit;
+}
+
+.qodef-blog-single-navigation .qodef-post-info-category a:hover {
+  color: #000;
+}
+
+.qodef-blog-single-navigation .qodef-post-info-title {
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -.025em;
+  color: #000;
+}
+
+.qodef-single-links-pages {
+  clear: both;
+  margin: 20px 0 5px;
+}
+
+.qodef-single-links-pages .qodef-single-links-pages-inner > a,
+.qodef-single-links-pages .qodef-single-links-pages-inner > span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 12px 5px 0;
+}
+
+.qodef-single-links-pages .qodef-single-links-pages-inner > span {
+  color: #50d6ae;
+}
+
+.qodef-single-links-pages .qodef-single-links-pages-inner > a:hover {
+  color: #000;
+}
+
+/* Single posts navigation styles - end
+    ====================================================================== */
+/* Related posts styles - begin
+	====================================================================== */
+.qodef-related-posts-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.qodef-related-posts-holder .qodef-related-posts-holder-inner {
+  padding: 46px 0 26px;
+}
+
+.qodef-related-posts-holder .qodef-related-posts-title {
+  margin: 0 0 40px;
+}
+
+.qodef-related-posts-holder .qodef-related-posts-title > * {
+  margin: 0;
+}
+
+.qodef-related-posts-holder .qodef-related-posts-inner {
+  margin: 0 -15px;
+}
+
+.qodef-related-posts-holder .qodef-related-post {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 25%;
+  margin: 0 0 30px;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.qodef-content-has-sidebar .qodef-related-posts-holder .qodef-related-post {
+  widtH: 33.33333333333333%;
+}
+
+.touch .qodef-related-posts-holder .qodef-related-post {
+  cursor: pointer;
+}
+
+.qodef-related-posts-holder .qodef-related-post:hover .qodef-related-post-image a:after {
+  opacity: 1;
+}
+
+.qodef-related-posts-holder .qodef-related-post .qodef-related-post-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.qodef-related-posts-holder .qodef-related-post .qodef-related-post-image a {
+  position: relative;
+  display: block;
+}
+
+.qodef-related-posts-holder .qodef-related-post .qodef-related-post-image a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.qodef-related-posts-holder .qodef-related-post .qodef-related-post-image img {
+  display: block;
+}
+
+.qodef-related-posts-holder .qodef-related-post .qodef-post-title {
+  margin: 19px 0 0;
+}
+
+.qodef-related-posts-holder .qodef-related-post .qodef-post-title:first-child {
+  margin-top: 0;
+}
+
+.qodef-related-posts-holder .qodef-related-post .qodef-post-info {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding-top: 8px;
+  line-height: 40px;
+}
+
+.qodef-related-posts-holder .qodef-related-post .qodef-post-info > div {
+  display: inline-block;
+  margin-right: 11px;
+}
+
+.qodef-related-posts-holder .qodef-related-post .qodef-post-info > div:last-child {
+  margin-right: 0;
+}
+
+.qodef-related-posts-holder .qodef-related-post .qodef-post-info > div .qodef-post-info-meta-icon {
+  margin-right: 2px;
+}
+
+/* Related posts styles - end
+	====================================================================== */
+/* ==========================================================================
+   Blog Single style - begin
+   ========================================================================== */
+.qodef-blog-holder.qodef-blog-single article {
+  margin: 0 0 28px;
+}
+
+.qodef-blog-holder.qodef-blog-single article.qodef-post-has-featured-image, .qodef-blog-holder.qodef-blog-single article.format-link, .qodef-blog-holder.qodef-blog-single article.format-quote {
+  padding-top: 77px;
+}
+
+.qodef-blog-holder.qodef-blog-single article .qodef-post-content {
+  padding: 0 0 54px;
+  border-bottom: 1px dashed #edeff2;
+}
+
+.qodef-blog-holder.qodef-blog-single article .qodef-post-heading {
+  margin-bottom: 54px;
+}
+
+.qodef-blog-holder.qodef-blog-single article .qodef-post-info-top {
+  margin-bottom: 4px;
+}
+
+.qodef-blog-holder.qodef-blog-single article .qodef-post-title {
+  margin-bottom: 5px;
+}
+
+.qodef-blog-holder.qodef-blog-single article.format-link .qodef-post-text, .qodef-blog-holder.qodef-blog-single article.format-quote .qodef-post-text {
+  margin-bottom: 54px;
+}
+
+/* ==========================================================================
+   Blog Single style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List shortcode global style - begin
+   ========================================================================== */
+.qodef-blog-list-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  clear: both;
+}
+
+.qodef-blog-list-holder .qodef-blog-list {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.qodef-blog-list-holder .qodef-bl-item {
+  padding: 0;
+  margin: 0;
+}
+
+.qodef-blog-list-holder .qodef-bli-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-blog-list-holder .qodef-bli-background-image-holder {
+  position: absolute;
+}
+
+.qodef-blog-list-holder .qodef-bli-heading {
+  position: relative;
+}
+
+.qodef-blog-list-holder .qodef-bli-text {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.qodef-blog-list-holder .qodef-post-image {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% + 1px);
+  margin: 0 0 20px;
+  overflow: hidden;
+}
+
+.qodef-blog-list-holder .qodef-post-image a {
+  display: block;
+}
+
+.qodef-blog-list-holder .qodef-post-image img {
+  display: block;
+  -webkit-transform: scale(1.08) translate3d(-5px, 0, 0);
+  -moz-transform: scale(1.08) translate3d(-5px, 0, 0);
+  transform: scale(1.08) translate3d(-5px, 0, 0);
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: -moz-transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-filter: blur();
+  filter: blur();
+  will-change: transform;
+}
+
+.qodef-blog-list-holder .qodef-post-image:hover img {
+  -webkit-transform: scale(1.08) translate3d(5px, 0, 0);
+  -moz-transform: scale(1.08) translate3d(5px, 0, 0);
+  transform: scale(1.08) translate3d(5px, 0, 0);
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: -moz-transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.qodef-blog-list-holder .qodef-bl-item.qodef-hovered img {
+  -webkit-transform: scale(1.08) translate3d(5px, 0, 0);
+  -moz-transform: scale(1.08) translate3d(5px, 0, 0);
+  transform: scale(1.08) translate3d(5px, 0, 0);
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: -moz-transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.qodef-blog-list-holder .qodef-bli-info-top {
+  margin-bottom: 4px;
+  line-height: 1.2em;
+}
+
+.qodef-blog-list-holder .qodef-bli-info-top > div {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: .1em;
+  color: #50d6ae;
+}
+
+.qodef-blog-list-holder .qodef-bli-info-top > div a {
+  color: inherit;
+}
+
+.qodef-blog-list-holder .qodef-bli-info-top > div a:hover {
+  color: #000;
+}
+
+.qodef-blog-list-holder .qodef-bli-info-bottom {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding-top: 29px;
+}
+
+.qodef-blog-list-holder .qodef-bli-info-bottom .qodef-bli-info-bottom-left,
+.qodef-blog-list-holder .qodef-bli-info-bottom .qodef-bli-info-bottom-right {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-blog-list-holder .qodef-bli-info-bottom .qodef-bli-info-bottom-left > div,
+.qodef-blog-list-holder .qodef-bli-info-bottom .qodef-bli-info-bottom-right > div {
+  display: inline-block;
+  margin-right: 11px;
+}
+
+.qodef-blog-list-holder .qodef-bli-info-bottom .qodef-bli-info-bottom-left > div:last-child,
+.qodef-blog-list-holder .qodef-bli-info-bottom .qodef-bli-info-bottom-right > div:last-child {
+  margin-right: 0;
+}
+
+.qodef-blog-list-holder .qodef-bli-info-bottom .qodef-bli-info-bottom-left > div .qodef-post-info-meta-icon,
+.qodef-blog-list-holder .qodef-bli-info-bottom .qodef-bli-info-bottom-right > div .qodef-post-info-meta-icon {
+  margin-right: 2px;
+}
+
+.qodef-blog-list-holder .qodef-bli-info-bottom .qodef-bli-info-bottom-left > div.qodef-post-info-author .qodef-post-info-author-avatar,
+.qodef-blog-list-holder .qodef-bli-info-bottom .qodef-bli-info-bottom-right > div.qodef-post-info-author .qodef-post-info-author-avatar {
+  margin-right: 7px;
+}
+
+.qodef-blog-list-holder .qodef-bli-info-bottom .qodef-bli-info-bottom-left > div.qodef-post-info-author .qodef-post-info-author-avatar img,
+.qodef-blog-list-holder .qodef-bli-info-bottom .qodef-bli-info-bottom-right > div.qodef-post-info-author .qodef-post-info-author-avatar img {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 5em;
+}
+
+@media only screen and (min-width: 481px) {
+  .qodef-blog-list-holder .qodef-bli-info-bottom .qodef-bli-info-bottom-left {
+    width: 80%;
+    float: left;
+  }
+  .qodef-blog-list-holder .qodef-bli-info-bottom .qodef-bli-info-bottom-right {
+    width: 20%;
+    text-align: right;
+    float: right;
+  }
+}
+
+.qodef-blog-list-holder .qodef-bli-info-bottom .qodef-bli-info-bottom-right > div {
+  margin-left: 17px;
+}
+
+.qodef-blog-list-holder .qodef-bli-info-bottom .qodef-bli-info-bottom-right > div:first-child {
+  margin-left: 0;
+}
+
+.qodef-blog-list-holder .qodef-bli-info-bottom .qodef-social-share-holder {
+  margin-top: 5px;
+}
+
+.qodef-blog-list-holder .qodef-post-title {
+  margin: 0;
+}
+
+.qodef-blog-list-holder .qodef-post-excerpt {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 15px 0 0;
+}
+
+.qodef-blog-list-holder .qodef-post-excerpt p {
+  margin: 0;
+}
+
+.qodef-blog-list-holder .qodef-post-excerpt:after {
+  content: '...';
+}
+
+.qodef-blog-list-holder .qodef-post-read-more-button {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 12px 0 0;
+}
+
+.qodef-blog-list-holder.qodef-dark-skin {
+  color: #fff;
+}
+
+.qodef-blog-list-holder.qodef-dark-skin a {
+  color: #fff;
+}
+
+.qodef-blog-list-holder.qodef-dark-skin .qodef-bli-info-top > div a:hover {
+  color: #fff;
+}
+
+.qodef-blog-list-holder.qodef-dark-skin .qodef-social-share-holder.qodef-dropdown .qodef-social-share-dropdown-opener:hover {
+  color: #fff;
+}
+
+.qodef-blog-list-holder.qodef-bl-with-bgrnd-animation .qodef-bli-background-image-holder {
+  overflow: hidden;
+}
+
+.qodef-blog-list-holder.qodef-bl-with-bgrnd-animation .qodef-bli-background-image-holder img {
+  visibility: hidden;
+}
+
+.touch .qodef-blog-list-holder.qodef-bl-with-bgrnd-animation .qodef-bli-background-image-holder img {
+  visibility: visible;
+}
+
+.no-touch .qodef-blog-list-holder.qodef-bl-with-bgrnd-animation .qodef-bli-background-image-holder img {
+  visibility: visible;
+  opacity: 0;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+.no-touch .qodef-blog-list-holder.qodef-bl-with-bgrnd-animation .qodef-bl-item.qodef-appeared:nth-child(1) .qodef-bli-background-image-holder img {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.6s cubic-bezier(0.05, 0.43, 0.04, 0.87) 0s;
+  -moz-transition: all 0.6s cubic-bezier(0.05, 0.43, 0.04, 0.87) 0s;
+  transition: all 0.6s cubic-bezier(0.05, 0.43, 0.04, 0.87) 0s;
+}
+
+.no-touch .qodef-blog-list-holder.qodef-bl-with-bgrnd-animation .qodef-bl-item.qodef-appeared:nth-child(2) .qodef-bli-background-image-holder img {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.6s cubic-bezier(0.05, 0.43, 0.04, 0.87) 0.2s;
+  -moz-transition: all 0.6s cubic-bezier(0.05, 0.43, 0.04, 0.87) 0.2s;
+  transition: all 0.6s cubic-bezier(0.05, 0.43, 0.04, 0.87) 0.2s;
+}
+
+.no-touch .qodef-blog-list-holder.qodef-bl-with-bgrnd-animation .qodef-bl-item.qodef-appeared:nth-child(3) .qodef-bli-background-image-holder img {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.6s cubic-bezier(0.05, 0.43, 0.04, 0.87) 0.4s;
+  -moz-transition: all 0.6s cubic-bezier(0.05, 0.43, 0.04, 0.87) 0.4s;
+  transition: all 0.6s cubic-bezier(0.05, 0.43, 0.04, 0.87) 0.4s;
+}
+
+.no-touch .qodef-blog-list-holder.qodef-bl-with-bgrnd-animation .qodef-bl-item.qodef-appeared:nth-child(4) .qodef-bli-background-image-holder img {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.6s cubic-bezier(0.05, 0.43, 0.04, 0.87) 0.6s;
+  -moz-transition: all 0.6s cubic-bezier(0.05, 0.43, 0.04, 0.87) 0.6s;
+  transition: all 0.6s cubic-bezier(0.05, 0.43, 0.04, 0.87) 0.6s;
+}
+
+.no-touch .qodef-blog-list-holder.qodef-bl-with-bgrnd-animation .qodef-bl-item.qodef-appeared:nth-child(5) .qodef-bli-background-image-holder img {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.6s cubic-bezier(0.05, 0.43, 0.04, 0.87) 0.8s;
+  -moz-transition: all 0.6s cubic-bezier(0.05, 0.43, 0.04, 0.87) 0.8s;
+  transition: all 0.6s cubic-bezier(0.05, 0.43, 0.04, 0.87) 0.8s;
+}
+
+.no-touch .qodef-blog-list-holder.qodef-bl-with-bgrnd-animation .qodef-bl-item.qodef-appeared:nth-child(6) .qodef-bli-background-image-holder img {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.6s cubic-bezier(0.05, 0.43, 0.04, 0.87) 1s;
+  -moz-transition: all 0.6s cubic-bezier(0.05, 0.43, 0.04, 0.87) 1s;
+  transition: all 0.6s cubic-bezier(0.05, 0.43, 0.04, 0.87) 1s;
+}
+
+.no-touch .qodef-blog-list-holder.qodef-bl-with-bgrnd-animation .qodef-bl-item.qodef-appeared:nth-child(7) .qodef-bli-background-image-holder img {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.6s cubic-bezier(0.05, 0.43, 0.04, 0.87) 1.2s;
+  -moz-transition: all 0.6s cubic-bezier(0.05, 0.43, 0.04, 0.87) 1.2s;
+  transition: all 0.6s cubic-bezier(0.05, 0.43, 0.04, 0.87) 1.2s;
+}
+
+.no-touch .qodef-blog-list-holder.qodef-bl-with-bgrnd-animation .qodef-bl-item.qodef-appeared:nth-child(8) .qodef-bli-background-image-holder img {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.6s cubic-bezier(0.05, 0.43, 0.04, 0.87) 1.4s;
+  -moz-transition: all 0.6s cubic-bezier(0.05, 0.43, 0.04, 0.87) 1.4s;
+  transition: all 0.6s cubic-bezier(0.05, 0.43, 0.04, 0.87) 1.4s;
+}
+
+.no-touch .qodef-blog-list-holder.qodef-bl-with-bgrnd-animation .qodef-bl-item.qodef-appeared:nth-child(9) .qodef-bli-background-image-holder img {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.6s cubic-bezier(0.05, 0.43, 0.04, 0.87) 1.6s;
+  -moz-transition: all 0.6s cubic-bezier(0.05, 0.43, 0.04, 0.87) 1.6s;
+  transition: all 0.6s cubic-bezier(0.05, 0.43, 0.04, 0.87) 1.6s;
+}
+
+/* ==========================================================================
+   Blog List shortcode global style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List shortcode - Custom type style - begin
+   ========================================================================== */
+.qodef-blog-list-holder.qodef-bl-custom .qodef-bl-item {
+  margin-bottom: 128px;
+}
+
+.qodef-blog-list-holder.qodef-bl-custom .qodef-bl-item .qodef-bli-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-blog-list-holder.qodef-bl-custom .qodef-bl-item .qodef-bli-heading,
+.qodef-blog-list-holder.qodef-bl-custom .qodef-bl-item .qodef-bli-text {
+  float: left;
+  box-sizing: border-box;
+}
+
+.qodef-blog-list-holder.qodef-bl-custom .qodef-bl-item .qodef-bli-heading {
+  width: 36.3%;
+  padding-top: 77px;
+}
+
+.qodef-blog-list-holder.qodef-bl-custom .qodef-bl-item .qodef-bli-text {
+  width: 63.7%;
+  padding-left: 110px;
+}
+
+.qodef-blog-list-holder.qodef-bl-custom .qodef-bl-item .qodef-post-date-pattern {
+  position: absolute;
+  top: 0;
+  right: -77px;
+  width: 140px;
+  height: 140px;
+}
+
+@media only screen and (max-width: 480px) {
+  .qodef-blog-list-holder.qodef-bl-custom .qodef-bl-item .qodef-post-date-pattern {
+    top: 38px;
+    right: -39px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .qodef-blog-list-holder.qodef-bl-custom .qodef-bl-item .qodef-post-date-pattern {
+    top: 61px;
+    right: -15px;
+  }
+}
+
+.qodef-blog-list-holder.qodef-bl-custom .qodef-bl-item .qodef-post-date-pattern .qodef-post-date-pattern-inner {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 77px;
+  height: 77px;
+  text-align: center;
+  background-color: #53f6c6;
+  z-index: 1;
+}
+
+.qodef-blog-list-holder.qodef-bl-custom .qodef-bl-item .qodef-post-date-pattern .qodef-post-date-pattern-inner .qodef-post-info-date {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -.025em;
+  color: #000;
+}
+
+.qodef-blog-list-holder.qodef-bl-custom .qodef-bl-item .qodef-post-date-pattern .qodef-post-date-pattern-inner .qodef-post-info-date a {
+  color: inherit;
+}
+
+.qodef-blog-list-holder.qodef-bl-custom .qodef-bl-item .qodef-post-date-pattern .qodef-post-date-pattern-inner .qodef-post-info-date a > span {
+  display: block;
+}
+
+.qodef-blog-list-holder.qodef-bl-custom .qodef-bl-item .qodef-bli-info-top {
+  margin-bottom: 14px;
+}
+
+.qodef-blog-list-holder.qodef-bl-custom .qodef-bl-item .qodef-post-read-more-button {
+  margin-top: 28px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-blog-list-holder.qodef-bl-custom .qodef-bl-item {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-blog-list-holder.qodef-bl-custom .qodef-bl-item .qodef-bli-heading,
+  .qodef-blog-list-holder.qodef-bl-custom .qodef-bl-item .qodef-bli-text {
+    float: none;
+    width: 100%;
+  }
+  .qodef-blog-list-holder.qodef-bl-custom .qodef-bl-item .qodef-bli-text {
+    padding: 0;
+  }
+}
+
+/* ==========================================================================
+   Blog List shortcode - Custom type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List shortcode - Masonry Boxed type style - begin
+   ========================================================================== */
+.qodef-blog-list-holder.qodef-bl-masonry-boxed .qodef-post-image {
+  margin: 0;
+}
+
+.qodef-blog-list-holder.qodef-bl-masonry-boxed .qodef-bli-text {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 28px 32px;
+  box-sizing: border-box;
+}
+
+.qodef-blog-list-holder.qodef-bl-masonry-boxed .qodef-bli-text .qodef-bli-text-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.qodef-blog-list-holder.qodef-bl-masonry-boxed .qodef-bli-text .qodef-bli-text-inner .qodef-bli-text-inner-2 {
+  position: absolute;
+  bottom: 0;
+}
+
+.qodef-blog-list-holder.qodef-bl-masonry-boxed.qodef-bl-with-animation .qodef-bl-item {
+  visibility: hidden;
+}
+
+.touch .qodef-blog-list-holder.qodef-bl-masonry-boxed.qodef-bl-with-animation .qodef-bl-item {
+  visibility: visible;
+}
+
+.no-touch .qodef-blog-list-holder.qodef-bl-masonry-boxed.qodef-bl-with-animation .qodef-bl-item {
+  visibility: visible;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 100px, 0) rotateY(45deg) rotateX(10deg);
+  -moz-transform: translate3d(0, 100px, 0) rotateY(45deg) rotateX(10deg);
+  transform: translate3d(0, 100px, 0) rotateY(45deg) rotateX(10deg);
+}
+
+.no-touch .qodef-blog-list-holder.qodef-bl-masonry-boxed.qodef-bl-with-animation .qodef-bl-item.qodef-appeared {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0) rotateY(0) rotateX(0);
+  -moz-transform: translate3d(0, 0, 0) rotateY(0) rotateX(0);
+  transform: translate3d(0, 0, 0) rotateY(0) rotateX(0);
+  -webkit-transition: all 0.6s cubic-bezier(0.19, 0.5, 0.46, 0.88);
+  -moz-transition: all 0.6s cubic-bezier(0.19, 0.5, 0.46, 0.88);
+  transition: all 0.6s cubic-bezier(0.19, 0.5, 0.46, 0.88);
+}
+
+.qodef-blog-list-holder.qodef-custom-layout .qodef-bl-item:nth-child(3),
+.qodef-blog-list-holder.qodef-custom-layout .qodef-bl-item:nth-child(5) {
+  padding-top: 82px;
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-blog-list-holder.qodef-custom-layout .qodef-bl-item:nth-child(5) {
+    padding-top: 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-blog-list-holder.qodef-custom-layout .qodef-bl-item:nth-child(3) {
+    padding-top: 0;
+  }
+}
+
+.qodef-blog-list-holder.qodef-info-top .qodef-bli-text .qodef-bli-text-inner .qodef-bli-text-inner-2 {
+  top: 1px;
+  bottom: auto;
+}
+
+/* ==========================================================================
+   Blog List shortcode - Masonry Boxed type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List shortcode - Masonry type style - begin
+   ========================================================================== */
+.qodef-blog-list-holder.qodef-bl-masonry {
+  transition: none !important;
+  overflow: visible !important;
+}
+
+/* ==========================================================================
+   Blog List shortcode - Masonry type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List shortcode - Minimal type style - begin
+   ========================================================================== */
+.qodef-blog-list-holder.qodef-bl-minimal .qodef-post-info-date {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 7px 0 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1;
+  color: #50d6ae;
+}
+
+.qodef-blog-list-holder.qodef-bl-minimal .qodef-post-info-date a {
+  color: inherit;
+}
+
+.qodef-blog-list-holder.qodef-bl-minimal .qodef-post-info-date a:hover {
+  color: #000;
+}
+
+.qodef-blog-list-holder.qodef-dark-skin .qodef-post-info-date a:hover {
+  color: #fff;
+}
+
+/* ==========================================================================
+   Blog List shortcode - Minimal type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List shortcode - Simple type style - begin
+   ========================================================================== */
+.qodef-blog-list-holder.qodef-bl-simple .qodef-post-image {
+  display: table-cell;
+  vertical-align: top;
+  width: 67px;
+}
+
+.qodef-blog-list-holder.qodef-bl-simple .qodef-bli-text {
+  display: table-cell;
+  vertical-align: top;
+  width: auto;
+  padding-left: 13px;
+}
+
+.qodef-blog-list-holder.qodef-bl-simple .qodef-bli-text .qodef-post-info-date {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 9px 0 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1;
+  color: #50d6ae;
+}
+
+.qodef-blog-list-holder.qodef-bl-simple .qodef-bli-text .qodef-post-info-date a {
+  color: inherit;
+}
+
+.qodef-blog-list-holder.qodef-bl-simple .qodef-bli-text .qodef-post-info-date a:hover {
+  color: #000;
+}
+
+.qodef-blog-list-holder.qodef-dark-skin .qodef-bli-text .qodef-post-info-date a:hover {
+  color: #fff;
+}
+
+/* ==========================================================================
+   Blog List shortcode - Simple type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List loading element style - begin
+   ========================================================================== */
+.qodef-bl-loading {
+  position: relative;
+  display: none;
+  width: 100%;
+  margin: 40px 0 20px;
+  text-align: center;
+}
+
+.qodef-bl-loading.qodef-showing {
+  display: block;
+}
+
+.qodef-bl-loading > div {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  margin: 0 3px;
+  background-color: #000;
+  border-radius: 100%;
+  -webkit-animation: bl-bouncedelay 1.4s infinite ease-in-out both;
+  -moz-animation: bl-bouncedelay 1.4s infinite ease-in-out both;
+  animation: bl-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.qodef-bl-loading .qodef-bl-loading-bounce1 {
+  -webkit-animation-delay: -0.32s;
+  -moz-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.qodef-bl-loading .qodef-bl-loading-bounce2 {
+  -webkit-animation-delay: -0.16s;
+  -moz-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes bl-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes bl-bouncedelay {
+  0%, 80%, 100% {
+    -moz-transform: scale(0);
+  }
+  40% {
+    -moz-transform: scale(1);
+  }
+}
+
+@keyframes bl-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* ==========================================================================
+   Blog List loading element style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog Slider shortcode style - begin
+   ========================================================================== */
+.qodef-blog-slider-holder.qodef-bs-slider .qodef-blog-slider-item {
+  text-align: center;
+}
+
+.touch .qodef-blog-slider-holder.qodef-bs-slider .qodef-blog-slider-item {
+  cursor: pointer;
+}
+
+.qodef-blog-slider-holder.qodef-bs-slider .qodef-blog-slider-item:hover .qodef-item-text-wrapper {
+  opacity: 1;
+}
+
+.qodef-blog-slider-holder .qodef-blog-slider-item {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  list-style-type: none;
+}
+
+.qodef-blog-slider-holder .qodef-item-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-blog-slider-holder .qodef-item-text-wrapper {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  -webkit-transition: opacity 0.45s ease-out;
+  -moz-transition: opacity 0.45s ease-out;
+  transition: opacity 0.45s ease-out;
+}
+
+.qodef-blog-slider-holder .qodef-item-text-holder {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.qodef-blog-slider-holder .qodef-item-text-holder-inner {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0 5%;
+}
+
+.qodef-blog-slider-holder .qodef-bsi-info-top {
+  line-height: 1.2em;
+}
+
+.qodef-blog-slider-holder .qodef-bsi-info-top > div {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  color: #50d6ae;
+}
+
+.qodef-blog-slider-holder .qodef-bsi-info-top > div a {
+  color: inherit;
+}
+
+.qodef-blog-slider-holder .qodef-bsi-info-top > div a:hover {
+  color: #000;
+}
+
+.qodef-blog-slider-holder .qodef-bsi-info-bottom {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  line-height: 40px;
+}
+
+.qodef-blog-slider-holder .qodef-bsi-info-bottom > div {
+  display: inline-block;
+  margin-right: 11px;
+}
+
+.qodef-blog-slider-holder .qodef-bsi-info-bottom > div:last-child {
+  margin-right: 0;
+}
+
+.qodef-blog-slider-holder .qodef-bsi-info-bottom > div .qodef-post-info-meta-icon {
+  margin-right: 2px;
+}
+
+.qodef-blog-slider-holder .qodef-bsi-info-bottom > div.qodef-post-info-author .qodef-post-info-author-avatar {
+  margin-right: 7px;
+}
+
+.qodef-blog-slider-holder .qodef-bsi-info-bottom > div.qodef-post-info-author .qodef-post-info-author-avatar img {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  border-radius: 5em;
+}
+
+.qodef-blog-slider-holder .qodef-post-title {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Blog Slider shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=blog-map.css.map */

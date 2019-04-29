@@ -1,0 +1,123 @@
+/* ==========================================================================
+# Team Info - begin
+	========================================================================== */
+
+.qodef-team-info {
+
+	.qodef-team-image,
+	.qodef-team-content {
+		@include qodefRelativeHolderLayout();
+		box-sizing: border-box;
+	}
+
+	.qodef-team-image {
+
+		img {
+			position: relative;
+			display: block;
+		}
+	}
+
+	.qodef-team-content {
+		width: 100%;
+		padding: 0;
+	}
+
+	.qodef-team-title {
+		margin: 23px 0 0;
+	}
+
+	.qodef-team-excerpt {
+		margin: 22px 0 0;
+	}
+
+	.qodef-team-meta {
+		margin: 46px 0 0;
+	}
+
+	.qodef-team-meta-section {
+		margin: 0 0 26px;
+		line-height: 1.2em;
+		border-bottom: 1px dashed $default-border-color;
+
+		.qodef-team-meta-section-title {
+			display: inline-block;
+			position: relative;
+			min-width: 127px;
+			margin: 0;
+		}
+
+		a {
+			color: $default-text-color;
+
+			&:hover {
+				color: $first-main-color;
+			}
+		}
+
+		.qodef-team-meta-social {
+
+			.qodef-icon-shortcode {
+				margin: 0 8px;
+				font-size: 18px;
+
+				&:first-child {
+					margin-left: 0;
+				}
+
+				.qodef-icon-element {
+					@include qodefTransition(none);
+				}
+			}
+		}
+	}
+
+	&.qodef-team-image-enabled {
+
+		.qodef-team-image,
+		.qodef-team-content {
+			float: left;
+		}
+
+		.qodef-team-image {
+			width: 45%;
+		}
+
+		.qodef-team-content {
+			width: 55%;
+			padding: 0 0 0 33px;
+		}
+	}
+
+	&.qodef-dark-skin {
+		color: #fff;
+
+		.qodef-team-title {
+			color: #fff;
+		}
+
+		.qodef-team-meta-section {
+			border-bottom: 1px dashed #575757;
+
+			.qodef-team-meta-section-title {
+				color: #fff;
+			}
+
+			a {
+				color: #fff;
+
+				&:hover {
+					color: $first-main-color;
+				}
+
+				&.qodef-btn.qodef-btn-simple:hover {
+					color: #fff !important;
+				}
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+# Team Info - end
+	========================================================================== */

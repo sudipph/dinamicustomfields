@@ -1,0 +1,142 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Custom Post Types responsive styles
+   ========================================================================== */
+/* ==========================================================================
+   Masonry Gallery shortcodes responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .qodef-masonry-gallery-holder .qodef-mg-item.qodef-masonry-size-large-width .qodef-mg-item-content-inner, .qodef-masonry-gallery-holder .qodef-mg-item.qodef-masonry-size-large-width-height .qodef-mg-item-content-inner {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-masonry-gallery-holder .qodef-mg-grid-sizer,
+  .qodef-masonry-gallery-holder .qodef-mg-item {
+    width: 50%;
+  }
+  .qodef-masonry-gallery-holder .qodef-mg-item.qodef-masonry-size-large-width, .qodef-masonry-gallery-holder .qodef-mg-item.qodef-masonry-size-large-width-height {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-masonry-gallery-holder .qodef-mg-grid-sizer,
+  .qodef-masonry-gallery-holder .qodef-mg-item {
+    width: 100%;
+  }
+  .qodef-masonry-gallery-holder .qodef-mg-item.qodef-masonry-size-large-width .qodef-mg-item-content-inner, .qodef-masonry-gallery-holder .qodef-mg-item.qodef-masonry-size-large-width-height .qodef-mg-item-content-inner {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Masonry Gallery shortcodes responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+# Team Info responsive style - begin
+========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .qodef-team-info .qodef-team-meta-section .qodef-team-meta-section-title {
+    min-width: 107px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-team-info .qodef-team-image,
+  .qodef-team-info .qodef-team-content {
+    float: none !important;
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .qodef-team-info .qodef-team-meta-section .qodef-team-meta-section-title {
+    min-width: 127px;
+  }
+  .qodef-team-info.qodef-team-image-enabled .qodef-team-content {
+    margin: 10px 0 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .qodef-team-info .qodef-team-meta-section .qodef-team-meta-section-title {
+    min-width: 97px;
+  }
+}
+
+/* ==========================================================================
+# Team Info responsive style - end
+========================================================================== */
+/* ==========================================================================
+# Team responsive style - begin
+========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .qodef-team.info-bellow .qodef-team-image {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-team.info-hover {
+    margin-bottom: 30px;
+  }
+}
+
+/* ==========================================================================
+# Team responsive style - end
+========================================================================== */
+@media only screen and (max-width: 1366px) {
+  .qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-content, .qodef-testimonials-holder.qodef-testimonials-custom .qodef-testimonial-content {
+    padding: 17px 23px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-text-holder {
+    padding-left: 104px;
+  }
+  .qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-text {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: normal;
+  }
+  .qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-author-holder {
+    margin: 18px 0 0;
+  }
+  .qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-author-job {
+    padding: 5px 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonials, .qodef-testimonials-holder.qodef-testimonials-custom .qodef-testimonials {
+    padding: 0 20px;
+  }
+  .qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-heading,
+  .qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-text-holder, .qodef-testimonials-holder.qodef-testimonials-custom .qodef-testimonial-heading,
+  .qodef-testimonials-holder.qodef-testimonials-custom .qodef-testimonial-text-holder {
+    float: none;
+  }
+  .qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-text-holder, .qodef-testimonials-holder.qodef-testimonials-custom .qodef-testimonial-text-holder {
+    width: 100%;
+    padding: 0;
+  }
+  .qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-content, .qodef-testimonials-holder.qodef-testimonials-custom .qodef-testimonial-content {
+    padding: 17px 10px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-content, .qodef-testimonials-holder.qodef-testimonials-custom .qodef-testimonial-content {
+    padding: 17px 0;
+  }
+}
+
+/*# sourceMappingURL=../../../../plugins/wellexpo-core/assets/css/custom-post-types-map-responsive.css.map */

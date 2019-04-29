@@ -1,0 +1,124 @@
+/* ==========================================================================
+   Google Map shortcode style - begin
+   ========================================================================== */
+
+.qodef-google-map-with-contact-form-holder {
+	@include qodefRelativeHolderLayout();
+
+	.qodef-contact-form {
+		position: relative;
+		width: 100%;
+		z-index: 100;
+
+		.qodef-contact-form-inner {
+			position: absolute;
+			width: 100%;
+			padding: 100px 118px 114px;
+			background-color: #fff;
+			box-sizing: border-box;
+			box-shadow: 0px 5px 21px 0px rgba(83, 246, 198, 0.37);
+			z-index: 1;
+			@include qodefTransform(translate3d(0, -51%, 0));
+
+			.qodef-dark-skin & {
+				box-shadow: none;
+			}
+
+			.qodef-contact-form-info,
+			.qodef-contact-form-content {
+				float: left;
+				box-sizing: border-box;
+			}
+
+			.qodef-contact-form-info {
+				width: 46%;
+				padding: 2px 80px 0 0;
+			}
+			
+			.qodef-contact-form-tagline {
+				font-family: $additional-font;
+				font-size: 14px;
+				letter-spacing: .15em;
+				color: $first-main-color;
+			}
+			
+			.qodef-contact-form-title {
+				margin: 0;
+			}
+
+			.qodef-contact-form-content {
+				width: 54%;
+				padding: 0 141px 0 18px;
+			}
+
+			.wpcf7-form {
+				box-shadow: none;
+			}
+		}
+	}
+
+	.qodef-contact-form-only {
+		position: absolute;
+		width: 100%;
+		z-index: 100;
+		@include qodefTransform(translate3d(0,-50%,0));
+
+		.wpcf7 {
+			background-color: #fff;
+		}
+	}
+
+	.qodef-google-map-with-contact-form {
+		display: block;
+		width: 100%;
+		height: 300px;
+		background: olive;
+		
+		iframe,
+		object,
+		embed {
+			width: 100%;
+			display: block;
+		}
+		
+		img {
+			max-width: none;
+		}
+	}
+	
+	.qodef-snazzy-map {
+		display: none;
+	}
+	
+	.qodef-google-map-with-contact-form-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: none;
+		z-index: 1000;
+	}
+
+	&.qodef-dark-skin {
+
+		.qodef-contact-form-inner {
+			background-color: $default-heading-color;
+
+			.qodef-contact-form-title {
+				color: #fff;
+			}
+		}
+
+		.qodef-contact-form-only {
+
+			.wpcf7 {
+				background-color: $default-heading-color;
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+   Google Map shortcode style - end
+   ========================================================================== */

@@ -1,0 +1,24 @@
+/*
+Theme Name: Predicteria
+Theme URI: http://wellexpo.select-themes.com
+Description: A Modern Event and Conference WordPress Theme
+Author: Select Themes
+Author URI: http://themeforest.net/user/select-themes
+Text Domain: wellexpo
+Tags: one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-menu, featured-images, flexible-header, post-formats, sticky-post, threaded-comments, translation-ready
+Version: 1.0
+License: GNU General Public License
+License URI: licence/GPL.txt
+
+CSS changes can be made in files in the /css/ folder. This is a placeholder file required by WordPress, so do not delete it.
+
+*/
+
+
+div.event_listings{
+        display: grid;
+    grid-template-columns: 360px 700px;
+}
+.d-learn-more_dinamic_ajax{
+    cursor: pointer;
+}

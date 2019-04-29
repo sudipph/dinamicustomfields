@@ -1,0 +1,52 @@
+/* ==========================================================================
+   Subscribe Popup responsive styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+# Subscribe Pop-up style responsive - begin
+========================================================================== */
+@media only screen and (max-width: 1280px) {
+  .qodef-subscribe-popup-holder .qodef-sp-inner {
+    width: 63%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-subscribe-popup-holder .qodef-sp-inner {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-subscribe-popup-holder .qodef-sp-inner {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-subscribe-popup-holder .qodef-sp-inner {
+    min-height: 450px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-subscribe-popup-holder .qodef-sp-content-container {
+    width: 100%;
+    padding: 0 40px;
+  }
+  .qodef-subscribe-popup-holder .qodef-sp-background {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+# Subscribe Pop-up style responsive - end
+========================================================================== */
+/* ==========================================================================
+   Subscribe Popup responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=popup-map-responsive.css.map */

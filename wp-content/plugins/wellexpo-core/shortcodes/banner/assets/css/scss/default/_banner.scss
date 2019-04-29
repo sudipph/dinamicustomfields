@@ -1,0 +1,126 @@
+/* ==========================================================================
+   Banner shortcode style - begin
+   ========================================================================== */
+
+.qodef-banner-holder {
+    @include qodefRelativeHolderLayout();
+	
+	.touch & {
+		cursor: pointer;
+	}
+	
+	&.qodef-visible-on-hover {
+		
+		&:hover {
+			
+			.qodef-banner-text-holder {
+				opacity: 1;
+			}
+		}
+		
+		.qodef-banner-text-holder {
+			opacity: 0;
+			@include qodefTransition(opacity .2s ease-out);
+		}
+	}
+	
+	&.qodef-disabled {
+		
+		.qodef-banner-text-holder {
+			display: none;
+		}
+	}
+	
+	&.qodef-banner-info-centered {
+		
+		.qodef-banner-text-holder {
+			text-align: center;
+		}
+	}
+	
+	.qodef-banner-image {
+		@include qodefRelativeHolderLayout();
+		overflow: hidden;
+
+		img {
+			display: block;
+			@include qodefTransform(scale(1.08) translate3d(-5px,0,0));
+			@include qodefTransitionTransform(.6s cubic-bezier(0.23, 1, 0.32, 1));
+		}
+	}
+
+	
+	&:hover {
+		img {
+			@include qodefTransform(scale(1.08) translate3d(5px,0,0));
+			@include qodefTransitionTransform(1s cubic-bezier(0.23, 1, 0.32, 1));
+		}
+	}
+	
+	.qodef-banner-text-holder {
+		@include qodefAbsoluteHolderLayout();
+		padding: 20px 46px;
+		box-sizing: border-box;
+		
+		@include ipad-portrait {
+			padding: 20px 20px;
+		}
+	}
+	
+	.qodef-banner-text-outer {
+		@include qodefTableLayout();
+	}
+	
+	.qodef-banner-text-inner {
+		position: relative;
+		display: table-cell;
+		height: 100%;
+		width: 100%;
+		vertical-align: bottom;
+	}
+	
+	.qodef-banner-subtitle {
+		margin: 0 0 4px;
+		color: #fff;
+	}
+	
+	.qodef-banner-title {
+		margin: 0;
+		color: #fff;
+		
+		.qodef-banner-title-light {
+			font-weight: 300;
+		}
+	}
+	
+	.qodef-banner-link-text {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		margin: 5px 0 0;
+		font-size: 12px;
+		color: #fff;
+		line-height: 1em;
+		z-index: 2;
+		@include qodefTransform(translateZ(0));
+
+		&.qodef-btn.qodef-btn-simple {
+			color: #fff !important;
+		}
+
+		&:hover {
+
+			&.qodef-btn.qodef-btn-simple {
+				color: #fff !important;
+			}
+		}
+	}
+
+	.qodef-banner-link {
+		@include qodefAbsoluteHolderLayout();
+		z-index: 1;
+	}
+}
+/* ==========================================================================
+   Banner shortcode style - end
+   ========================================================================== */

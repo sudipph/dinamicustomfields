@@ -1,0 +1,198 @@
+/* ==========================================================================
+   Social Share shortcode style - begin
+   ========================================================================== */
+
+.qodef-social-share-holder {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+
+    ul {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        a {
+            color: inherit;
+
+            &:hover {
+                color: $additional-color;
+            }
+        }
+    }
+}
+
+/* List type - begin
+========================================================================== */
+.qodef-social-share-holder.qodef-list {
+
+    .qodef-social-title {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 10px 0 0;
+    }
+
+    li {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0;
+        margin: 0 10px 3px 0;
+
+        &:last-child {
+            margin: 0 0 3px;
+        }
+
+        a {
+            font-size: 15px;
+        }
+    }
+}
+
+/* List type - end
+========================================================================== */
+
+/* Text type - begin
+========================================================================== */
+.qodef-social-share-holder.qodef-text {
+
+    .qodef-social-title {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        color: $default-text-color;
+        font-weight: 600;
+        margin-right: 13px;
+    }
+
+    li {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0;
+        margin: 0 13px 3px 0;
+
+        &:last-child {
+            margin: 0 0 3px;
+        }
+
+        a {
+            font-size: 15px;
+        }
+    }
+}
+
+/* Text type - end
+========================================================================== */
+
+/* Dropdown type - begin
+========================================================================== */
+
+$socialShareWidth: 26px;
+$socialShareHeight: 26px;
+
+.qodef-social-share-holder.qodef-dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+
+    .qodef-social-share-dropdown-opener {
+        display: block;
+        padding: 0 7px;
+        color: $default-text-color;
+        @include qodefTransition(none);
+
+        .social_share {
+            font-size: 14px;
+            color: $additional-color;
+            @include qodefTransition(color .2s ease-out);
+        }
+
+        &:hover {
+            color: $additional-color;
+
+            .social_share {
+                color: inherit;
+            }
+        }
+    }
+
+    .qodef-social-share-dropdown {
+        position: relative;
+        visibility: hidden;
+        z-index: 950;
+
+        ul {
+            position: relative;
+            display: block;
+            z-index: 990;
+            margin: 0;
+            padding: 0 !important;
+            top: -28px;
+            right: -4px;
+        }
+
+        ul li {
+            width: $socialShareWidth;
+            height: $socialShareHeight;
+            line-height: $socialShareHeight;
+            visibility: hidden;
+            position: absolute;
+            text-align: center;
+            opacity: 0;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            font-size: 15.87px;
+            color: $default-text-color;
+            box-sizing: border-box;
+            @include qodefTransition( opacity .2s ease-out 0s, visibility .2s ease-out 0s, background-color .2s ease-out 0s);
+	
+	        &:not(:first-child) {
+		        border-top: none;
+	        }
+            
+            * {
+                display: block;
+                line-height: inherit;
+            }
+
+            @for $i from 1 through 7 {
+                &:nth-child(#{$i}) {
+                    left: #{-$i*(($socialShareHeight))};
+                }
+            }
+        }
+    }
+}
+
+.qodef-social-share-holder.qodef-dropdown:hover {
+
+    .qodef-social-share-dropdown ul li {
+        opacity: 1;
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .qodef-social-share-dropdown ul li {
+
+        /* opacity and visibility need to be different, but not background-color */
+        @for $i from 2 through 7 {
+            &:nth-child(#{$i}) {
+                @include qodefTransition( opacity .2s ease-out #{($i)/10+s}, visibility .2s ease-out #{($i)/10+s}, background-color .2s ease-out);
+            }
+        }
+    }
+}
+
+/* Dropdown type - end
+========================================================================== */
+
+/* ==========================================================================
+   Social Share shortcode style - end
+   ========================================================================== */

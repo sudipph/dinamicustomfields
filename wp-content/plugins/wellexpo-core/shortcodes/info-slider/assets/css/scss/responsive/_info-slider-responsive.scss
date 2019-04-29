@@ -1,0 +1,55 @@
+/* ==========================================================================
+   Info Slider shortcode responsive styles - begin
+   ========================================================================== */
+.qodef-info-slider {
+    @include ipad-landscape {
+        .qodef-section-title-holder {
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+    }
+
+    @include ipad-portrait {
+        display: block;
+
+        .qodef-bg-svg {
+            display: none;
+        }
+
+        .qodef-is-content {
+            width: 80%;
+            margin: auto;
+        }
+
+        .qodef-section-title-holder {
+            padding: 0;
+        }
+        
+        .qodef-is-items {
+            width: 80%;
+            padding-top: 70%;
+            margin: auto;
+        }
+
+        .qodef-is-item-image {
+            height: auto;
+            object-fit: contain;
+        }
+
+        &.qodef-is-with-nav {
+            padding-bottom: 20px;
+            
+            .qodef-is-nav {
+                height: 20px;
+                left: 0;
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+}   
+/* ==========================================================================
+   Info Slider shortcode responsive styles - end
+   ========================================================================== */
+
+

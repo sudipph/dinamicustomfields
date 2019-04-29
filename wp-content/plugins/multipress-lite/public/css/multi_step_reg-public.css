@@ -1,0 +1,126 @@
+.commands { 
+  overflow: hidden;
+}
+.error { 
+  color: #b33; 
+}
+#progress { 
+  position: relative; 
+  height: 10px; 
+  background-color: #eee; 
+  margin-bottom: 20px; 
+}
+#progress-complete { 
+  border: 0; 
+  position: absolute; 
+  height: 100%; 
+  min-width: 10px; 
+  background-color: #337ab7; 
+  transition: width .2s ease-in-out; 
+}
+
+#msr-form-wrapper{  
+  max-width: 100%;
+  margin: auto;
+  padding: 10px;
+}
+
+form#SignupForm:hover{
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+form#SignupForm{
+  position: relative;
+  background-color: #eee;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  text-align: left;
+  transition: all .4s ease-in-out;
+  border: 0 none;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+
+form#SignupForm input{
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;  
+  box-sizing: border-box;  
+  color: #2C3E50;
+  font-size: 13px;
+  width: 100%;
+  padding: 8px 10px;
+}
+
+.msr_form_steps {
+    padding: 10px;
+}
+
+
+form#SignupForm textarea {height: 100px;}
+
+form#SignupForm input[type="text"],
+form#SignupForm textarea{
+  /*width: 100% !important;*/
+}
+
+form#SignupForm input[type="file"]{
+  padding: 0;
+  border: none medium;
+}
+
+form#SignupForm .prev,
+form#SignupForm .next,
+form#SignupForm .submit{
+  min-width: 100px;
+  background: #27AE60;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+
+form#SignupForm .prev:hover,
+form#SignupForm .next:hover,
+form#SignupForm .submit:hover,
+form#SignupForm .prev:focus,
+form#SignupForm .next:focus,
+form#SignupForm .submit:focus{
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+
+.prev {
+  float:left
+}
+.next, 
+.submit {
+  float:right
+}
+form#SignupForm label{
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #2C3E50;
+  margin-bottom: 10px;
+}
+
+#form-loader > img {
+    height: 40px;
+    width: 40px;
+}
+
+@media only screen and (min-width: 320px) {
+    form#SignupForm {
+      padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 764px) {
+/*Write your css here it can apply only upto 764px width*/
+ #main-form, #msr-form-wrapper{ width:100%!important;}
+}

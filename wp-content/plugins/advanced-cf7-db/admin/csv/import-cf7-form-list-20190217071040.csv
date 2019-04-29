@@ -1,0 +1,3 @@
+﻿fname,lname,sk_email,sp-phone,sk_interest,Industry,company,website,linkedin_url,twitter,speaker_bio,speaking_topic,take_away_1,take_away_2,take_away_3,sk_company_logo,head_shot_logo,event_listing,submit_ip,submit_time
+test,Test,test234@gmail.com,45225487,IoT,Test,Test,http://google.com,http://know-it.in/predictera/,http://localhost/predictera3/,test,gf,fgff,gfgg,gfgfgf,,,,103.88.217.222,"2019-02-14 13:18:30"
+Speaker,Test,speakertest@gmail.com,1234567892,Interest1,test,test,test,https://twitter.com/,https://twitter.com/,test,test,test,test,test,http://know-it.in/predictera/wp-content/uploads/advanced-cf7-upload/download-2.png,http://know-it.in/predictera/wp-content/uploads/advanced-cf7-upload/download-2-1.png,,47.11.132.162,"2019-01-31 03:33:16"

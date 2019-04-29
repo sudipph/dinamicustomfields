@@ -1,0 +1,60 @@
+/* ==========================================================================
+   Author Info widget style - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+.qodef-author-info-widget {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.qodef-author-info-widget .qodef-aiw-image {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.qodef-author-info-widget .qodef-aiw-image img {
+  display: block;
+}
+
+.qodef-author-info-widget .qodef-aiw-title {
+  position: absolute;
+  bottom: 33px;
+  right: 26px;
+  padding: 32px 12px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 24px;
+  letter-spacing: -.025em;
+  color: #000;
+  background-color: rgba(80, 214, 174, 0.7);
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+
+.qodef-author-info-widget .qodef-aiw-title a,
+.qodef-author-info-widget .qodef-aiw-title a:hover {
+  color: inherit;
+}
+
+.qodef-author-info-widget .qodef-aiw-title.qodef-aiw-title-light-skin {
+  color: #fff;
+}
+
+.qodef-author-info-widget .qodef-aiw-text {
+  display: block;
+  margin: 25px 0 0;
+}
+
+/* ==========================================================================
+   Author Info widget style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=author-info-widget-map.css.map */

@@ -1,0 +1,104 @@
+/* ==========================================================================
+   Masonry Elements Holder shortcode style - begin
+   ========================================================================== */
+
+.qodef-masonry-elements-holder {
+	@include qodefRelativeHolderLayout();
+	visibility: hidden;
+
+	&.qodef-appeared {
+		visibility: visible;
+	}
+
+	.qodef-masonry-elements-item {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		box-sizing: border-box;
+
+		.qodef-masonry-elements-item-inner-helper {
+			position:relative;
+			width: 100%;
+			height: 100%;
+		}
+
+		.qodef-masonry-elements-item-inner-tb {
+			display: table;
+			height: 100%;
+			width: 100%;
+
+			.qodef-masonry-elements-item-inner-tc {
+				display: table-cell;
+				padding: 15px 39px 42px 39px;
+				box-sizing: border-box;
+				
+				@include laptop-landscape-large {
+					padding: 20px;
+				}
+			}
+		}
+
+		.qodef-masonry-elements-item-background {
+			@include qodefAbsoluteHolderLayout();
+			background-size: cover;
+		}
+	}
+
+	.qodef-masonry-elements-item-inner {
+		height: 100%;
+		width: 100.1%;
+		box-sizing: border-box;
+		position:relative;
+		overflow:hidden;
+	}
+
+	.qodef-masonry-elements-item {
+		width: 33.3333%;
+
+		&.qodef-large-width,
+		&.qodef-large-width-height {
+			width: 66.6666%;
+		}
+	}
+
+	&.qodef-masonry-two-columns {
+
+		.qodef-masonry-elements-item {
+			width: 50%;
+
+			&.qodef-large-width,
+			&.qodef-large-width-height {
+				width: 50%;
+			}
+		}
+
+		.qodef-masonry-elements-grid-sizer {
+			width: 25%;
+		}
+	}
+
+	&.qodef-masonry-four-columns {
+
+		.qodef-masonry-elements-item {
+			width: 25%;
+
+			&.qodef-large-width, &.qodef-large-width-height {
+				width: 50%;
+			}
+		}
+	}
+
+	.qodef-masonry-elements-grid-sizer {
+		width: 33.3333%;
+	}
+
+	&.qodef-masonry-four-columns {
+
+		.qodef-masonry-elements-grid-sizer {
+			width: 25%;
+		}
+	}
+}
+/* ==========================================================================
+   Masonry Elements Holder shortcode style - end
+   ========================================================================== */

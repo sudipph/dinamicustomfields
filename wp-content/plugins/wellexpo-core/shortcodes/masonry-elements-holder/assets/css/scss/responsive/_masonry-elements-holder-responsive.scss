@@ -1,0 +1,58 @@
+/* ==========================================================================
+   Masonry Elements Holder shortcode responsive style - begin
+   ========================================================================== */
+
+@include laptop-landscape-large {
+	
+	.qodef-masonry-elements-holder {
+		
+		.qodef-masonry-elements-item {
+			
+			&.qodef-large-width,
+			&.qodef-large-width-height {
+				width: 50% !important;
+			}
+		}
+	}
+}
+
+@include ipad-landscape {
+
+	.qodef-masonry-elements-holder {
+
+		.qodef-masonry-elements-item {
+			width: 50% !important;
+
+			&.qodef-large-width,
+			&.qodef-large-width-height {
+				width: 100% !important;
+			}
+		}
+
+		.qodef-masonry-elements-grid-sizer {
+			width: 50% !important;
+		}
+	}
+}
+
+@include phone-landscape {
+
+	.qodef-masonry-elements-holder {
+
+		.qodef-masonry-elements-item {
+			width: 100% !important;
+
+			&.qodef-large-width,
+			&.qodef-large-width-height {
+				width: 100% !important;
+			}
+		}
+
+		.qodef-masonry-elements-grid-sizer {
+			width: 100% !important;
+		}
+	}
+}
+/* ==========================================================================
+   Masonry lements Holder shortcode responsive style - end
+   ========================================================================== */

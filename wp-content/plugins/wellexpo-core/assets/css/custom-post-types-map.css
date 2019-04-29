@@ -1,0 +1,1278 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Custom Post Types styles
+   ========================================================================== */
+/* ==========================================================================
+   Masonry Gallery shortcodes style - begin
+   ========================================================================== */
+.qodef-masonry-gallery-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-inner {
+  opacity: 0;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-grid-gutter {
+  width: 0;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-grid-sizer {
+  width: 33.33333333333333%;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item {
+  position: relative;
+  width: 33.33333333333333%;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item.qodef-masonry-size-large-width {
+  width: 66.66666666666667%;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item.qodef-masonry-size-large-width .qodef-mg-image img {
+  max-height: inherit;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item.qodef-masonry-size-large-height .qodef-mg-image img {
+  max-width: inherit;
+  width: auto;
+  height: 100%;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item.qodef-masonry-size-large-width-height {
+  width: 66.66666666666667%;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item.qodef-masonry-size-large-width .qodef-mg-item-content-inner, .qodef-masonry-gallery-holder .qodef-mg-item.qodef-masonry-size-large-width-height .qodef-mg-item-content-inner {
+  width: 50%;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item.qodef-mg-simple .qodef-mg-item-content {
+  vertical-align: middle;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item:not(.qodef-mg-simple) .qodef-mg-item-title {
+  color: #fff;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item:not(.qodef-mg-simple) .qodef-mg-item-button.qodef-btn-simple {
+  color: #fff !important;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item:not(.qodef-mg-simple) .qodef-mg-item-button.qodef-btn-simple:hover {
+  color: #fff !important;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item .qodef-mg-content {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item .qodef-mg-item-outer {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item .qodef-mg-item-inner {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item .qodef-mg-item-content {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: bottom;
+  padding: 37px 44px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-masonry-gallery-holder .qodef-mg-item .qodef-mg-item-content {
+    padding: 17px 22px;
+  }
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item .qodef-mg-image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transform: translateZ(0px);
+  -moz-transform: translateZ(0px);
+  transform: translateZ(0px);
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item .qodef-mg-image-overlay {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  height: calc(100% + 10px);
+  width: calc(100% + 10px);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item .qodef-mg-item-icon {
+  margin: 0 0 1px;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item .qodef-mg-item-category {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-bottom: 9px;
+  font-family: "Rubik", sans-serif;
+  line-height: 1.2em;
+  font-size: 14px;
+  font-style: italic;
+  color: #50d6ae;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item .qodef-mg-item-title {
+  margin: 0;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item .qodef-mg-item-text {
+  margin: 12px 0 0;
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-masonry-gallery-holder .qodef-mg-item .qodef-mg-item-text {
+    display: none;
+  }
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item .qodef-mg-item-button {
+  margin: 26px 0 0;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item .qodef-mg-item-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item.qodef-mg-standard .qodef-mg-item-inner {
+  opacity: 0;
+  -webkit-transition: opacity 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95), background-color 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  -moz-transition: opacity 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95), background-color 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  transition: opacity 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95), background-color 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item.qodef-mg-standard .qodef-mg-item-title,
+.qodef-masonry-gallery-holder .qodef-mg-item.qodef-mg-standard .qodef-mg-item-text {
+  color: #fff;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item.qodef-mg-standard img {
+  -webkit-transition: opacity 0.7s ease;
+  -moz-transition: opacity 0.7s ease;
+  transition: opacity 0.7s ease;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item.qodef-mg-standard:hover .qodef-mg-item-inner {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item.qodef-mg-standard:hover img {
+  opacity: 0;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item.qodef-mg-simple.qodef-mg-skin-default .qodef-mg-item-inner {
+  background-color: #fff;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item.qodef-mg-simple.qodef-mg-skin-light .qodef-mg-item-inner {
+  background-color: #fff;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item.qodef-mg-simple.qodef-mg-skin-dark .qodef-mg-item-inner {
+  background-color: #000;
+}
+
+.qodef-masonry-gallery-holder .qodef-mg-item.qodef-mg-simple.qodef-mg-skin-dark .qodef-mg-item-title,
+.qodef-masonry-gallery-holder .qodef-mg-item.qodef-mg-simple.qodef-mg-skin-dark .qodef-mg-item-text {
+  color: #fff;
+}
+
+/* ==========================================================================
+   Masonry Gallery shortcodes style - end
+   ========================================================================== */
+.qodef-team-single-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-team-single-holder .qodef-ts-about-title-tagline {
+  font-family: "Rubik", sans-serif;
+  letter-spacing: .15em;
+  font-style: italic;
+  color: #50d6ae;
+}
+
+.qodef-team-single-holder .qodef-ts-about-title-tagline:before {
+  content: '<';
+}
+
+.qodef-team-single-holder .qodef-ts-about-title-tagline:after {
+  content: '/>';
+}
+
+.qodef-team-single-holder .qodef-ts-about-title {
+  margin: 0 0 31px;
+}
+
+@media only screen and (min-width: 681px) {
+  .qodef-team-single-holder .qodef-ts-excerpt {
+    column-count: 2;
+    column-gap: 52px;
+  }
+}
+
+.qodef-team-single-holder .qodef-position {
+  margin: 0;
+  color: #ababab;
+}
+
+.qodef-team-single-holder .qodef-position .qodef-icon-shortcode {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+
+.qodef-team-single-holder .qodef-position .qodef-icon-shortcode a, .qodef-team-single-holder .qodef-position .qodef-icon-shortcode span, .qodef-team-single-holder .qodef-position .qodef-icon-shortcode i {
+  color: #999;
+}
+
+.qodef-team-single-holder .qodef-ts-bio-holder {
+  margin: 47px 0 0;
+}
+
+.qodef-team-single-holder .qodef-ts-info-row {
+  margin: 0 0 27px;
+  line-height: 1.2em;
+  border-bottom: 1px dashed #edeff2;
+}
+
+.qodef-team-single-holder .qodef-ts-info-row .qodef-ts-bio-info {
+  display: inline-block;
+  position: relative;
+  min-width: 127px;
+  margin: 0 0 1px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-team-single-holder .qodef-ts-info-row .qodef-ts-bio-info {
+    min-width: 107px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-team-single-holder .qodef-ts-info-row .qodef-ts-bio-info {
+    min-width: 127px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .qodef-team-single-holder .qodef-ts-info-row .qodef-ts-bio-info {
+    min-width: 97px;
+  }
+}
+
+.qodef-team-single-holder .qodef-ts-info-row a {
+  color: #282828;
+}
+
+.qodef-team-single-holder .qodef-ts-info-row a:hover {
+  color: #50d6ae;
+}
+
+.qodef-team-single-holder .qodef-team-single-content {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 30px;
+}
+
+.qodef-team-member-dark-skin .qodef-team-single-info-holder h1, .qodef-team-member-dark-skin .qodef-team-single-info-holder h2, .qodef-team-member-dark-skin .qodef-team-single-info-holder h3, .qodef-team-member-dark-skin .qodef-team-single-info-holder h4, .qodef-team-member-dark-skin .qodef-team-single-info-holder h5, .qodef-team-member-dark-skin .qodef-team-single-info-holder h6, .qodef-team-member-dark-skin .qodef-team-single-info-holder p, .qodef-team-member-dark-skin .qodef-team-single-info-holder span, .qodef-team-member-dark-skin .qodef-team-single-info-holder a {
+  color: #fff;
+}
+
+.qodef-team-member-dark-skin .qodef-team-single-info-holder .qodef-ts-about-title-tagline {
+  color: #50d6ae;
+}
+
+.qodef-team-member-dark-skin .qodef-team-single-holder .qodef-ts-about-title {
+  margin-bottom: 86px;
+}
+
+.qodef-team-member-dark-skin .qodef-team-single-holder .qodef-ts-info-row {
+  border-color: #333;
+}
+
+/* ==========================================================================
+# Team Info - begin
+	========================================================================== */
+.qodef-team-info .qodef-team-image,
+.qodef-team-info .qodef-team-content {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.qodef-team-info .qodef-team-image img {
+  position: relative;
+  display: block;
+}
+
+.qodef-team-info .qodef-team-content {
+  width: 100%;
+  padding: 0;
+}
+
+.qodef-team-info .qodef-team-title {
+  margin: 23px 0 0;
+}
+
+.qodef-team-info .qodef-team-excerpt {
+  margin: 22px 0 0;
+}
+
+.qodef-team-info .qodef-team-meta {
+  margin: 46px 0 0;
+}
+
+.qodef-team-info .qodef-team-meta-section {
+  margin: 0 0 26px;
+  line-height: 1.2em;
+  border-bottom: 1px dashed #edeff2;
+}
+
+.qodef-team-info .qodef-team-meta-section .qodef-team-meta-section-title {
+  display: inline-block;
+  position: relative;
+  min-width: 127px;
+  margin: 0;
+}
+
+.qodef-team-info .qodef-team-meta-section a {
+  color: #282828;
+}
+
+.qodef-team-info .qodef-team-meta-section a:hover {
+  color: #50d6ae;
+}
+
+.qodef-team-info .qodef-team-meta-section .qodef-team-meta-social .qodef-icon-shortcode {
+  margin: 0 8px;
+  font-size: 18px;
+}
+
+.qodef-team-info .qodef-team-meta-section .qodef-team-meta-social .qodef-icon-shortcode:first-child {
+  margin-left: 0;
+}
+
+.qodef-team-info .qodef-team-meta-section .qodef-team-meta-social .qodef-icon-shortcode .qodef-icon-element {
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+.qodef-team-info.qodef-team-image-enabled .qodef-team-image,
+.qodef-team-info.qodef-team-image-enabled .qodef-team-content {
+  float: left;
+}
+
+.qodef-team-info.qodef-team-image-enabled .qodef-team-image {
+  width: 45%;
+}
+
+.qodef-team-info.qodef-team-image-enabled .qodef-team-content {
+  width: 55%;
+  padding: 0 0 0 33px;
+}
+
+.qodef-team-info.qodef-dark-skin {
+  color: #fff;
+}
+
+.qodef-team-info.qodef-dark-skin .qodef-team-title {
+  color: #fff;
+}
+
+.qodef-team-info.qodef-dark-skin .qodef-team-meta-section {
+  border-bottom: 1px dashed #575757;
+}
+
+.qodef-team-info.qodef-dark-skin .qodef-team-meta-section .qodef-team-meta-section-title {
+  color: #fff;
+}
+
+.qodef-team-info.qodef-dark-skin .qodef-team-meta-section a {
+  color: #fff;
+}
+
+.qodef-team-info.qodef-dark-skin .qodef-team-meta-section a:hover {
+  color: #50d6ae;
+}
+
+.qodef-team-info.qodef-dark-skin .qodef-team-meta-section a.qodef-btn.qodef-btn-simple:hover {
+  color: #fff !important;
+}
+
+/* ==========================================================================
+# Team Info - end
+	========================================================================== */
+/* ==========================================================================
+# Team list - begin
+	========================================================================== */
+.qodef-team-list-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-team-list-holder .qodef-icon-shortcode .qodef-icon-element {
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+.qodef-team-list-holder.qodef-dark-skin .qodef-team.info-bellow {
+  color: #fff;
+}
+
+.qodef-team-list-holder.qodef-dark-skin .qodef-team.info-bellow a {
+  color: #fff;
+}
+
+.qodef-team-list-holder.qodef-dark-skin .qodef-team.info-bellow a:hover {
+  color: #50d6ae;
+}
+
+.qodef-team-list-holder.qodef-dark-skin .qodef-team.info-bellow .qodef-team-name,
+.qodef-team-list-holder.qodef-dark-skin .qodef-team.info-bellow .qodef-team-position {
+  color: #fff;
+}
+
+/*Popup style*/
+.qodef-team-modal-holder {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% + 17px);
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10000;
+  display: none;
+}
+
+.qodef-team-modal-holder .qodef-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 56px;
+  height: 56px;
+  font-size: 30px;
+  line-height: 56px;
+  text-align: center;
+  color: #000;
+  background-color: #53f6c6;
+  cursor: pointer;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+.qodef-team-modal-holder .qodef-close:hover {
+  color: #fff;
+}
+
+.qodef-team-modal-holder .qodef-team-popup {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.qodef-team-modal-holder .qodef-team-popup-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.qodef-team-modal-holder .qodef-team-popup-content {
+  max-width: 384px;
+  margin: auto auto;
+  background-color: #fff;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.qodef-team-modal-holder .qodef-team-popup-content img {
+  display: block;
+}
+
+.qodef-team-modal-holder .qodef-team-popup-image-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-team-modal-holder .qodef-team-popup-info-on-image-holder {
+  position: absolute;
+  bottom: 31px;
+  left: 35px;
+}
+
+.qodef-team-modal-holder .qodef-team-position-holder {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  line-height: 1.3em;
+  letter-spacing: .15em;
+  color: #50d6ae;
+}
+
+.qodef-team-modal-holder .qodef-team-title-holder {
+  display: table;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.qodef-team-modal-holder .qodef-team-title-holder .qodef-team-name {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+  color: #fff;
+}
+
+.qodef-team-modal-holder .qodef-team-popup-info-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 37px 36px 41px;
+  box-sizing: border-box;
+}
+
+.qodef-team-modal-holder.qodef-modal-opened .qodef-team-popup-content {
+  visibility: visible;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.qodef-team-modal-holder .qodef-team-popup-image {
+  position: relative;
+}
+
+.qodef-team-modal-holder .qodef-team-popup-image.qodef-team-popup-image-bgrnd {
+  background-size: cover;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  padding-top: 43.75%;
+}
+
+.qodef-team-modal-holder .qodef-team-info-section.qodef-excerpt-section {
+  margin: 0 0 22px;
+}
+
+.qodef-team-modal-holder .qodef-team-info-section:not(.qodef-excerpt-section) {
+  margin: 0 0 24px;
+  line-height: 1.2em;
+  border-bottom: 1px dashed #edeff2;
+}
+
+.qodef-team-modal-holder .qodef-team-info-section:not(.qodef-excerpt-section) .qodef-team-info-section-title {
+  display: inline-block;
+  position: relative;
+  min-width: 80px;
+  margin: 0 0 2px;
+}
+
+.qodef-team-modal-holder .qodef-team-info-section:not(.qodef-excerpt-section) a {
+  color: #282828;
+}
+
+.qodef-team-modal-holder .qodef-team-info-section:not(.qodef-excerpt-section) a:hover {
+  color: #50d6ae;
+}
+
+.qodef-team-modal-holder .qodef-team-info-section:not(.qodef-excerpt-section) .qodef-team-info-social .qodef-icon-shortcode {
+  margin: 0 8px;
+  font-size: 18px;
+}
+
+.qodef-team-modal-holder .qodef-team-info-section:not(.qodef-excerpt-section) .qodef-team-info-social .qodef-icon-shortcode:first-child {
+  margin-left: 0;
+}
+
+.qodef-team-modal-holder .qodef-team-info-section:not(.qodef-excerpt-section) .qodef-team-info-social .qodef-icon-shortcode .qodef-icon-element {
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+.qodef-team-spinner {
+  display: none;
+}
+
+.qodef-team-spinner .qodef-team-pulse {
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 22px);
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: scaleout 1.6s infinite ease;
+  animation: scaleout 1.6s infinite ease;
+}
+
+.qodef-team-spinner .qodef-team-pulse:last-child {
+  -webkit-animation-delay: -0.6s;
+  animation-delay: -0.6s;
+}
+
+/* ==========================================================================
+# Team list - end
+========================================================================== */
+/* ==========================================================================
+# Team Member - begin
+	========================================================================== */
+.qodef-team .qodef-icon-shortcode .qodef-icon-element {
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+/* ==========================================================================
+# Team Member - end
+========================================================================== */
+/* ==========================================================================
+# Team info bellow - begin
+	========================================================================== */
+.qodef-team.info-bellow .qodef-team-inner {
+  text-align: left;
+  width: 100%;
+}
+
+.qodef-team.info-bellow .qodef-team-image {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+}
+
+.qodef-team.info-bellow .qodef-team-image a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.qodef-team.info-bellow .qodef-team-image a:hover:after {
+  opacity: 0.3;
+}
+
+.qodef-team.info-bellow .qodef-team-image a:after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.qodef-team.info-bellow .qodef-team-image img {
+  display: block;
+}
+
+.qodef-team.info-bellow .qodef-team-title-holder {
+  margin: 25px 0 0;
+}
+
+.qodef-team.info-bellow .qodef-team-name {
+  font-size: 32px;
+  line-height: 1.1em;
+  margin: 0 0 16px;
+}
+
+.qodef-team.info-bellow .qodef-team-name:hover {
+  color: #d0d0d0;
+}
+
+.qodef-team.info-bellow .qodef-team-position {
+  margin: 0;
+  font-size: 20px;
+  color: #737373;
+  font-weight: 300;
+}
+
+.qodef-team.info-bellow .qodef-team-social-holder-between {
+  margin: 15px 0 0;
+}
+
+.qodef-team.info-bellow .qodef-icon-shortcode {
+  margin: 0 8px;
+  font-size: 18px;
+}
+
+.qodef-team.info-bellow .qodef-icon-shortcode:first-child {
+  margin-left: 0;
+}
+
+.qodef-team.info-bellow.qodef-dark-skin {
+  color: #fff;
+}
+
+.qodef-team.info-bellow.qodef-dark-skin a {
+  color: #fff;
+}
+
+.qodef-team.info-bellow.qodef-dark-skin a:hover {
+  color: #50d6ae;
+}
+
+.qodef-team.info-bellow.qodef-dark-skin .qodef-team-name,
+.qodef-team.info-bellow.qodef-dark-skin .qodef-team-position {
+  color: #fff;
+}
+
+/* ==========================================================================
+# Team info bellow - end
+	========================================================================== */
+/* ==========================================================================
+# Team info hover - begin
+	========================================================================== */
+.qodef-team.info-hover .qodef-team-inner {
+  position: relative;
+  width: calc(100% + 1px);
+}
+
+.qodef-team.info-hover .qodef-team-image {
+  overflow: hidden;
+}
+
+.qodef-team.info-hover .qodef-team-image img {
+  display: block;
+  -webkit-transform: scale(1.08) translate3d(-10px, 0, 0);
+  -moz-transform: scale(1.08) translate3d(-10px, 0, 0);
+  transform: scale(1.08) translate3d(-10px, 0, 0);
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: -moz-transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  will-change: transform;
+}
+
+.qodef-team.info-hover .qodef-team-info-tb {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.qodef-team.info-hover .qodef-team-info-tb:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #53f6c6;
+  background: -moz-linear-gradient(225deg, #53f6c6 0%, #53f6c6 0%, #6e38db 100%);
+  background: -webkit-gradient(linear, right top, left bottom, color-stop(0%, #53f6c6), color-stop(0%, #53f6c6), color-stop(100%, #6e38db));
+  background: -webkit-linear-gradient(225deg, #53f6c6 0%, #53f6c6 0%, #6e38db 100%);
+  background: -o-linear-gradient(225deg, #53f6c6 0%, #53f6c6 0%, #6e38db 100%);
+  background: -ms-linear-gradient(225deg, #53f6c6 0%, #53f6c6 0%, #6e38db 100%);
+  background: linear-gradient(225deg, #53f6c6 0%, #53f6c6 0%, #6e38db 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6e38db', endColorstr='#53f6c6', GradientType=1 );
+  opacity: 0;
+  -webkit-transition: opacity 0.4s cubic-bezier(0.19, 0.5, 0.46, 0.88);
+  -moz-transition: opacity 0.4s cubic-bezier(0.19, 0.5, 0.46, 0.88);
+  transition: opacity 0.4s cubic-bezier(0.19, 0.5, 0.46, 0.88);
+}
+
+.qodef-team.info-hover .qodef-team-info-tc {
+  position: relative;
+  height: 100%;
+  padding: 25px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.qodef-team.info-hover .qodef-team-position {
+  display: block;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: .1em;
+  color: #53f6c6;
+}
+
+.qodef-team.info-hover .qodef-team-position:before {
+  content: '< ';
+  position: relative;
+  display: inline-block;
+}
+
+.qodef-team.info-hover .qodef-team-position:after {
+  content: ' />';
+  position: relative;
+  display: inline-block;
+}
+
+.qodef-team.info-hover .qodef-team-name {
+  margin: 0 0 9px;
+  color: #fff;
+}
+
+.qodef-team.info-hover .qodef-team-description-holder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.qodef-team.info-hover .qodef-team-description {
+  color: #fff;
+}
+
+.qodef-team.info-hover .qodef-team-social-holder-between {
+  position: absolute;
+  bottom: 28px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  z-index: 20;
+}
+
+.qodef-team.info-hover .qodef-icon-shortcode {
+  margin: 0 8px;
+  font-size: 18px;
+}
+
+.qodef-team.info-hover .qodef-icon-shortcode:first-child {
+  margin-left: 0;
+}
+
+.qodef-team.info-hover .qodef-icon-shortcode > a {
+  display: block;
+  overflow: hidden;
+  color: #50d6ae;
+}
+
+.qodef-team.info-hover .qodef-icon-shortcode > a > span {
+  -webkit-transition: -webkit-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+.qodef-team.info-hover .qodef-icon-shortcode > a:hover {
+  color: #fff;
+}
+
+.qodef-team.info-hover .qodef-icon-shortcode:nth-child(1) > a > span {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+.qodef-team.info-hover .qodef-icon-shortcode:nth-child(2) > a > span {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.qodef-team.info-hover .qodef-icon-shortcode:nth-child(3) > a > span {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+.qodef-team.info-hover .qodef-icon-shortcode:nth-child(4) > a > span {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.qodef-team.info-hover .qodef-icon-shortcode:nth-child(5) > a > span {
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+
+.qodef-team.info-hover .qodef-icon-shortcode:nth-child(6) > a > span {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.qodef-team.info-hover .qodef-icon-shortcode:nth-child(7) > a > span {
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
+}
+
+.qodef-team.info-hover .qodef-icon-shortcode:nth-child(8) > a > span {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.qodef-team.info-hover .qodef-icon-shortcode:nth-child(9) > a > span {
+  -webkit-transition-delay: 0.45s;
+  transition-delay: 0.45s;
+}
+
+.qodef-team.info-hover:hover .qodef-team-social-holder-between {
+  opacity: 1;
+}
+
+.qodef-team.info-hover:hover .qodef-team-info-tb:after {
+  opacity: .7;
+}
+
+.qodef-team.info-hover:hover .qodef-team-description-holder {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.qodef-team.info-hover:hover img {
+  -webkit-transform: scale(1.08) translate3d(10px, 0, 0);
+  -moz-transform: scale(1.08) translate3d(10px, 0, 0);
+  transform: scale(1.08) translate3d(10px, 0, 0);
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: -moz-transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.qodef-team.info-hover:hover .qodef-icon-shortcode > a > span {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.qodef-tl-with-animation .qodef-team.info-hover {
+  visibility: hidden;
+}
+
+.touch .qodef-tl-with-animation .qodef-team.info-hover {
+  visibility: visible;
+}
+
+.no-touch .qodef-tl-with-animation .qodef-team.info-hover {
+  visibility: visible;
+}
+
+.no-touch .qodef-tl-with-animation.qodef-tl-standard .qodef-team.info-hover {
+  opacity: 0;
+}
+
+.no-touch .qodef-tl-with-animation.qodef-tl-standard .qodef-team.info-hover.qodef-appeared {
+  opacity: 1;
+  -webkit-transition: opacity 1s cubic-bezier(0.19, 0.5, 0.46, 0.88);
+  -moz-transition: opacity 1s cubic-bezier(0.19, 0.5, 0.46, 0.88);
+  transition: opacity 1s cubic-bezier(0.19, 0.5, 0.46, 0.88);
+}
+
+.no-touch .qodef-tl-with-animation.qodef-tl-masonry .qodef-team.info-hover {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 100px, 0) rotateY(45deg) rotateX(10deg);
+  -moz-transform: translate3d(0, 100px, 0) rotateY(45deg) rotateX(10deg);
+  transform: translate3d(0, 100px, 0) rotateY(45deg) rotateX(10deg);
+}
+
+.no-touch .qodef-tl-with-animation.qodef-tl-masonry .qodef-team.info-hover.qodef-appeared {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0) rotateY(0) rotateX(0);
+  -moz-transform: translate3d(0, 0, 0) rotateY(0) rotateX(0);
+  transform: translate3d(0, 0, 0) rotateY(0) rotateX(0);
+  -webkit-transition: all 0.6s cubic-bezier(0.19, 0.5, 0.46, 0.88);
+  -moz-transition: all 0.6s cubic-bezier(0.19, 0.5, 0.46, 0.88);
+  transition: all 0.6s cubic-bezier(0.19, 0.5, 0.46, 0.88);
+}
+
+/* ==========================================================================
+# Team info hover - end
+	========================================================================== */
+/* ==========================================================================
+# Team slider - begin
+	========================================================================== */
+.qodef-team-slider-holder.qodef-dark-skin .owl-dots .owl-dot span {
+  background-color: #fff;
+}
+
+.qodef-team-slider-holder.qodef-dark-skin .owl-dots .owl-dot:hover {
+  border-color: #fff;
+}
+
+/* ==========================================================================
+# Team slider - end
+	========================================================================== */
+/* ==========================================================================
+   Testimonials custom style - begin
+   ========================================================================== */
+.qodef-testimonials-holder.qodef-testimonials-custom .qodef-testimonials {
+  margin: 0;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-custom .qodef-testimonial-content {
+  padding: 17px 79px;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-custom .qodef-testimonial-text-holder {
+  padding-left: 104px;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-custom .qodef-testimonial-author-holder {
+  margin: 27px 0 0;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-custom .qodef-testimonial-author-job {
+  padding: 5px 0 0 0;
+}
+
+/* ==========================================================================
+   Testimonials custom style - end
+   ========================================================================== */
+/* ==========================================================================
+   Testimonials standard style - begin
+   ========================================================================== */
+.qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonials {
+  margin: 0;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-content {
+  padding: 17px 100px;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-text-holder {
+  padding-left: 122px;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-text {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  letter-spacing: -.025em;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-author-holder {
+  margin: 30px 0 0;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-author-job {
+  margin: 10px 0 0;
+}
+
+/* ==========================================================================
+   Testimonials standard style - end
+   ========================================================================== */
+/* ==========================================================================
+   Testimonials shortcode style - begin
+   ========================================================================== */
+.qodef-testimonials-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /* Light/Dark styles */
+}
+
+.qodef-testimonials-holder .qodef-testimonials,
+.qodef-testimonials-holder .qodef-testimonial-content,
+.qodef-testimonials-holder .qodef-testimonial-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-testimonials-holder .qodef-testimonials {
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.qodef-testimonials-holder .qodef-testimonial-content {
+  box-sizing: border-box;
+}
+
+.qodef-testimonials-holder .qodef-testimonial-heading,
+.qodef-testimonials-holder .qodef-testimonial-text-holder {
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+}
+
+.qodef-testimonials-holder .qodef-testimonial-heading {
+  width: 114px;
+  padding-top: 77px;
+}
+
+.qodef-testimonials-holder .qodef-testimonial-text-holder {
+  width: calc(100% - 114px);
+}
+
+.qodef-testimonials-holder .qodef-testimonial-type-id {
+  position: absolute;
+  top: 0;
+  right: -77px;
+  width: 140px;
+  height: 140px;
+}
+
+.qodef-testimonials-holder .qodef-testimonial-type-id .qodef-testimonial-icon-holder {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 77px;
+  height: 77px;
+  text-align: center;
+  background-color: #53f6c6;
+  z-index: 1;
+}
+
+.qodef-testimonials-holder .qodef-testimonial-type-id .qodef-testimonial-icon-holder .qodef-testimonial-icon {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  top: 15px;
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 700;
+  color: #000;
+}
+
+.qodef-testimonials-holder .qodef-testimonial-author-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-testimonials-holder .qodef-testimonial-author-holder .qodef-testimonial-image {
+  float: left;
+}
+
+.qodef-testimonials-holder .qodef-testimonial-author-name {
+  margin: 0;
+}
+
+.qodef-testimonials-holder .qodef-testimonial-author-job {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 27px;
+  letter-spacing: .15em;
+  color: #50d6ae;
+}
+
+.qodef-testimonials-holder .qodef-testimonial-image img {
+  position: relative;
+  width: 114px !important;
+  height: auto !important;
+  z-index: 1;
+}
+
+.qodef-testimonials-holder .qodef-owl-slider .owl-dots {
+  margin: 59px 0 0;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-light .qodef-testimonial-title,
+.qodef-testimonials-holder.qodef-testimonials-light .qodef-testimonial-text,
+.qodef-testimonials-holder.qodef-testimonials-light .qodef-testimonial-author-name {
+  color: #fff;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-light .owl-nav .owl-prev,
+.qodef-testimonials-holder.qodef-testimonials-light .owl-nav .owl-next {
+  color: #fff;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-light .owl-nav .owl-prev:hover,
+.qodef-testimonials-holder.qodef-testimonials-light .owl-nav .owl-next:hover {
+  color: #50d6ae;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-light .owl-dots .owl-dot span {
+  background-color: #fff;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-light .owl-dots .owl-dot:hover {
+  border-color: #fff;
+}
+
+/* ==========================================================================
+   Testimonials shortcode style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/wellexpo-core/assets/css/custom-post-types-map.css.map */

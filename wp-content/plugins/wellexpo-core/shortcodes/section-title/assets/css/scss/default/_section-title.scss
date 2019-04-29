@@ -1,0 +1,212 @@
+/* ==========================================================================
+   Section Title shortcode styles - begin
+   ========================================================================== */
+
+.qodef-section-title-holder {
+    @include qodefRelativeHolderLayout();
+	box-sizing: border-box;
+	
+	.qodef-st-tagline {
+		position: relative;
+		display: inline-block;
+		box-sizing: border-box;
+		padding: 0 18px 0 10px;
+		margin: 0 0 2px;
+		font-family: $additional-font;
+		letter-spacing: .1em;
+		font-style: italic;
+		line-height: 1.3em;
+		color: $first-main-color;
+
+		&:before {
+			content: '<';
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		
+		&:after {
+			content: '/>';
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+
+	&.qodef-section-title-custom-tagline {
+
+		.qodef-st-tagline {
+
+			&:before,
+			&:after,
+			.qodef-char,
+			.qodef-num {
+				font-size: 18px !important;
+			}
+		}
+	}
+
+	&.qodef-st-with-animation {
+		%font {
+			font-size: 14px;
+			letter-spacing: .15em;
+			font-style: italic;
+			line-height: 1.3em;
+			color: inherit;
+		}
+
+		.qodef-st-tagline {
+			white-space: nowrap;
+			font-size: 0; //remove whitespace
+
+			&:before,
+			&:after {
+				@extend %font;
+				opacity: 0;
+			}
+		}
+
+		.qodef-char {
+			position: relative;
+			display: inline-block;
+			@extend %font;
+			visibility: hidden;
+		}
+	
+		.qodef-num {
+			position: absolute;
+			@extend %font;
+			visibility: hidden;
+		}
+
+		@include keyframes(qodefNumFadeOut) {
+			0% {
+				visibility: visible;
+				opacity: 1;
+			}
+
+			100% {
+				visibility: visible;
+				opacity: 0;
+				@include qodefTransform(translateY(-30%));
+			}
+		}
+		
+		@include keyframes(qodefNumFadeInOut) {
+			0% {
+				visibility: visible;
+				opacity: 0;
+			}
+
+			50% {
+				visibility: visible;
+				opacity: 1;
+			}
+
+			100% {
+				visibility: visible;
+				opacity: 0;
+				@include qodefTransform(translateY(-30%));
+			}
+		}
+				
+		@include keyframes(qodefCharFadeIn) {
+			0% {
+				visibility: visible;
+				opacity: 0;
+				@include qodefTransform(translateY(30%));
+			}
+
+			100% {
+				visibility: visible;
+				opacity: 1;
+				@include qodefTransform(translateY(0));
+			}
+		}
+
+		@include keyframes(qodefTextFadeIn) {
+			0% {
+				visibility: visible;
+				opacity: 0;
+				@include qodefTransform(translate3d(0, 5%, 0));
+			}
+
+			40% {
+				visibility: visible;
+				opacity: 1;
+			}
+
+			100% {
+				visibility: visible;
+				opacity: 1;
+				@include qodefTransform(translate3d(0, 0, 0));
+			}
+		}
+
+		.qodef-st-text-wrapper,
+		.qodef-st-title-wrapper { 
+			visibility: hidden;
+		}
+
+		&.qodef-appeared {
+			.qodef-st-tagline {
+				&:before,
+				&:after {
+					@include qodefTransition(opacity .1s);
+					opacity: 1;
+				}
+			}
+			.qodef-num-1 {
+				@include qodefAnimation(qodefNumFadeOut .1s forwards);
+			}
+
+			.qodef-num-2 {
+				@include qodefAnimation(qodefNumFadeInOut .1s forwards);
+			}
+			
+			.qodef-char {
+				@include qodefAnimation(qodefCharFadeIn .15s forwards);
+			}
+
+			.qodef-st-title-wrapper {
+				@include qodefAnimation(qodefTextFadeIn 1s cubic-bezier(0.19, 0.5, 0.46, 0.88) forwards);
+			}
+
+			.qodef-st-text-wrapper {
+				@include qodefAnimation(qodefTextFadeIn 1s cubic-bezier(0.19, 0.5, 0.46, 0.88) .2s forwards);
+			}
+		}
+	}
+
+	
+	.qodef-st-title {
+	    display: block;
+        margin: 0;
+	    
+	    .qodef-st-title-bold {
+		    font-weight: 700;
+	    }
+	    
+	    .qodef-st-title-light {
+		    font-weight: 300;
+	    }
+    }
+    
+    .qodef-st-text {
+	    display: block;
+        margin: 5px 0 0;
+    }
+
+	&.qodef-light-skin {
+
+		.qodef-st-title,
+		.qodef-st-text {
+			color: #fff;
+		}
+	}
+}
+/* ==========================================================================
+   Section Title shortcode styles - end
+   ========================================================================== */
+
+

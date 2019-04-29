@@ -1,0 +1,698 @@
+/* ==========================================================================
+   Event List styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Event Single style - begin
+   ========================================================================== */
+.qodef-ttevent-single .qodef-ttevent-single-subtitle {
+  font-family: "Rubik", sans-serif;
+  line-height: 30px;
+  letter-spacing: .1em;
+  font-style: italic;
+  color: #50d6ae;
+}
+
+.qodef-ttevent-single .qodef-ttevent-single-subtitle:before {
+  content: '<';
+}
+
+.qodef-ttevent-single .qodef-ttevent-single-subtitle:after {
+  content: '/>';
+}
+
+.qodef-ttevent-single .qodef-ttevent-single-title {
+  margin: 0 0 16px;
+}
+
+@media only screen and (min-width: 481px) {
+  .qodef-ttevent-single .qodef-event-heading .qodef-event-image {
+    margin: 167px 0 47px;
+  }
+}
+
+.qodef-ttevent-single .qodef-event-heading .qodef-event-type-id {
+  position: absolute;
+  top: 90px;
+  left: -125px;
+  width: 140px;
+  height: 140px;
+}
+
+@media only screen and (max-width: 480px) {
+  .qodef-ttevent-single .qodef-event-heading .qodef-event-type-id {
+    display: none;
+  }
+}
+
+.qodef-ttevent-single .qodef-event-heading .qodef-event-icon-holder {
+  display: table;
+  table-layout: fixed;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 77px;
+  height: 77px;
+  text-align: center;
+  background-color: #53f6c6;
+  z-index: 1;
+}
+
+.qodef-ttevent-single .qodef-event-heading .qodef-event-icon {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  font-size: 24px;
+}
+
+/* ==========================================================================
+   Event Single style - end
+   ========================================================================== */
+.tt_tabs .tt_navigation_cell {
+  margin: 0 0 10px !important;
+  width: 100%;
+}
+
+@media only screen and (max-width: 680px) {
+  .tt_tabs .tt_navigation_cell {
+    border-bottom: 1px solid #edeff2;
+  }
+}
+
+.tt_tabs .tt_navigation_cell .tt_tabs_navigation {
+  width: 100% !important;
+}
+
+.tt_tabs .tt_tabs_navigation {
+  margin: 0 0 9px;
+}
+
+.tt_tabs .tt_tabs_navigation li {
+  display: inline-block;
+  vertical-align: top;
+  float: none;
+  margin: 0 5px 14px !important;
+}
+
+@media only screen and (max-width: 680px) {
+  .tt_tabs .tt_tabs_navigation li {
+    display: block;
+    margin: 0 0 15px !important;
+  }
+}
+
+.tt_tabs .tt_tabs_navigation li a {
+  position: relative;
+  padding: 0 !important;
+  margin: 0 25px !important;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px !important;
+  font-weight: 700;
+  color: #000 !important;
+  background-color: transparent;
+  border: 0 !important;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  -webkit-transition: all .23s !important;
+  -moz-transition: all .23s !important;
+  transition: all .23s !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  .tt_tabs .tt_tabs_navigation li a {
+    margin: 0 17px !important;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .tt_tabs .tt_tabs_navigation li a {
+    display: inline-block;
+    margin: 0 !important;
+  }
+}
+
+.tt_tabs .tt_tabs_navigation li a:before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  left: -4px;
+  width: calc(100% + 8px);
+  height: 4px;
+  background-color: #53f6c6;
+  z-index: -1;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: -moz-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transform: scaleX(0) translateZ(0);
+  -moz-transform: scaleX(0) translateZ(0);
+  transform: scaleX(0) translateZ(0);
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+
+.tt_tabs .tt_tabs_navigation li:first-child a {
+  margin-left: 0 !important;
+}
+
+.tt_tabs .tt_tabs_navigation .ui-tabs-active a:before,
+.tt_tabs .tt_tabs_navigation li a:hover:before {
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-transform: scaleX(1) translateZ(0);
+  -moz-transform: scaleX(1) translateZ(0);
+  transform: scaleX(1) translateZ(0);
+}
+
+table.tt_timetable {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
+  border: 1px dashed #e5e5e5;
+}
+
+table.tt_timetable tr, table.tt_timetable td {
+  border-style: dashed;
+}
+
+table.tt_timetable thead tr {
+  border: 1px dashed #e5e5e5;
+}
+
+table.tt_timetable thead tr.row_gray {
+  background-color: transparent !important;
+}
+
+table.tt_timetable thead th {
+  width: 22%;
+  height: 58px;
+  padding: 0 26px;
+  border-right: 1px dashed #e5e5e5 !important;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  vertical-align: middle !important;
+}
+
+table.tt_timetable thead th:first-child {
+  width: 8%;
+}
+
+table.tt_timetable thead th:last-child {
+  border-right: 0 !important;
+}
+
+table.tt_timetable tbody tr {
+  border-bottom: 1px dashed #e5e5e5;
+}
+
+table.tt_timetable tbody tr:last-child {
+  border-bottom: none;
+}
+
+table.tt_timetable tbody tr.row_gray {
+  background: transparent !important;
+}
+
+table.tt_timetable tbody tr .tt_tooltip .tt_tooltip_content {
+  margin: 0 27px;
+  padding: 12px 10px !important;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+  border-radius: 0 !important;
+  background-color: #50d6ae !important;
+}
+
+table.tt_timetable tbody tr .tt_tooltip .tt_tooltip_content:before {
+  content: '<';
+}
+
+table.tt_timetable tbody tr .tt_tooltip .tt_tooltip_content:after {
+  content: '/>';
+}
+
+table.tt_timetable tbody tr .tt_tooltip .tt_tooltip_content a {
+  display: none;
+}
+
+table.tt_timetable tbody tr .tt_tooltip .tt_tooltip_arrow {
+  border-width: 8px 8px 0;
+  border-color: #50d6ae transparent !important;
+  top: 12px;
+}
+
+table.tt_timetable tbody tr .tt_tooltip .tt_tooltip_text {
+  top: -51px !important;
+  left: 0 !important;
+  width: auto !important;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  transform: translateY(10px);
+  -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.15s cubic-bezier(0.19, 0.5, 0.46, 0.88);
+  -moz-transition: -moz-transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.15s cubic-bezier(0.19, 0.5, 0.46, 0.88);
+  transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.15s cubic-bezier(0.19, 0.5, 0.46, 0.88);
+}
+
+table.tt_timetable tbody tr .tt_tooltip:hover .tt_tooltip_text {
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+table.tt_timetable tbody td {
+  width: 8% !important;
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+  vertical-align: middle !important;
+  border-right: 1px dashed #e5e5e5 !important;
+}
+
+table.tt_timetable tbody td.tt_hours_column {
+  font-weight: 700;
+}
+
+table.tt_timetable .event {
+  background: none !important;
+  vertical-align: middle;
+}
+
+table.tt_timetable .event .event_header {
+  margin: 0 0 3px;
+  color: #000 !important;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: .025em;
+}
+
+table.tt_timetable .event .event_header:hover {
+  color: #000 !important;
+  text-decoration: none;
+}
+
+table.tt_timetable .event .event_container {
+  padding: 20px 26px 16px;
+}
+
+table.tt_timetable .event .event_container.tt_tooltip:hover {
+  background-color: transparent;
+}
+
+table.tt_timetable .event .before_hour_text,
+table.tt_timetable .event .after_hour_text {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: .1em;
+  color: #50d6ae;
+}
+
+table.tt_timetable .event .before_hour_text:before, table.tt_timetable .event .before_hour_text:after,
+table.tt_timetable .event .after_hour_text:before,
+table.tt_timetable .event .after_hour_text:after {
+  display: inline-block;
+}
+
+table.tt_timetable .event .before_hour_text:before,
+table.tt_timetable .event .after_hour_text:before {
+  content: '<';
+}
+
+table.tt_timetable .event .before_hour_text:after,
+table.tt_timetable .event .after_hour_text:after {
+  content: '/>';
+}
+
+table.tt_timetable .event .before_hour_text {
+  margin: 4px 0 2px;
+}
+
+table.tt_timetable .event .after_hour_text {
+  margin: 2px 0 0;
+}
+
+table.tt_timetable .event .top_hour,
+table.tt_timetable .event .bottom_hour {
+  display: inline-block;
+  font-weight: 400;
+  color: #282828;
+}
+
+table.tt_timetable .event .top_hour .hours,
+table.tt_timetable .event .bottom_hour .hours {
+  color: inherit !important;
+  font-size: 14px;
+  font-weight: inherit;
+}
+
+table.tt_timetable .event .top_hour {
+  margin: 0;
+}
+
+table.tt_timetable .event .bottom_hour {
+  margin: 0 0 0 5px;
+}
+
+table.tt_timetable .event .bottom_hour:before {
+  content: "-";
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 5px 0 0;
+}
+
+table.tt_timetable .event a {
+  color: #50d6ae !important;
+  font-size: 18px;
+  font-weight: inherit;
+}
+
+table.tt_timetable .event a:hover {
+  color: #000 !important;
+  text-decoration: none;
+}
+
+table.tt_timetable .event hr {
+  display: none;
+}
+
+/* ==========================================================================
+   Event List shortcode style - begin
+   ========================================================================== */
+.qodef-event-list-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-event-list-holder .qodef-eli-content-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-event-list-holder.qodef-el-table .qodef-el-wrapper {
+  padding: 0 10px;
+}
+
+.qodef-event-list-holder.qodef-el-table .qodef-eli-content-inner {
+  position: relative;
+  display: table;
+}
+
+.qodef-event-list-holder.qodef-el-table .qodef-el-item {
+  width: 100%;
+  margin: 0;
+  padding: 0 45px 0 65px;
+  vertical-align: middle;
+}
+
+.qodef-event-list-holder.qodef-el-table .qodef-el-item:nth-child(2n+1) {
+  background: #000000;
+  background: -moz-linear-gradient(left, #000000 0%, #181818 50%, #000000 100%);
+  background: -webkit-linear-gradient(left, #000000 0%, #181818 50%, #000000 100%);
+  background: linear-gradient(to right, #000000 0%, #181818 50%, #000000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 );
+}
+
+.qodef-event-list-holder.qodef-el-table .qodef-eli-title {
+  width: 40%;
+}
+
+.qodef-event-list-holder.qodef-el-table .qodef-eli-info-time {
+  width: 25%;
+  color: #838383;
+}
+
+.qodef-event-list-holder.qodef-el-table .qodef-eli-info-author {
+  width: 35%;
+  font-family: "Rubik", sans-serif;
+  font-style: italic;
+  letter-spacing: .1em;
+  color: #50d6ae;
+}
+
+.qodef-event-list-holder.qodef-el-table .qodef-eli-info-author .qodef-eli-info-label:before {
+  content: '<';
+}
+
+.qodef-event-list-holder.qodef-el-table .qodef-eli-info-author .qodef-eli-info-label:after {
+  content: '/>';
+}
+
+.qodef-event-list-holder.qodef-el-table .qodef-eli-title,
+.qodef-event-list-holder.qodef-el-table .qodef-btn.qodef-btn-simple {
+  color: #fff;
+}
+
+.qodef-event-list-holder.qodef-el-table .qodef-eli-title,
+.qodef-event-list-holder.qodef-el-table .qodef-eli-info-time,
+.qodef-event-list-holder.qodef-el-table .qodef-eli-info-author,
+.qodef-event-list-holder.qodef-el-table .qodef-eli-info-button {
+  position: relative;
+  display: table-cell;
+  height: 74px;
+  padding-right: 20px;
+  vertical-align: middle;
+}
+
+.qodef-event-list-holder.qodef-el-table.qodef-el-has-button .qodef-el-item {
+  padding: 0 90px 0 110px;
+}
+
+.qodef-event-list-holder.qodef-el-table.qodef-el-has-button .qodef-eli-title {
+  width: 34.2%;
+}
+
+.qodef-event-list-holder.qodef-el-table.qodef-el-has-button .qodef-eli-info-time {
+  width: 25.6%;
+}
+
+.qodef-event-list-holder.qodef-el-table.qodef-el-has-button .qodef-eli-info-author {
+  width: 27.8%;
+}
+
+.qodef-event-list-holder.qodef-el-table.qodef-el-has-button .qodef-eli-info-button {
+  width: 12.4%;
+}
+
+.qodef-event-list-holder.qodef-el-table.qodef-el-has-button .qodef-eli-info-button .qodef-btn.qodef-btn-simple:hover {
+  color: #fff !important;
+}
+
+/* ==========================================================================
+# Event list responsive style - begin
+========================================================================== */
+@media only screen and (max-width: 768px) {
+  .qodef-event-list-holder .qodef-eli-image,
+  .qodef-event-list-holder .qodef-eli-content {
+    display: block;
+  }
+  .qodef-event-list-holder .qodef-eli-image {
+    height: auto;
+  }
+  .qodef-event-list-holder.qodef-el-table .qodef-el-item {
+    padding: 0 20px;
+  }
+}
+
+/* ==========================================================================
+# Event list responsive style - end
+========================================================================== */
+/* ==========================================================================
+   Event List shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+# Event list responsive style - begin
+========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .qodef-event-list-holder.qodef-el-table .qodef-el-item, .qodef-event-list-holder.qodef-el-table.qodef-el-has-button .qodef-el-item {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-event-list-holder .qodef-eli-image,
+  .qodef-event-list-holder .qodef-eli-content {
+    display: block;
+  }
+  .qodef-event-list-holder .qodef-eli-image {
+    height: auto;
+  }
+  .qodef-event-list-holder.qodef-el-table .qodef-eli-title,
+  .qodef-event-list-holder.qodef-el-table .qodef-eli-info-time,
+  .qodef-event-list-holder.qodef-el-table .qodef-eli-info-author,
+  .qodef-event-list-holder.qodef-el-table .qodef-eli-info-button, .qodef-event-list-holder.qodef-el-table.qodef-el-has-button .qodef-eli-title,
+  .qodef-event-list-holder.qodef-el-table.qodef-el-has-button .qodef-eli-info-time,
+  .qodef-event-list-holder.qodef-el-table.qodef-el-has-button .qodef-eli-info-author,
+  .qodef-event-list-holder.qodef-el-table.qodef-el-has-button .qodef-eli-info-button {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+  .qodef-event-list-holder.qodef-el-table.qodef-el-has-button .qodef-eli-info-button {
+    padding-right: 0;
+  }
+  .qodef-event-list-holder.qodef-el-table.qodef-el-has-button .qodef-eli-info-button .qodef-btn-text {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-event-list-holder.qodef-el-table .qodef-eli-title,
+  .qodef-event-list-holder.qodef-el-table .qodef-eli-info-time,
+  .qodef-event-list-holder.qodef-el-table .qodef-eli-info-author,
+  .qodef-event-list-holder.qodef-el-table .qodef-eli-info-button, .qodef-event-list-holder.qodef-el-table.qodef-el-has-button .qodef-eli-title,
+  .qodef-event-list-holder.qodef-el-table.qodef-el-has-button .qodef-eli-info-time,
+  .qodef-event-list-holder.qodef-el-table.qodef-el-has-button .qodef-eli-info-author,
+  .qodef-event-list-holder.qodef-el-table.qodef-el-has-button .qodef-eli-info-button {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 5px 0;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+/* ==========================================================================
+# Event list responsive style - end
+========================================================================== */
+/* ==========================================================================
+   Timetable Items List shortcode style - begin
+   ========================================================================== */
+.qodef-timetable-list {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 70px 35px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.qodef-timetable-list.qodef-tl-has-border {
+  border: 1px dashed #e5e5e5;
+}
+
+.qodef-timetable-list.qodef-tl-minimalistic {
+  padding: 30px 56px 35px;
+  border-radius: 5px;
+  background: transparent;
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-timetable-list.qodef-tl-minimalistic {
+    padding: 30px 25px 35px;
+  }
+}
+
+.qodef-timetable-list.qodef-tl-minimalistic .qodef-timetable-list-item .qodef-tli-title {
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -.025em;
+  font-weight: 600;
+}
+
+.qodef-timetable-list.qodef-tl-minimalistic .qodef-timetable-list-item .qodef-tli-content {
+  margin: 0;
+}
+
+.qodef-timetable-list.qodef-tl-minimalistic .qodef-timetable-list-item .qodef-tli-link {
+  font-family: "Rubik", sans-serif;
+  font-style: italic;
+  letter-spacing: .14em;
+  color: #50d6ae;
+}
+
+.qodef-timetable-list.qodef-tl-minimalistic .qodef-timetable-list-item .qodef-tli-link:before {
+  content: '<';
+}
+
+.qodef-timetable-list.qodef-tl-minimalistic .qodef-timetable-list-item .qodef-tli-link:after {
+  content: '/>';
+}
+
+.qodef-timetable-list.qodef-tl-minimalistic.light {
+  border-color: #fff;
+}
+
+.qodef-timetable-list.qodef-tl-minimalistic.light .qodef-tli-link {
+  color: #50d6ae;
+}
+
+.qodef-timetable-list.qodef-tl-minimalistic.light .qodef-tli-link:hover {
+  color: #fff;
+}
+
+.qodef-timetable-list.qodef-tl-minimalistic.light .qodef-tli-title,
+.qodef-timetable-list.qodef-tl-minimalistic.light .qodef-tli-content {
+  color: #fff;
+}
+
+.qodef-timetable-list .qodef-tl-heading .qodef-tl-subtitle {
+  font-style: italic;
+  color: #50d6ae;
+}
+
+.qodef-timetable-list .qodef-tl-heading .qodef-tl-subtitle:before {
+  content: '<';
+}
+
+.qodef-timetable-list .qodef-tl-heading .qodef-tl-subtitle:after {
+  content: '/>';
+}
+
+.qodef-timetable-list .qodef-tl-heading .qodef-tl-title {
+  margin: 4px 0 48px;
+}
+
+.qodef-timetable-list .qodef-timetable-list-item .qodef-tli-content {
+  margin: 8px 0 28px;
+}
+
+.qodef-timetable-list .qodef-timetable-list-item:last-child .qodef-tli-content {
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Timetable Items List shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Timetable Items List shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 680px) {
+  .qodef-timetable-list {
+    margin: 10px 0;
+    padding: 35px 15px;
+  }
+  .qodef-timetable-list .qodef-tl-wrapper .qodef-tl-heading .qodef-tl-title {
+    margin: 4px 0 28px;
+  }
+}
+
+/* ==========================================================================
+   Timetable Items List shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Event List styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=timetable-map.css.map */
